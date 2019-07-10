@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Alexey Pasmarnov](https://up.htmlacademy.ru/adaptive/17/user/972473).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Мирошниченко](https://htmlacademy.ru/profile/id591417).
 
 ---
 
