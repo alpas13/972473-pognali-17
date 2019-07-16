@@ -7,57 +7,55 @@
 <body>
 <header class="page-header">
     <h1 class="page-header__title page-header__title--active">Направления</h1>
-    <nav class="main-nav">
-        <div class="main-nav__menu-header">
-            <a class="main-nav__logo">
-                <img alt="Логотип сайта 'погнали?'" class="main-nav__logo-image" height="19" src="http://placehold.it/100x19" width="100">
-            </a>
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-        </div>
-        <div class="main-nav__content-menu visually-hidden">
+    <div class="page-header__menu-header">
+        <a class="page-header__logo">
+            <img alt="Логотип сайта 'погнали?'" class="page-header__logo-image" height="19" src="http://placehold.it/100x19" width="100">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+    </div>
+    <div class="page-header__content-menu visually-hidden">
+        <nav class="main-nav">
             <ul class="main-nav__list site-list">
                 <li class="site-list__item">О сервисе</li>
                 <li class="site-list__item">Направления</li>
                 <li class="site-list__item">Попутчики</li>
             </ul>
-            <div class="main-nav__user-wrapper">
-                <ul class="main-nav__list user-list">
-                    <li class="user-list__item">
-                        <a class="user-list__login" href="#">Авторизация</a>
-                    </li>
-                </ul>
-                <ul class="main-nav__list contacts-list">
-                    <li class="contacts-list__item">
-                        <a class="contacts-list__phone" href="tel:8-800-555-86-28">
-                            <span>8 800 555-86-28</span>
-                        </a>
-                    </li>
-                    <li class="contacts-list__item">
-                        <a class="contacts-list__email" href="mailto:mail@htmlacademy.ru">
-                            <span>mail@htmlacademy.ru</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <ul class="main-nav__list social-list">
-                <li class="social-list__item">
-                    <a class="social-list__fb" href="#">
-                        <span class="visually-hidden">Facebook</span>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__vk" href="#">
-                        <span class="visually-hidden">В Контакте</span>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__inst" href="#">
-                        <span class="visually-hidden">Instagram</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
+        <ul class="page-header__list user-list">
+            <li class="user-list__item">
+                <a class="user-list__login" href="#">Авторизация</a>
+            </li>
+        </ul>
+        <ul class="page-header__list contacts-list">
+            <li class="contacts-list__item">
+                <a class="contacts-list__item-phone" href="tel:8-800-555-86-28">
+                    8 800 555-86-28
+                </a>
+            </li>
+            <li class="contacts-list__item">
+                <a class="contacts-list__item-email" href="mailto:mail@htmlacademy.ru">
+                    mail@htmlacademy.ru
+                </a>
+            </li>
+        </ul>
+        <ul class="page-header__list social-list">
+            <li class="social-list__item">
+                <a class="social-list__item-fb" href="#">
+                    <span class="visually-hidden">Facebook</span>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__item-vk" href="#">
+                    <span class="visually-hidden">В Контакте</span>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__item-inst" href="#">
+                    <span class="visually-hidden">Instagram</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </header>
 <main class="main-form">
 </main>
@@ -84,7 +82,7 @@
     </ul>
     <div class="developer">
         <p class="developer-text">Разработано</p>
-        <a class="developer__logo" href="#">
+        <a class="developer__logo" target="_blank" href="#">
             <img alt="" class="developer__logo-image" height="34" src="http://placehold.it/27x34" width="27">
         </a>
     </div>

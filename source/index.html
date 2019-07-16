@@ -7,55 +7,74 @@
 <body>
 <header class="page-header">
     <h1 class="page-header__title">В путешествие с крутыми попутчиками!</h1>
-    <nav class="main-nav">
-        <div class="main-nav__menu-header">
-            <a class="main-nav__logo">
-                <img alt="Логотип сайта 'погнали?'" class="main-nav__logo-image" height="19" src="http://placehold.it/100x19" width="100">
-            </a>
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-        </div>
-        <ul class="main-nav__list site-list visually-hidden">
-            <li class="site-list__item">О сервисе</li>
-            <li class="site-list__item">Направления</li>
-            <li class="site-list__item">Попутчики</li>
+    <div class="page-header__menu-header">
+        <a class="page-header__logo">
+            <img alt="Логотип сайта 'погнали?'" class="page-header__logo-image" height="19" src="http://placehold.it/100x19" width="100">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+    </div>
+    <div class="page-header__user-menu user-menu">
+        <ul class="user-menu__login">
+            <li class="user-menu__login-item">
+                <a class="user-menu__login-link" href="#">Авторизация</a>
+            </li>
         </ul>
-        <div class="main-nav__user-wrapper">
-            <ul class="main-nav__list user-list">
-                <li class="user-list__item">
-                    <a class="user-list__login" href="#">Авторизация</a>
-                </li>
+        <ul class="user-menu__contacts-list">
+            <li class="user-menu__contact-item">
+                <a class="user-menu__item-phone" href="tel:8-800-555-86-28">
+                    <span class="visually-hidden">8 800 555-86-28</span>
+                </a>
+            </li>
+            <li class="user-menu__contact-item">
+                <a class="user-menu__item-email" href="mailto:mail@htmlacademy.ru">
+                    <span class="visually-hidden">mail@htmlacademy.ru</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="page-header__content-menu visually-hidden">
+        <nav class="main-nav">
+            <ul class="main-nav__list site-list">
+                <li class="site-list__item">О сервисе</li>
+                <li class="site-list__item">Направления</li>
+                <li class="site-list__item">Попутчики</li>
             </ul>
-            <ul class="main-nav__list contacts-list">
-                <li class="contacts-list__item">
-                    <a class="contacts-list__phone" href="tel:8-800-555-86-28">
-                        <span class="visually-hidden">8 800 555-86-28</span>
-                    </a>
-                </li>
-                <li class="contacts-list__item">
-                    <a class="contacts-list__email" href="mailto:mail@htmlacademy.ru">
-                        <span class="visually-hidden">mail@htmlacademy.ru</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <ul class="main-nav__list social-list visually-hidden">
+        </nav>
+        <ul class="page-header__list user-list">
+            <li class="user-list__item">
+                <a class="user-list__login" href="#">Авторизация</a>
+            </li>
+        </ul>
+        <ul class="page-header__list contacts-list">
+            <li class="contacts-list__item">
+                <a class="contacts-list__item-phone" href="tel:8-800-555-86-28">
+                    8 800 555-86-28
+                </a>
+            </li>
+            <li class="contacts-list__item">
+                <a class="contacts-list__item-email" href="mailto:mail@htmlacademy.ru">
+                    mail@htmlacademy.ru
+                </a>
+            </li>
+        </ul>
+        <ul class="page-header__list social-list">
             <li class="social-list__item">
-                <a class="social-list__fb" href="#">
+                <a class="social-list__item-fb" href="#">
                     <span class="visually-hidden">Facebook</span>
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__vk" href="#">
+                <a class="social-list__item-vk" href="#">
                     <span class="visually-hidden">В Контакте</span>
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__inst" href="#">
+                <a class="social-list__item-inst" href="#">
                     <span class="visually-hidden">Instagram</span>
                 </a>
             </li>
         </ul>
-    </nav>
+    </div>
 </header>
 <main class="main-content">
     <section class="about-service">
@@ -67,77 +86,78 @@
         <ul class="about-service__list intro-list">
             <li class="intro-list__item">
                 <p class="intro-list__description">Выберите направление</p>
-                <span class="intro-list__number">1</span></li>
             <li class="intro-list__item">
                 <p class="intro-list__description">Изучите идеи путешественников</p>
-                <span class="intro-list__number">2</span></li>
             <li class="intro-list__item">
                 <p class="intro-list__description">Находите тех, кто похож на вас</p>
-                <span class="intro-list__number">3</span></li>
             <li class="intro-list__item">
                 <p class="intro-list__description">Путешествуйте вместе!</p>
-                <span class="intro-list__number">4</span></li>
         </ul>
-        <section class="about-service__description">
-            <h3 class="about-service__description-title">О сервисе</h3>
-            <p class="about-service__description-text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
-            <p class="about-service__description-tip">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+        <section class="about-service__description service-description">
+            <h2 class="service-description__title">О сервисе</h2>
+            <p class="service-description__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+                Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
+            <p class="service-description__tip">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
         </section>
     </section>
     <section class="direction">
-        <h2 class="direction__title">Направления</h2>
-        <p class="direction__description">Мы не продаем туры и ничего не рекламируем.
-            Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться. </p>
-        <ul class="direction__list country-list">
-            <li class="country-list__item">
+        <section class="direction__service-description service-description">
+            <h2 class="service-description__title">Направления</h2>
+            <p class="service-description__text">Мы не продаем туры и ничего не рекламируем.
+                Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться. </p>
+        </section>
+            <section class="country-list">
                 <img alt="Изображение Таиланда " class="country-list__image" height="110" src="http://placehold.it/270x110" width="270">
                 <ul class="country-list__flags flags-list">
-                    <li class="flags-list__item flags-list__thailand">
+                    <li class="flags-list__item">
+                        <img alt="Флаг Тайланда" class="flags-list__item-image" height="24" src="http://placehold.it/35x24" width="35">
                         <span class="visually-hidden">Флаг Тайланда</span>
                     </li>
                 </ul>
-                <p class="country-list__card">
+                <p class="country-list__info">
                     <span class="country-list__title">Тайланд</span>
                     <span class="country-list__place">Джугли зовут!</span>
                     <span class="country-list__users">18321</span>
                 </p>
-            </li>
-            <li class="country-list__item">
+            </section>
+            <section class="country-list">
                 <img alt="Изображение Франции" class="country-list__image" height="110" src="http://placehold.it/270x110" width="270">
                 <ul class="country-list__flags flags-list">
-                    <li class="flags-list__item flags-list__france">
+                    <li class="flags-list__item">
+                        <img alt="Флаг Франции" class="flags-list__item-image" height="24" src="http://placehold.it/35x24" width="35">
                         <span class="visually-hidden">Флаг Франции</span>
                     </li>
                 </ul>
-                <p class="country-list__card">
+                <p class="country-list__info">
                     <span class="country-list__title">Франция</span>
                     <span class="country-list__place">Трэ бьен, манифик!</span>
                     <span class="country-list__users">12518</span>
                 </p>
-            </li>
-            <li class="country-list__item">
+            </section>
+            <section class="country-list">
                 <img alt="Изображение Чехии" class="country-list__image" height="110" src="http://placehold.it/270x110" width="270">
                 <ul class="country-list__flags flags-list">
-                    <li class="flags-list__item flags-list__czech">
+                    <li class="flags-list__item">
+                        <img alt="Флаг Чехии" class="flags-list__item-image" height="24" src="http://placehold.it/35x24" width="35">
                         <span class="visually-hidden">Флаг Чехии</span>
                     </li>
                 </ul>
-                <p class="country-list__card">
+                <p class="country-list__info">
                     <span class="country-list__title">Чехия</span>
                     <span class="country-list__place">Закоулки старой Европы</span>
                     <span class="country-list__users">5326</span>
                 </p>
-            </li>
-        </ul>
+            </section>
         <a class="direction__show-all" href="#">Показать все</a>
     </section>
     <section class="companions">
-        <h2 class="companions__title">Попутчики</h2>
-        <p class="companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-            Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
-        <p class="companions__tip">Теперь можно легко найти единомышленников!</p>
-        <ul class="companions__list user-list">
-            <li class="user-list__item">
+        <section class="companions__service-description service-description">
+            <h2 class="service-description__title">Попутчики</h2>
+            <p class="service-description__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+                Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
+            <p class="service-description__tip">Теперь можно легко найти единомышленников!</p>
+        </section>
+            <section class="user-list">
                 <img alt="Фотография пользователя" class="user-list__image" height="270" src="http://placehold.it/270x270" width="270">
                 <ul class="user-list__flags flags-list">
                     <li class="flags-list__item flags-list__sri-lanka">
@@ -150,9 +170,7 @@
                         <span class="visually-hidden">Сейшелы</span>
                     </li>
                 </ul>
-                <p class="user-list__card">
-                    <span class="user-list__name">Таня Фирсова</span>
-                </p>
+                <p class="user-list__card">Таня Фирсова</p>
                 <ul class="user-list__hash-tags hash-tags">
                     <li class="hash-tags__item">#ЗОЖ</li>
                     <li class="hash-tags__item">#ПП</li>
@@ -175,8 +193,8 @@
                         <span class="visually-hidden">Бегом</span>
                     </li>
                 </ul>
-            </li>
-            <li class="user-list__item">
+            </section>
+            <section class="user-list">
                 <img alt="Фотография пользователя" class="user-list__image" height="270" src="http://placehold.it/270x270" width="270">
                 <ul class="user-list__flags flags-list">
                     <li class="flags-list__item flags-list__belgium">
@@ -186,9 +204,7 @@
                         <span class="visually-hidden">Чехия</span>
                     </li>
                 </ul>
-                <p class="user-list__card">
-                    <span class="user-list__name">Петя Демин</span>
-                </p>
+                <p class="user-list__card">Петя Демин</p>
                 <ul class="user-list__hash-tags hash-tags">
                     <li class="hash-tags__item">#бургер</li>
                     <li class="hash-tags__item">#бар</li>
@@ -210,8 +226,7 @@
                         <span class="visually-hidden">Бегом</span>
                     </li>
                 </ul>
-            </li>
-        </ul>
+            </section>
         <a class="companions__show-all" href="#">Показать всех</a>
     </section>
     <section class="set-profile">
@@ -223,6 +238,24 @@
             <li class="price-list__item price-list__customisation">Кастомный цвет карточки<br>59 руб./мес</li>
         </ul>
         <a class="set-profile__business-price" href="#">Показать тарифы для бизнеса</a>
+        <section class="modal-price">
+            <h2 class="modal-price__title">Бизнес-тарифы</h2>
+            <ul class="modal-price__list business-price">
+                <li class="business-price__item">
+                    <p>Реклама у блоггера<br>300 000 руб./пост</p>
+                </li>
+                <li class="business-price__item">
+                    <p>Накрутка подписчиков<br>от 1 руб./шт.</p>
+                </li>
+                <li class="business-price__item">
+                    <p>Лайки от ботов<br>от 20 коп./лайк</p>
+                </li>
+                <li class="business-price__item">
+                    <p>Ваш продакт-плейсмент<br>Индивидуально</p>
+                </li>
+            </ul>
+            <button class="modal-price__close" type="button">Закрыть окно</button>
+        </section>
     </section>
 </main>
 <footer class="page-footer">
@@ -248,28 +281,10 @@
     </ul>
     <div class="developer">
         <p class="developer-text">Разработано</p>
-        <a class="developer__logo" href="#">
+        <a class="developer__logo" target="_blank" href="#">
             <img alt="" class="developer__logo-image" height="34" src="http://placehold.it/27x34" width="27">
         </a>
     </div>
 </footer>
-<section class="modal-price">
-    <h2 class="modal-price__title">Бизнес-тарифы</h2>
-    <ul class="modal-price__list business-price">
-        <li class="business-price__item">
-            <p>Реклама у блоггера<br>300 000 руб./пост</p>
-        </li>
-        <li class="business-price__item">
-            <p>Накрутка подписчиков<br>от 1 руб./шт.</p>
-        </li>
-        <li class="business-price__item">
-            <p>Лайки от ботов<br>от 20 коп./лайк</p>
-        </li>
-        <li class="business-price__item">
-            <p>Ваш продакт-плейсмент<br>Индивидуально</p>
-        </li>
-    </ul>
-    <button class="modal-price__close" type="button">Закрыть окно</button>
-</section>
 </body>
 </html>
