@@ -1,318 +1,322 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>HTML Academy: Погнали | Попутчики</title>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Погнали | Попутчики</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
-    <h1 class="page-header__title page-header__title--active">Попутчики</h1>
-    <div class="page-header__menu-header">
-        <a class="page-header__logo">
-            <img alt="Логотип сайта 'погнали?'" class="page-header__logo-image" height="19" src="http://placehold.it/100x19" width="100">
+  <h1 class="page-header__title page-header__title--active">Попутчики</h1>
+  <div class="page-header__menu-header">
+    <a class="page-header__logo">
+      <img alt="Логотип сайта 'погнали?'" class="page-header__logo-image" height="19" src="http://placehold.it/100x19"
+           width="100">
+    </a>
+    <button class="page-header__toggle" type="button">Открыть меню</button>
+  </div>
+  <div class="page-header__content-menu visually-hidden">
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">О сервисе</li>
+        <li class="site-list__item">Направления</li>
+        <li class="site-list__item">Попутчики</li>
+      </ul>
+    </nav>
+    <ul class="page-header__list user-list">
+      <li class="user-list__item">
+        <a class="user-list__login" href="#">Авторизация</a>
+      </li>
+    </ul>
+    <ul class="page-header__list contacts-list">
+      <li class="contacts-list__item">
+        <a class="contacts-list__contact contacts-list__contact--phone" href="tel:8-800-555-86-28">
+          8 800 555-86-28
         </a>
-        <button class="page-header__toggle" type="button">Открыть меню</button>
-    </div>
-    <div class="page-header__content-menu visually-hidden">
-        <nav class="main-nav">
-            <ul class="main-nav__list site-list">
-                <li class="site-list__item">О сервисе</li>
-                <li class="site-list__item">Направления</li>
-                <li class="site-list__item">Попутчики</li>
-            </ul>
-        </nav>
-        <ul class="page-header__list user-list">
-            <li class="user-list__item">
-                <a class="user-list__login" href="#">Авторизация</a>
-            </li>
-        </ul>
-        <ul class="page-header__list contacts-list">
-            <li class="contacts-list__item">
-                <a class="contacts-list__item-phone" href="tel:8-800-555-86-28">
-                    8 800 555-86-28
-                </a>
-            </li>
-            <li class="contacts-list__item">
-                <a class="contacts-list__item-email" href="mailto:mail@htmlacademy.ru">
-                    mail@htmlacademy.ru
-                </a>
-            </li>
-        </ul>
-        <ul class="page-header__list social-list">
-            <li class="social-list__item">
-                <a class="social-list__item-fb" href="#">
-                    <span class="visually-hidden">Facebook</span>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__item-vk" href="#">
-                    <span class="visually-hidden">В Контакте</span>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__item-inst" href="#">
-                    <span class="visually-hidden">Instagram</span>
-                </a>
-            </li>
-        </ul>
-    </div>
+      </li>
+      <li class="contacts-list__item">
+        <a class="contacts-list__contact contacts-list__contact--email" href="mailto:mail@htmlacademy.ru">
+          mail@htmlacademy.ru
+        </a>
+      </li>
+    </ul>
+    <ul class="page-header__list social-list">
+      <li class="social-list__item">
+        <a class="social-list__network social-list__network--fb" href="#">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__network social-list__network--vk" href="#">
+          <span class="visually-hidden">В Контакте</span>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__network social-list__network--inst" href="#">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 </header>
 <main class="main-catalog">
-    <section class="main-catalog__users-cards">
-        <section class="user-card">
-            <div class="user-card__header">
-                <img alt="Иконка пользователя" class="user-card__icon" height="70" src="http://placehold.it/70x70" width="70">
-                <div class="user-card__name-wrapper">
-                    <h2 class="user-card__user-name">Таня Фирсова</h2>
-                    <p class="user-card__user-rating">1.5 M</p>
-                </div>
-            </div>
-            <ul class="user-card__hash-tags hash-tags">
-                <li class="hash-tags__item">#ЗОЖ</li>
-                <li class="hash-tags__item">#ПП</li>
-                <li class="hash-tags__item">#Фитнес</li>
-                <li class="hash-tags__item">#пляж</li>
-                <li class="hash-tags__item">#авокадо</li>
-                <li class="hash-tags__item">#смузи</li>
-            </ul>
-            <section class="trip-preferences">
-                <h3 class="user-card__section-title trip-preferences__title">хочет посетить:</h3>
-                <ul class="trip-preferences__list flags-list">
-                    <li class="flags-list__item">
-                        <img alt="Флаг Шри ланка" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
-                        <span>Шри ланка</span>
-                    </li>
-                    <li class="flags-list__item">
-                        <img alt="Флаг Тайланд" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
-                        <span>Тайланд</span>
-                    </li>
-                    <li class="flags-list__item">
-                        <img alt="Флаг Сейшелы" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
-                        <span>Сейшелы</span>
-                    </li>
-                </ul>
-            </section>
-            <div class="user-card__footer-wrapper">
-                <section class="transport">
-                    <h3 class="user-card__section-title transport__title">транспорт:</h3>
-                    <ul class="transport-list travel-mode">
-                        <li class="travel-mode__item travel-mode__plane travel-mode__item--active">
-                            <span class="visually-hidden">Самолётом</span>
-                        </li>
-                        <li class="travel-mode__item travel-mode__bus">
-                            <span class="visually-hidden">Автобусом</span>
-                        </li>
-                        <li class="travel-mode__item travel-mode__bike">
-                            <span class="visually-hidden">Велосипедом</span>
-                        </li>
-                        <li class="travel-mode__item travel-mode__run">
-                            <span class="visually-hidden">Бегом</span>
-                        </li>
-                    </ul>
-                </section>
-                <div class="user-card__profile-level user-level">
-                    <h3 class="user-card__section-title user-level__title">левел:</h3>
-                    <span class="user-card__level-indicator user-level__indicator">99</span>
-                </div>
-            </div>
-            <button class="user-card__call-user">Позвать!</button>
-        </section>
-        <section class="user-card">
-            <div class="user-card__header">
-                <img alt="Иконка пользователя" class="user-card__icon" height="70" src="http://placehold.it/70x70" width="70">
-                <div class="user-card__name-wrapper">
-                    <h2 class="user-card__user-name">Петя Демин</h2>
-                    <p class="user-card__user-rating">150</p>
-                </div>
-            </div>
-            <ul class="user-card__hash-tags hash-tags">
-                <li class="hash-tags__item">#бургер</li>
-                <li class="hash-tags__item">#бар</li>
-                <li class="hash-tags__item">#футбол</li>
-                <li class="hash-tags__item">#концерт</li>
-                <li class="hash-tags__item">#крафт</li>
-            </ul>
-            <section class="trip-preferences">
-                <h3 class="user-card__section-title trip-preferences__title">хочет посетить:</h3>
-                <ul class="trip-preferences__list flags-list">
-                    <li class="flags-list__item">
-                        <img alt="Флаг Бельгия" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
-                        <span>Бельгия</span>
-                    </li>
-                    <li class="flags-list__item">
-                        <img alt="Флаг Чехия" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
-                        <span>Чехия</span>
-                    </li>
-                </ul>
-            </section>
-            <div class="user-card__footer-wrapper">
-                <section class="transport">
-                    <h3 class="user-card__section-title transport__title">транспорт:</h3>
-                    <ul class="transport-list travel-mode">
-                        <li class="travel-mode__item travel-mode__plane travel-mode__item--active">
-                            <span class="visually-hidden">Самолётом</span>
-                        </li>
-                        <li class="travel-mode__item travel-mode__bus travel-mode__item--active">
-                            <span class="visually-hidden">Автобусом</span>
-                        </li>
-                        <li class="travel-mode__item travel-mode__bike">
-                            <span class="visually-hidden">Велосипедом</span>
-                        </li>
-                        <li class="travel-mode__item travel-mode__run travel-mode__item--active">
-                            <span class="visually-hidden">Бегом</span>
-                        </li>
-                    </ul>
-                </section>
-                <div class="user-card__profile-level user-level">
-                    <h3 class="user-card__section-title user-level__title">левел:</h3>
-                    <span class="user-card__level-indicator user-level__indicator">80</span>
-                </div>
-            </div>
-            <button class="user-card__call-user">Позвать!</button>
-        </section>
-        <section class="user-card">
-            <div class="user-card__header">
-                <img alt="Иконка пользователя" class="user-card__icon" height="70" src="http://placehold.it/70x70" width="70">
-                <div class="user-card__name-wrapper">
-                    <h2 class="user-card__user-name">Марк Смолов</h2>
-                    <p class="user-card__user-rating">1700</p>
-                </div>
-            </div>
-            <ul class="user-card__hash-tags hash-tags">
-                <li class="hash-tags__item">#рэп</li>
-                <li class="hash-tags__item">#тату</li>
-                <li class="hash-tags__item">#хайпбист</li>
-                <li class="hash-tags__item">#кроссовки</li>
-                <li class="hash-tags__item">#суприм</li>
-            </ul>
-            <section class="trip-preferences">
-                <h3 class="user-card__section-title trip-preferences__title">хочет посетить:</h3>
-                <ul class="trip-preferences__list flags-list">
-                    <li class="flags-list__item">
-                        <img alt="Флаг США" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
-                        <span>США</span>
-                    </li>
-                    <li class="flags-list__item">
-                        <img alt="Флаг Австралия" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
-                        <span>Австралия</span>
-                    </li>
-                    <li class="flags-list__item">
-                        <img alt="Флаг Доминикана" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
-                        <span>Доминикана</span>
-                    </li>
-                </ul>
-            </section>
-            <div class="user-card__footer-wrapper">
-                <section class="transport">
-                    <h3 class="user-card__section-title transport__title">транспорт:</h3>
-                    <ul class="transport-list travel-mode">
-                        <li class="travel-mode__item travel-mode__plane travel-mode__item--active">
-                            <span class="visually-hidden">Самолётом</span>
-                        </li>
-                        <li class="travel-mode__item travel-mode__bus">
-                            <span class="visually-hidden">Автобусом</span>
-                        </li>
-                        <li class="travel-mode__item travel-mode__bike travel-mode__item--active">
-                            <span class="visually-hidden">Велосипедом</span>
-                        </li>
-                        <li class="travel-mode__item travel-mode__run">
-                            <span class="visually-hidden">Бегом</span>
-                        </li>
-                    </ul>
-                </section>
-                <div class="user-card__profile-level user-level">
-                    <h3 class="user-card__section-title user-level__title">левел:</h3>
-                    <span class="user-card__level-indicator user-level__indicator">25</span>
-                </div>
-            </div>
-            <button class="user-card__call-user">Позвать!</button>
-        </section>
-        <section class="user-card">
-            <div class="user-card__header">
-                <img alt="Иконка пользователя" class="user-card__icon" height="70" src="http://placehold.it/70x70" width="70">
-                <div class="user-card__name-wrapper">
-                    <h2 class="user-card__user-name">Лариса Роговая</h2>
-                    <p class="user-card__user-rating">23</p>
-                </div>
-            </div>
-            <ul class="user-card__hash-tags hash-tags">
-                <li class="hash-tags__item">#образование</li>
-                <li class="hash-tags__item">#карьера</li>
-                <li class="hash-tags__item">#учеба</li>
-                <li class="hash-tags__item">#линкедин</li>
-            </ul>
-            <section class="trip-preferences">
-                <h3 class="user-card__section-title trip-preferences__title">хочет посетить:</h3>
-                <ul class="trip-preferences__list flags-list">
-                    <li class="flags-list__item">
-                        <img alt="Флаг Великобритания" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
-                        <span>Великобритания</span>
-                    </li>
-                    <li class="flags-list__item">
-                        <img alt="Флаг Германия" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
-                        <span>Германия</span>
-                    </li>
-                </ul>
-            </section>
-            <div class="user-card__footer-wrapper">
-                <div class="transport">
-                    <h3 class="user-card__section-title transport__title">транспорт:</h3>
-                    <ul class="transport-list travel-mode">
-                        <li class="travel-mode__item travel-mode__plane travel-mode__item--active">
-                            <span class="visually-hidden">Самолётом</span>
-                        </li>
-                        <li class="travel-mode__item travel-mode__bus travel-mode__item--active">
-                            <span class="visually-hidden">Автобусом</span>
-                        </li>
-                        <li class="travel-mode__item travel-mode__bike">
-                            <span class="visually-hidden">Велосипедом</span>
-                        </li>
-                        <li class="travel-mode__item travel-mode__run">
-                            <span class="visually-hidden">Бегом</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="user-card__profile-level user-level">
-                    <h3 class="user-card__section-title user-level__title">левел:</h3>
-                    <span class="user-card__level-indicator user-level__indicator">50</span>
-                </div>
-            </div>
-            <a class="user-card__call-user" href="#">Позвать!</a>
-        </section>
-    </section>
-    <a class="show-more" href="#" type="button">Показать еще</a>
-    <section class="catalog-pagination">
-        <a class="catalog-pagination__back" href="#"><span class="visually-hidden">Вперед</span></a>
-        <a class="catalog-pagination__next" href="#"><span class="visually-hidden">Назад</span></a>
-    </section>
+  <ul class="main-catalog__users-cards">
+    <li class="user-card">
+      <div class="user-card__header">
+        <img alt="Иконка пользователя" class="user-card__icon" height="70" src="http://placehold.it/70x70" width="70">
+        <div class="user-card__name-wrapper">
+          <h2 class="user-card__user-name">Таня Фирсова</h2>
+          <p class="user-card__user-rating">1.5 M</p>
+        </div>
+      </div>
+      <ul class="user-card__hash-tags hash-tags">
+        <li class="hash-tags__item">#ЗОЖ</li>
+        <li class="hash-tags__item">#ПП</li>
+        <li class="hash-tags__item">#Фитнес</li>
+        <li class="hash-tags__item">#пляж</li>
+        <li class="hash-tags__item">#авокадо</li>
+        <li class="hash-tags__item">#смузи</li>
+      </ul>
+      <section class="trip-preferences">
+        <h3 class="user-card__section-title trip-preferences__title">хочет посетить:</h3>
+        <ul class="trip-preferences__list flags-list">
+          <li class="flags-list__item">
+            <img alt="Флаг Шри ланка" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
+            <span>Шри ланка</span>
+          </li>
+          <li class="flags-list__item">
+            <img alt="Флаг Тайланд" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
+            <span>Тайланд</span>
+          </li>
+          <li class="flags-list__item">
+            <img alt="Флаг Сейшелы" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
+            <span>Сейшелы</span>
+          </li>
+        </ul>
+      </section>
+      <div class="user-card__footer-wrapper">
+        <div class="transport">
+          <h3 class="user-card__section-title transport__title">транспорт:</h3>
+          <ul class="transport-list travel-mode">
+            <li class="travel-mode__item travel-mode__plane travel-mode__item--active">
+              <span class="visually-hidden">Самолётом</span>
+            </li>
+            <li class="travel-mode__item travel-mode__bus">
+              <span class="visually-hidden">Автобусом</span>
+            </li>
+            <li class="travel-mode__item travel-mode__bike">
+              <span class="visually-hidden">Велосипедом</span>
+            </li>
+            <li class="travel-mode__item travel-mode__run">
+              <span class="visually-hidden">Бегом</span>
+            </li>
+          </ul>
+        </div>
+        <div class="user-card__profile-level user-level">
+          <h3 class="user-card__section-title user-level__title">левел:</h3>
+          <span class="user-card__level-indicator user-level__indicator">99</span>
+        </div>
+      </div>
+      <button class="user-card__call-user">Позвать!</button>
+    </li>
+    <li class="user-card">
+      <div class="user-card__header">
+        <img alt="Иконка пользователя" class="user-card__icon" height="70" src="http://placehold.it/70x70" width="70">
+        <div class="user-card__name-wrapper">
+          <h2 class="user-card__user-name">Петя Демин</h2>
+          <p class="user-card__user-rating">150</p>
+        </div>
+      </div>
+      <ul class="user-card__hash-tags hash-tags">
+        <li class="hash-tags__item">#бургер</li>
+        <li class="hash-tags__item">#бар</li>
+        <li class="hash-tags__item">#футбол</li>
+        <li class="hash-tags__item">#концерт</li>
+        <li class="hash-tags__item">#крафт</li>
+      </ul>
+      <section class="trip-preferences">
+        <h3 class="user-card__section-title trip-preferences__title">хочет посетить:</h3>
+        <ul class="trip-preferences__list flags-list">
+          <li class="flags-list__item">
+            <img alt="Флаг Бельгия" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
+            <span>Бельгия</span>
+          </li>
+          <li class="flags-list__item">
+            <img alt="Флаг Чехия" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
+            <span>Чехия</span>
+          </li>
+        </ul>
+      </section>
+      <div class="user-card__footer-wrapper">
+        <div class="transport">
+          <h3 class="user-card__section-title transport__title">транспорт:</h3>
+          <ul class="transport-list travel-mode">
+            <li class="travel-mode__item travel-mode__plane travel-mode__item--active">
+              <span class="visually-hidden">Самолётом</span>
+            </li>
+            <li class="travel-mode__item travel-mode__bus travel-mode__item--active">
+              <span class="visually-hidden">Автобусом</span>
+            </li>
+            <li class="travel-mode__item travel-mode__bike">
+              <span class="visually-hidden">Велосипедом</span>
+            </li>
+            <li class="travel-mode__item travel-mode__run travel-mode__item--active">
+              <span class="visually-hidden">Бегом</span>
+            </li>
+          </ul>
+        </div>
+        <div class="user-card__profile-level user-level">
+          <h3 class="user-card__section-title user-level__title">левел:</h3>
+          <span class="user-card__level-indicator user-level__indicator">80</span>
+        </div>
+      </div>
+      <button class="user-card__call-user">Позвать!</button>
+    </li>
+    <li class="user-card">
+      <div class="user-card__header">
+        <img alt="Иконка пользователя" class="user-card__icon" height="70" src="http://placehold.it/70x70" width="70">
+        <div class="user-card__name-wrapper">
+          <h2 class="user-card__user-name">Марк Смолов</h2>
+          <p class="user-card__user-rating">1700</p>
+        </div>
+      </div>
+      <ul class="user-card__hash-tags hash-tags">
+        <li class="hash-tags__item">#рэп</li>
+        <li class="hash-tags__item">#тату</li>
+        <li class="hash-tags__item">#хайпбист</li>
+        <li class="hash-tags__item">#кроссовки</li>
+        <li class="hash-tags__item">#суприм</li>
+      </ul>
+      <section class="trip-preferences">
+        <h3 class="user-card__section-title trip-preferences__title">хочет посетить:</h3>
+        <ul class="trip-preferences__list flags-list">
+          <li class="flags-list__item">
+            <img alt="Флаг США" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
+            <span>США</span>
+          </li>
+          <li class="flags-list__item">
+            <img alt="Флаг Австралия" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
+            <span>Австралия</span>
+          </li>
+          <li class="flags-list__item">
+            <img alt="Флаг Доминикана" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
+            <span>Доминикана</span>
+          </li>
+        </ul>
+      </section>
+      <div class="user-card__footer-wrapper">
+        <div class="transport">
+          <h3 class="user-card__section-title transport__title">транспорт:</h3>
+          <ul class="transport-list travel-mode">
+            <li class="travel-mode__item travel-mode__plane travel-mode__item--active">
+              <span class="visually-hidden">Самолётом</span>
+            </li>
+            <li class="travel-mode__item travel-mode__bus">
+              <span class="visually-hidden">Автобусом</span>
+            </li>
+            <li class="travel-mode__item travel-mode__bike travel-mode__item--active">
+              <span class="visually-hidden">Велосипедом</span>
+            </li>
+            <li class="travel-mode__item travel-mode__run">
+              <span class="visually-hidden">Бегом</span>
+            </li>
+          </ul>
+        </div>
+        <div class="user-card__profile-level user-level">
+          <h3 class="user-card__section-title user-level__title">левел:</h3>
+          <span class="user-card__level-indicator user-level__indicator">25</span>
+        </div>
+      </div>
+      <button class="user-card__call-user">Позвать!</button>
+    </li>
+    <li class="user-card">
+      <div class="user-card__header">
+        <img alt="Иконка пользователя" class="user-card__icon" height="70" src="http://placehold.it/70x70" width="70">
+        <div class="user-card__name-wrapper">
+          <h2 class="user-card__user-name">Лариса Роговая</h2>
+          <p class="user-card__user-rating">23</p>
+        </div>
+      </div>
+      <ul class="user-card__hash-tags hash-tags">
+        <li class="hash-tags__item">#образование</li>
+        <li class="hash-tags__item">#карьера</li>
+        <li class="hash-tags__item">#учеба</li>
+        <li class="hash-tags__item">#линкедин</li>
+      </ul>
+      <section class="trip-preferences">
+        <h3 class="user-card__section-title trip-preferences__title">хочет посетить:</h3>
+        <ul class="trip-preferences__list flags-list">
+          <li class="flags-list__item">
+            <img alt="Флаг Великобритания" class="flags-list__image" height="18" src="http://placehold.it/26x18"
+                 width="26">
+            <span>Великобритания</span>
+          </li>
+          <li class="flags-list__item">
+            <img alt="Флаг Германия" class="flags-list__image" height="18" src="http://placehold.it/26x18" width="26">
+            <span>Германия</span>
+          </li>
+        </ul>
+      </section>
+      <div class="user-card__footer-wrapper">
+        <div class="transport">
+          <h3 class="user-card__section-title transport__title">транспорт:</h3>
+          <ul class="transport-list travel-mode">
+            <li class="travel-mode__item travel-mode__plane travel-mode__item--active">
+              <span class="visually-hidden">Самолётом</span>
+            </li>
+            <li class="travel-mode__item travel-mode__bus travel-mode__item--active">
+              <span class="visually-hidden">Автобусом</span>
+            </li>
+            <li class="travel-mode__item travel-mode__bike">
+              <span class="visually-hidden">Велосипедом</span>
+            </li>
+            <li class="travel-mode__item travel-mode__run">
+              <span class="visually-hidden">Бегом</span>
+            </li>
+          </ul>
+        </div>
+        <div class="user-card__profile-level user-level">
+          <h3 class="user-card__section-title user-level__title">левел:</h3>
+          <span class="user-card__level-indicator user-level__indicator">50</span>
+        </div>
+      </div>
+      <a class="user-card__call-user" href="#">Позвать!</a>
+    </li>
+  </ul>
+  <a class="show-more" href="#" type="button">Показать еще</a>
+  <section class="catalog-pagination">
+    <a class="catalog-pagination__back" href="#"><span class="visually-hidden">Вперед</span></a>
+    <a class="catalog-pagination__next" href="#"><span class="visually-hidden">Назад</span></a>
+  </section>
 </main>
 <footer class="page-footer">
-    <a class="page-footer__logo">
-        <img alt="Логотип сайта 'погнали?'" class="page-footer__logo-image" height="15" src="http://placehold.it/96x15" width="96">
+  <a class="page-footer__logo">
+    <img alt="Логотип сайта 'погнали?'" class="page-footer__logo-image" height="15" src="http://placehold.it/96x15"
+         width="96">
+  </a>
+  <ul class="page-footer__list social-list">
+    <li class="social-list__item">
+      <a class="social-list__fb" href="#">
+        <span class="visually-hidden">Facebook</span>
+      </a>
+    </li>
+    <li class="social-list__item">
+      <a class="social-list__vk" href="#">
+        <span class="visually-hidden">В Контакте</span>
+      </a>
+    </li>
+    <li class="social-list__item">
+      <a class="social-list__inst" href="#">
+        <span class="visually-hidden">Instagram</span>
+      </a>
+    </li>
+  </ul>
+  <div class="developer">
+    <p class="developer-text">Разработано</p>
+    <a class="developer__logo" href="#" target="_blank">
+      <img alt="" class="developer__logo-image" height="34" src="http://placehold.it/27x34" width="27">
     </a>
-    <ul class="page-footer__list social-list">
-        <li class="social-list__item">
-            <a class="social-list__fb" href="#">
-                <span class="visually-hidden">Facebook</span>
-            </a>
-        </li>
-        <li class="social-list__item">
-            <a class="social-list__vk" href="#">
-                <span class="visually-hidden">В Контакте</span>
-            </a>
-        </li>
-        <li class="social-list__item">
-            <a class="social-list__inst" href="#">
-                <span class="visually-hidden">Instagram</span>
-            </a>
-        </li>
-    </ul>
-    <div class="developer">
-        <p class="developer-text">Разработано</p>
-        <a class="developer__logo" href="#" target="_blank">
-            <img alt="" class="developer__logo-image" height="34" src="http://placehold.it/27x34" width="27">
-        </a>
-    </div>
+  </div>
 </footer>
 </body>
 </html>
