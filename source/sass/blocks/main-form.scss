@@ -1,0 +1,28 @@
+@import "../variables";
+@import "../mixins";
+
+.main-form {
+  width: 100%;
+  background-color: $pale-grey-middle;
+}
+
+.maim-form__about-self {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 23px 25px 33px;
+}
+
+@media (min-width: $medium-width) {
+  .maim-form__about-self {
+    width: 768px;
+    padding: 60px 75px;
+  }
+}
+
+@media (min-width: $huge-width) {
+  .maim-form__about-self {
+    width: 1440px;
+    padding: 0 60px 65px;
+  }
+}

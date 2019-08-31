@@ -1,0 +1,27 @@
+@import "../variables";
+@import "../mixins";
+
+.site-list {
+  a {
+    text-decoration: none;
+    color: $dark-slate-blue;
+  }
+}
+
+@media (min-width: $huge-width) {
+  .site-list__item {
+    margin-right: 34px;
+
+    a {
+      color: hsl(0, 0%, 100%);
+    }
+  }
+
+  .site-list__item--scroll {
+    margin-right: 34px;
+
+    a {
+      color: $dark-slate-blue;
+    }
+  }
+}

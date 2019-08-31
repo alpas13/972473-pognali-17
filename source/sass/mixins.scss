@@ -1,0 +1,59 @@
+@import "variables";
+
+@mixin main-indents($indent: 25px) {
+  padding: 0 $indent;
+}
+
+@mixin font-set($size: 24px, $weight: bold, $line: 30px, $style: normal) {
+  font-weight: $weight;
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-size: $size;
+  font-style: $style;
+  font-stretch: normal;
+  line-height: $line;
+  letter-spacing: normal;
+}
+
+@mixin element-hidden() {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin triangle-arrow-right($brd-width: 10px, $other-brd-width: 7px, $brd-color: $dark-slate-blue) {
+  border-right: 0;
+  border-left: $brd-width solid $brd-color;
+  border-top: $other-brd-width solid transparent;
+  border-bottom: $other-brd-width solid transparent;
+}
+
+@mixin triangle-arrow-left($brd-width: 10px, $other-brd-width: 7px, $brd-color: $dark-slate-blue) {
+  border-left: 0;
+  border-right: $brd-width solid $brd-color;
+  border-top: $other-brd-width solid transparent;
+  border-bottom: $other-brd-width solid transparent;
+}
+
+@mixin triangle-arrow-top($brd-width: 10px, $other-brd-width: 7px, $brd-color: $dark-slate-blue) {
+  border-top: 0;
+  border-bottom: $brd-width solid $brd-color;
+  border-right: $other-brd-width solid transparent;
+  border-left: $other-brd-width solid transparent;
+}
+
+@mixin triangle-arrow-bottom($brd-width: 10px, $other-brd-width: 7px, $brd-color: $dark-slate-blue) {
+  border-bottom: 0;
+  border-top: $brd-width solid $brd-color;
+  border-right: $other-brd-width solid transparent;
+  border-left: $other-brd-width solid transparent;
+}

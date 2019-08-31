@@ -1,0 +1,41 @@
+@import "../variables";
+@import "../mixins";
+
+.user-level {
+  position: absolute;
+
+  &::before {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    text-align: center;
+
+    @include font-set(24px, 800, 50px);
+    background-color: hsla(0, 0%, 0%, 0.5);
+  }
+
+  &::after {
+    content: "level";
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    text-align: center;
+    border-top: 1px solid hsla(0, 0%, 100%, 0.3);
+
+    @include font-set(14px, 500, 18px);
+  }
+}
+
+.user-level__scale {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+@media (min-width: $medium-width) {
+  .user-level__scale {
+    top: 23px;
+    left: 23px;
+  }
+}

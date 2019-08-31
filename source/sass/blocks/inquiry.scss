@@ -1,0 +1,281 @@
+@import "../variables";
+@import "../mixins";
+
+.inquiry {
+  width: 320px;
+  margin: 0 auto;
+  background-color: $light-gold;
+}
+
+.inquiry__wrapper {
+  padding: 72px 25px 29px;
+  border-radius: 0 0 20px 20px;
+  background-color: $light-slate-blue;
+}
+
+.inquiry__title {
+  margin: 0 0 20px;
+  padding: 0;
+  color: $mango-dark;
+  text-align: center;
+
+  @include font-set(24px, 800, 24px);
+}
+
+.inquiry__text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px 29px;
+  padding: 0;
+  text-align: center;
+
+  @include font-set(16px, 300, 22px);
+}
+
+.inquiry__text-link {
+  color: $light-gold;
+}
+
+.inquiry__registration-form {
+  display: flex;
+  margin-bottom: 29px;
+}
+
+.inquiry__registration-label {
+  flex-grow: 1;
+}
+
+.inquiry__registration-mail {
+  width: 100%;
+  height: 62px;
+  margin: 0;
+  padding: 0 0 0 20px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.inquiry__registration-mail::placeholder {
+  //padding-left: 20px;
+  color: hsla(0, 0%, 27%, 0.3);
+
+  @include font-set(18px, 800, 18px);
+}
+
+.inquiry__registration-button {
+  position: relative;
+  width: 60px;
+  height: 62px;
+  margin: 0 0 0 -10px;
+  border: none;
+  border-radius: 10px;
+  background-color: $light-gold;
+
+  &::placeholder {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-2px, -7px);
+
+    @include triangle-arrow-right();
+  }
+}
+
+.inquiry__tip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 17px;
+  padding: 0;
+  text-align: center;
+
+  @include font-set(16px, 300, 22px);
+
+  &::after {
+    content: "Мы с радостью на них ответим!";
+  }
+}
+
+.inquiry__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .modal-contacts__contact {
+    height: 45px;
+
+    &--phone,
+    &--email {
+      color: $light-gold;
+      text-decoration: none;
+
+      &::before {
+        width: 45px;
+        height: 45px;
+        background-color: $dark-slate-blue;
+      }
+    }
+
+    &--phone {
+      &::before {
+        background-image: url("../../img/contacts-phone.svg");
+        background-size: 18px 18px;
+      }
+    }
+
+    &--email {
+      &::before {
+        background-image: url("../../img/contacts-mail.svg");
+        background-size: 18px 13px;
+      }
+    }
+  }
+}
+
+@media (min-width: $medium-width) {
+  .inquiry {
+    width: 768px;
+  }
+
+  .inquiry__wrapper {
+    padding: 77px 75px 60px;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .inquiry__title {
+    margin-bottom: 58px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .inquiry__tip,
+  .inquiry__text {
+    padding: 0;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .inquiry__text {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 65px;
+  }
+
+  .inquiry__registration {
+    margin-bottom: 59px;
+  }
+
+  .inquiry__registration-mail::placeholder {
+    padding-left: 35px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .inquiry__tip {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .inquiry__list {
+    .modal-contacts__contact {
+      height: 67px;
+
+      &--phone,
+      &--email {
+        &::before {
+          width: 67px;
+          height: 67px;
+        }
+      }
+
+      &--phone {
+        &::before {
+          background-size: 27px 27px;
+        }
+      }
+
+      &--email {
+        &::before {
+          background-size: 27px 19px;
+        }
+      }
+    }
+  }
+
+  .inquiry__registration-mail {
+    height: 81px;
+  }
+
+  .inquiry__registration-button {
+    width: 82px;
+    height: 81px;
+  }
+}
+
+@media (min-width: $huge-width) {
+  .inquiry {
+    width: 1440px;
+  }
+
+  .inquiry__wrapper {
+    padding: 108px 132px 104px;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .inquiry__tip {
+    &::after {
+      content: "Свяжитесь с нами удобным для вас способом:";
+    }
+  }
+
+  .inquiry__list {
+    .modal-contacts {
+      justify-content: center;
+      width: auto;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .modal-contacts__item:first-of-type {
+      margin-left: auto;
+      margin-right: 110px;
+    }
+
+    .modal-contacts__item:last-of-type {
+      margin-right: auto;
+    }
+
+    .modal-contacts__contact {
+      width: auto;
+      height: 90px;
+      padding-left: 122px;
+
+      &--phone,
+      &--email {
+        &::before {
+          width: 90px;
+          height: 90px;
+        }
+      }
+
+      &--phone {
+        &::before {
+          background-size: 36px 36px;
+        }
+      }
+
+      &--email {
+        &::before {
+          background-size: 36px 26px;
+        }
+      }
+
+      span {
+        display: block;
+      }
+    }
+  }
+}

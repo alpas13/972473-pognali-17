@@ -1,0 +1,145 @@
+@import "../variables";
+@import "../mixins";
+
+.travel-mode {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.travel-mode--form,
+.travel-mode-user-list,
+.travel-mode--catalog {
+  justify-content: center;
+}
+
+.travel-mode__item {
+  margin: 0;
+  padding: 0;
+}
+
+.travel-mode__item--user-list {
+  height: 21px;
+}
+
+.travel-mode__item--transport-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: $pale-grey-middle;
+}
+
+.travel-mode__item--transport-label {
+  background-color: $white;
+}
+
+.travel-mode__item-image {
+  fill: hsla(228, 41%, 15%, 0.15);
+}
+
+.travel-mode__item-radio:checked + .travel-mode__item--transport-list {
+  .travel-mode__item-image {
+    fill: $dark-slate-blue;
+  }
+}
+
+.travel-mode__item--active {
+  fill: hsla(228, 41%, 15%, 1);
+}
+
+.travel-mode__plane {
+  margin-right: 17px;
+}
+
+.travel-mode__bus {
+  margin-right: 13px;
+}
+
+.travel-mode__bike {
+  margin-right: 10px;
+}
+
+@media (min-width: $medium-width) {
+  .travel-mode--catalog {
+    margin: 0 0 5px 0;
+  }
+
+  .travel-mode__item--transport-list {
+    background-color: inherit;
+  }
+
+  .travel-mode__item-image--catalog-plane,
+  .travel-mode__item-image--catalog-bus,
+  .travel-mode__item-image--catalog-bike,
+  .travel-mode__item-image--catalog-run {
+    height: 21px;
+  }
+
+  .travel-mode__item-image--catalog-plane {
+    width: 19px;
+  }
+
+  .travel-mode__item-image--catalog-bus {
+    width: 17px;
+  }
+
+  .travel-mode__item-image--catalog-bike {
+    width: 24px;
+  }
+
+  .travel-mode__item-image--catalog-run {
+    width: 20px;
+  }
+
+  .travel-mode__item--transport-label {
+    width: 43px;
+    height: 43px;
+    margin-right: 13px;
+    background-color: $white;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .travel-mode__item-image--form-bus,
+  .travel-mode__item-image--form-bike,
+  .travel-mode__item-image--form-run,
+  .travel-mode__item-image--form-plane,
+  .travel-mode__item-image--filter-bus,
+  .travel-mode__item-image--filter-bike,
+  .travel-mode__item-image--filter-run,
+  .travel-mode__item-image--filter-plane {
+    height: 21px;
+  }
+
+  .travel-mode__item-image--form-plane,
+  .travel-mode__item-image--filter-plane {
+    width: 19px;
+  }
+
+  .travel-mode__item-image--form-bus,
+  .travel-mode__item-image--filter-bus {
+    width: 19px;
+  }
+
+  .travel-mode__item-image--form-bike,
+  .travel-mode__item-image--filter-bike {
+    width: 24px;
+  }
+
+  .travel-mode__item-image--form-run,
+  .travel-mode__item-image--filter-run {
+    width: 20px;
+  }
+}
+
+@media (min-width: $huge-width) {
+  .travel-mode__item--transport-label {
+    margin-right: 0;
+  }
+}

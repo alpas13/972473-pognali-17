@@ -1,0 +1,24 @@
+@import "../variables";
+@import "../mixins";
+
+.trip-preferences {
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-preferences__list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $medium-width) {
+  .trip-preferences__list {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $huge-width) {
+  .trip-preferences__list {
+    flex-direction: column;
+  }
+}

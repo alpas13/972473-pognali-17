@@ -1,0 +1,50 @@
+@import "../variables";
+@import "../mixins";
+
+.show-button {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 270px;
+  height: 62px;
+  padding-left: 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: $dark-slate-blue;
+  background-color: $light-gold;
+  vertical-align: middle;
+
+  @include font-set(18px, 800, 62px);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 23px;
+    transform: translateY(-7px);
+
+    @include triangle-arrow-right();
+  }
+}
+
+@media (min-width: $medium-width) {
+  .show-button {
+    width: 618px;
+    height: 81px;
+    padding-left: 34px;
+    border-radius: 20px;
+
+    @include font-set(24px, 800, 81px);
+
+    &::after {
+      right: 36px;
+    }
+  }
+}
+
+@media (min-width: $huge-width) {
+  .show-button {
+    width: 274px;
+    height: 81px;
+  }
+}
