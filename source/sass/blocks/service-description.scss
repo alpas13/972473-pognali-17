@@ -1,0 +1,135 @@
+@import "../variables";
+@import "../mixins";
+
+.service-description__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-description__title {
+  margin: 0;
+  text-align: left;
+  color: $mango-dark;
+
+  @include font-set(24px, 800, 24px);
+
+  &--direction {
+    margin-bottom: 21px;
+  }
+
+  &--about {
+    margin-bottom: 23px;
+  }
+
+  &--companions {
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+}
+
+.service-description__text {
+  margin: 0;
+
+  @include font-set(16px, 300, 22px);
+
+  &--direction {
+    margin-bottom: 64px;
+    color: $greyish-brown;
+  }
+
+  &--about {
+    margin-bottom: 25px;
+  }
+
+  &--companions {
+    position: relative;
+    margin-bottom: 24px;
+    z-index: 1;
+  }
+}
+
+.service-description__tip {
+  margin: 0;
+
+  @include font-set(16px, 800, 22px);
+
+  &--companions {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.service-description__button {
+  display: none;
+}
+
+@media (min-width: $medium-width) {
+  .service-description__wrapper {
+    margin-right: auto;
+  }
+
+  .service-description__button {
+    display: block;
+  }
+
+  .service-description__title {
+    @include font-set(45px, 800px, 45px);
+
+    &--direction {
+      margin-bottom: 60px;
+    }
+
+    &--about {
+      margin-bottom: 40px;
+    }
+
+    &--companions {
+      margin-bottom: 58px;
+    }
+  }
+
+  .service-description__text {
+    @include font-set(28px, 300, 33px);
+
+    &--direction {
+      margin-bottom: 0;
+    }
+
+    &--about {
+      margin-bottom: 30px;
+    }
+
+    &--companions {
+      margin-bottom: 44px;
+    }
+  }
+
+  .service-description__tip {
+    @include font-set(21px, 800, 25px);
+
+    &--about {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (min-width: $huge-width) {
+  .service-description__title {
+    &--about {
+      margin-bottom: 57px;
+    }
+  }
+
+  .service-description__text {
+    &--about {
+      margin-bottom: 35px;
+    }
+  }
+
+  .service-description__tip {
+    &--about {
+      margin-bottom: 80px;
+    }
+  }
+}

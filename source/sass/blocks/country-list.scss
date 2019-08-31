@@ -1,0 +1,140 @@
+@import "../variables";
+@import "../mixins";
+
+.country-list {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.country-list__image {
+  margin: 0;
+  padding: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.country-list__description-card {
+  position: relative;
+  width: 100%;
+  min-height: 90px;
+  margin: -20px 0 10px 0;
+  padding: 0;
+  border-radius: 10px 10px 0 0;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.country-list__flags {
+  margin: 0 0 0 0;
+  padding: 0 0 0 25px;
+}
+
+.country-list__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0 0 0 24px;
+  color: $dark-slate-blue;
+}
+
+.country-list__info-title {
+  margin: 0 auto 5px 0;
+
+  @include font-set(21px, 800, 21px);
+}
+
+.country-list__info-place,
+.country-list__info-users {
+  margin: 0;
+  padding: 0;
+  color: change-color($dark-slate-blue, $alpha: 0.3);
+
+  @include font-set(16px, 500, 21px);
+}
+
+.country-list__info-place {
+  line-height: 18px;
+}
+
+.country-list__info-users {
+  position: relative;
+  display: block;
+  margin-right: 25px;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    transform: translateY(-7px);
+    background-image: url("../../img/user.svg");
+    opacity: 0.1;
+  }
+}
+
+@media (min-width: $medium-width) {
+  .country-list {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .country-list__image {
+    height: 140px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .country-list__description-card {
+    margin: 0 0 0;
+    display: flex;
+  }
+
+  .country-list__info {
+    flex-direction: column;
+    margin-right: auto;
+    padding: 32px 0 0 30px;
+    padding-right: auto;
+  }
+
+  .country-list__info-title {
+    margin-bottom: 10px;
+
+    @include font-set(24px, 800, 24px);
+  }
+
+  .country-list__info-place,
+  .country-list__info-users {
+    @include font-set(20px, 500, 18px);
+  }
+
+  .country-list__info-users {
+    order: 1;
+    margin-top: 0;
+    padding-left: 30px;
+
+    &::before {
+      width: 21px;
+      height: 20px;
+      transform: translateY(-10px);
+    }
+  }
+
+  .country-list__info-place {
+    margin-bottom: 20px;
+  }
+
+  .country-list__flags {
+    width: 70px;
+    height: 47px;
+    margin-top: 15px;
+    order: 1;
+  }
+}
+
+@media (min-width: $huge-width) {
+  .country-list {
+    width: 560px;
+    height: 140px;
+  }
+}

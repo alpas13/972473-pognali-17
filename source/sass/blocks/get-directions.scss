@@ -1,0 +1,167 @@
+@import "../variables";
+@import "../mixins";
+
+.get-directions {
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 32px 25px 35px;
+  border-radius: 0 0 20px 20px;
+  background-color: $light-gold;
+  z-index: 1;
+}
+
+.get-directions__address-wrapper {
+  position: relative;
+  display: flex;
+  margin: 0 0 32px 0;
+  padding: 0;
+}
+
+.get-directions__marker {
+  position: relative;
+  box-sizing: border-box;
+  width: 45px;
+  height: 45px;
+  margin: 0 26px 0 0;
+  padding: 13px 15px 0 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: $dark-blue-grey;
+  }
+}
+
+.get-directions__marker-icon {
+  position: relative;
+  width: 14px;
+  height: 22px;
+  z-index: 1;
+  fill: $light-gold;
+}
+
+.get-directions__address {
+  position: relative;
+  margin: 0 50px 0 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+
+  @include font-set(16px, 800, 22px);
+}
+
+.get-directions__button {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 62px;
+  margin: 0;
+  padding: 0 0 0 21px;
+  border: 3px solid $dark-blue-grey;
+  border-radius: 10px;
+  color: $dark-slate-blue;
+  text-decoration: none;
+  vertical-align: middle;
+
+  @include font-set(18px, 800, 56px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 23px;
+    transform: translateY(-7px);
+
+    @include triangle-arrow-right();
+  }
+}
+
+@media (min-width: $medium-width) {
+  .get-directions {
+    width: 768px;
+    padding: 47px 75px 85px;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .get-directions__address-wrapper {
+    margin: 0 0 45px 0;
+    padding: 0;
+  }
+
+  .get-directions__marker {
+    width: 67px;
+    height: 67px;
+    margin: 0 49px 0 0;
+    padding: 20px 0 0 23px;
+
+    &::before {
+      width: 67px;
+      height: 67px;
+    }
+  }
+
+  .get-directions__marker-icon {
+    width: 21px;
+    height: 31px;
+  }
+
+  .get-directions__address {
+    align-self: center;
+    margin: 0;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .get-directions__button {
+    height: 81px;
+    padding: 0 0 0 37px;
+    border-radius: 20px;
+    font-size: 24px;
+    line-height: 75px;
+
+    &::before {
+      right: 36px;
+    }
+  }
+}
+
+@media (min-width: $huge-width) {
+  .get-directions {
+    display: flex;
+    width: 1440px;
+    padding: 54px 0  56px 284px;
+  }
+
+  .get-directions__marker {
+    width: 90px;
+    height: 90px;
+    margin: 0 32px 0 0;
+    padding: 26px 0 0 31px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .get-directions__marker-icon {
+    width: 28px;
+    height: 43px;
+  }
+
+  .get-directions__address-wrapper {
+    margin: 0 148px 0 0;
+  }
+
+  .get-directions__button {
+    width: 324px;
+  }
+}

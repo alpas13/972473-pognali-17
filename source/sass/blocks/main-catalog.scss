@@ -1,0 +1,151 @@
+@import "../variables";
+@import "../mixins";
+
+.main-catalog {
+  width: 100%;
+  padding-bottom: 25px;
+  background-color: $pale-grey-middle;
+}
+
+.main-catalog__filter-country {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto 24px;
+  padding: 0 25px;
+  border-radius: 0 0 20px 20px;
+  background-color: $pale-grey-dark;
+}
+
+.main-catalog__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 25px 1px;
+}
+
+.main-catalog__filter-companion {
+  width: auto;
+}
+
+.main-catalog__filter-wrapper {
+  margin-bottom: 28px;
+}
+
+.main-catalog__users-cards {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.main-catalog__show-more {
+  position: relative;
+  display: block;
+  margin: 0 auto 21px;
+  padding: 0 0 0 33px;
+  border: none;
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+  background-color: inherit;
+
+  @include font-set(17px, 800, 30px);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 18px;
+    height: 2px;
+    background-color: $dark-slate-blue;
+    transform: translateY(-2px);
+  }
+
+  &::after {
+    transform: translateY(-2px) rotate(90deg);
+  }
+}
+
+@media (min-width: $medium-width) {
+  .main-catalog {
+    padding-bottom: 62px;
+  }
+
+  .main-catalog__users-cards {
+    margin-bottom: 45px;
+  }
+
+  .main-catalog__filter-country {
+    width: 768px;
+    padding: 0 75px;
+  }
+
+  .main-catalog__wrapper {
+    width: 768px;
+    padding: 0 40px;
+  }
+
+  .main-catalog__show-more {
+    font-size: 20px;
+    margin-bottom: 48px;
+    padding-left: 52px;
+
+    &::before,
+    &::after {
+      width: 27px;
+      height: 3px;
+      transform: translateY(-3px);
+    }
+
+    &::after {
+      transform: translateY(-3px) rotate(90deg);
+    }
+  }
+}
+
+@media (min-width: $huge-width) {
+  .main-catalog {
+    padding-bottom: 77px;
+  }
+
+  .main-catalog__users-cards {
+    margin-bottom: 66px;
+  }
+
+  .main-catalog__title {
+    width: 1440px;
+  }
+
+  .main-catalog__title-wrapper {
+    padding: 0 123px 0 129px;
+  }
+
+  .main-catalog__filter-country {
+    width: 1440px;
+    padding: 0 60px 1px;
+  }
+
+  .main-catalog__wrapper {
+    display: flex;
+    width: 1440px;
+    padding: 0 60px;
+  }
+
+  .main-catalog__filter-wrapper {
+    order: 1;
+  }
+
+  .main-catalog__content-wrapper {
+    flex-grow: 1;
+    margin-right: 85px;
+  }
+
+  .main-catalog__filter-companion {
+    box-sizing: border-box;
+    width: 285px;
+  }
+
+  .main-catalog__show-more {
+    margin-bottom: 68px;
+  }
+}

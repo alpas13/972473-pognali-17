@@ -1,0 +1,104 @@
+@import "../variables";
+@import "../mixins";
+
+.direction {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: $light-slate-blue;
+}
+
+.direction__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 73px 25px 30px;
+  border-radius: 0 0 25px 25px;
+  background-color: $pale-grey-middle;
+}
+
+.direction__service-description {
+  padding: 0 50px 0 25px;
+}
+
+.direction__country-list {
+  min-height: 90px;
+  margin: 0 0 25px 0;
+  padding: 0;
+}
+
+@media (min-width: $medium-width) {
+  .direction {
+    width: 768px;
+  }
+
+  .direction__wrapper {
+    padding: 73px 40px 80px;
+    border-radius: 0 0 50px 50px;
+    background-image: url("../../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position-x: 438px;
+    background-position-y: 73px;
+  }
+
+  .direction__service-description {
+    box-sizing: border-box;
+    width: 400px;
+    padding: 0 0 110px 35px;
+  }
+
+  .direction__country-list {
+    position: relative;
+    padding: 0 35px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 141px;
+      height: 141px;
+      top: -39px;
+      left: 0;
+      border-radius: 20px;
+      background-color: $pale-grey-dark;
+    }
+  }
+
+  .direction__show-button {
+
+  }
+}
+
+@media (min-width: $huge-width) {
+  .direction {
+    width: 1440px;
+  }
+
+  .direction__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 160px 60px 140px;
+    background-position-x: 1095px;
+    background-position-y: 88px;
+  }
+
+  .direction__country-list {
+    margin: 0 136px 0 0;
+    padding-left: 71px;
+    order: -1;
+
+    &::before {
+      top: -70px;
+    }
+  }
+
+  .direction__service-description {
+    width: 337px;
+    margin: 0;
+    padding: 6px 0 0 0;
+  }
+
+  .direction__show-button {
+    width: 274px;
+    height: 81px;
+    margin: -81px 0 0 804px;
+  }
+}

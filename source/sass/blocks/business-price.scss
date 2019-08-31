@@ -1,0 +1,33 @@
+@import "../variables";
+@import "../mixins";
+
+.business-price {
+  list-style: none;
+  color: $greyish-brown;
+
+  @include font-set(16px, 300, 22px);
+}
+
+.business-price__item {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0 10px;
+  border-top: 1px solid hsla(0, 0%, 27%, 0.05);
+
+  &:last-child {
+    border-bottom: 1px solid hsla(0, 0%, 27%, 0.05);
+  }
+}
+
+@media (min-width: $medium-width) {
+  .business-price {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 51px;
+  }
+
+  .business-price__item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,84 @@
+@import "../variables";
+@import "../mixins";
+
+.modal-login {
+  width: 270px;
+  height: 50px;
+  margin-bottom: 51px;
+  text-align: center;
+  border-radius: 25px;
+  background-color: $light-gold;
+  color: $dark-slate-blue;
+  cursor: pointer;
+}
+
+.modal-login__item {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-login__button {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+  vertical-align: middle;
+  margin: auto 0;
+
+  @include font-set(17px, bold, 1);
+}
+
+.modal-login--header {
+  display: none;
+}
+
+.modal-login--catalog {
+  display: none;
+}
+
+@media (min-width: $medium-width) {
+  .modal-login--header {
+    display: block;
+  }
+
+  .modal-login--menu {
+    display: none;
+  }
+
+  .modal-login {
+    margin: 0 0 0 auto;
+    width: 189px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: $light-gold;
+    color: $dark-slate-blue;
+
+    @include font-set(20px, bold, 50px);
+  }
+}
+
+@media (min-width: $huge-width) {
+  .modal-login {
+    position: static;
+    margin-left: 0;
+    order: 1;
+  }
+
+  .modal-login--menu {
+    display: block;
+  }
+
+  .modal-login--header {
+    display: none;
+  }
+
+  .modal-login__button {
+    @include font-set(20px, 800, 30px);
+  }
+
+  .modal-login--catalog {
+    display: block;
+  }
+}

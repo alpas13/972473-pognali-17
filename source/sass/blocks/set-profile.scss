@@ -1,0 +1,167 @@
+@import "../variables";
+@import "../mixins";
+
+.set-profile {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: $light-slate-blue;
+}
+
+.set-profile__wrapper {
+  padding: 37px 25px 1px 50px;
+  border-radius: 0 0 20px 20px;
+  background-color: $pale-grey-middle;
+}
+
+.set-profile__title {
+  color: $mango-dark;
+
+  @include font-set(24px, 800, 24px);
+}
+
+.set-profile__list {
+  margin: 0 0 31px;
+  padding: 0;
+}
+
+.set-profile__business-price {
+  display: block;
+  margin: 0 0 37px;
+  text-decoration: none;
+  color: $dark-slate-blue;
+  cursor: pointer;
+
+  @include font-set(16px, 800, 16px);
+}
+
+@media (max-width: $mobile-only-width) {
+  .set-profile__title {
+    position: relative;
+    margin: 0 0 31px;
+    padding: 15px 110px 13px 0;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 99px;
+      height: 99px;
+      background-color: $pale-grey-middle;
+      background-image: url("../../img/rates@1x.png");
+      background-repeat: no-repeat;
+      background-size: 99px 99px;
+    }
+  }
+}
+
+@media (min-width: $medium-width) {
+  .set-profile {
+    width: 768px;
+  }
+
+  .set-profile__wrapper {
+    padding: 76px 40px 1px;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .set-profile__list {
+    margin: 0;
+  }
+
+  .set-profile__title {
+    margin: 0;
+    padding: 0 0 31px;
+    text-align: center;
+
+    @include font-set(45px, 800, 45px);
+  }
+
+  .set-profile__business-price {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 64px;
+    padding: 25px 0 22px 90px;
+    color: $light-slate-blue;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 67px;
+      height: 67px;
+      border-radius: 50%;
+      background-color: $pale-grey-dark;
+      /*TODO Change background-image on svg sprite*/
+      background-image: url("../../img/business.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 17px 21px;
+    }
+  }
+}
+
+@media (min-width: $medium-width) and (max-width: $medium-only-width) {
+  .set-profile__business-price {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 46px;
+      width: 99px;
+      height: 99px;
+      transform: translateY(-49.5px);
+      background-color: transparent;
+      background-image: url("../../img/rates@1x.png");
+      background-repeat: no-repeat;
+      background-size: 99px 99px;
+    }
+  }
+}
+
+@media (min-width: $huge-width) {
+  .set-profile {
+    width: 1440px;
+  }
+
+  .set-profile__wrapper {
+    padding: 108px 132px 165px;
+  }
+
+  .set-profile__title {
+    padding-bottom: 83px;
+  }
+
+  .set-profile__list {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 198px;
+      height: 198px;
+      transform: translateY(-99px);
+      background-color: transparent;
+      background-image: url("../../img/rates@1x.png");
+      background-repeat: no-repeat;
+      background-size: 198px 198px;
+    }
+  }
+
+  .set-profile__business-price {
+    margin-bottom: 0;
+    padding-top: 16px;
+
+    &::before {
+      top: -9px;
+    }
+  }
+}
+

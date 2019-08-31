@@ -1,0 +1,58 @@
+@import "../variables";
+@import "../mixins";
+
+.main-content {
+  width: 100%;
+}
+
+.main-content__intro {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  background-color: $dark-slate-blue;
+  background-image: url("../../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -74px;
+}
+
+@media (min-width: $medium-width) {
+  .main-content {
+    background-color: $light-slate-blue;
+  }
+
+  .main-content__intro {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+    min-height: 591px;
+    padding: 0;
+    background-color: $light-slate-blue;
+    background-image: url("../../img/globe-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 245px;
+  }
+}
+
+@media (min-width: $huge-width) {
+  .main-content {
+    background-color: $dark-slate-blue;
+  }
+
+  .main-content__intro-wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: $light-slate-blue;
+  }
+
+  .main-content__intro {
+    width: 1440px;
+    height: 640px;
+    background-color: $dark-slate-blue;
+    background-image: url("../../img/globe-back-desktop@1x.jpg");
+    background-position: bottom;
+  }
+}

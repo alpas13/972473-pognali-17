@@ -1,0 +1,134 @@
+@import "../variables";
+@import "../mixins";
+
+.about-service {
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background-color: $light-slate-blue;
+  background-image: linear-gradient(to bottom, $light-slate-blue 0%, $light-slate-blue 80%, $pale-grey-middle 80%, $pale-grey-middle 100%);
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 113px;
+    height: 132px;
+    background-color: $dark-slate-blue;
+    border-radius: 0 20px 0 0;
+    z-index: 0;
+  }
+}
+
+.about-service__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 352px;
+  margin: 0;
+  padding: 33px 50px 0;
+  border-radius: 0 0 30px 30px;
+  background-color: transparent;
+  background-image: url("../../img/about-mobile@1x.png"), linear-gradient(to bottom, transparent 0%, transparent 80%, $light-slate-blue 80%, $light-slate-blue 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.about-service__show-button {
+  display: none;
+}
+
+.about-service__photo {
+  display: none;
+}
+
+@media (min-width: $medium-width) {
+  .about-service {
+    width: 768px;
+    min-height: auto;
+
+    &::before {
+      width: 688px;
+      height: 215px;
+      left: 40px;
+      border-radius: 20px;
+    }
+  }
+
+  .about-service__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    margin: 0;
+    min-height: auto;
+    border-radius: 0 0 50px 50px;
+    padding: 43px 0 88px 76px;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 80%, $light-slate-blue 80%, $light-slate-blue 100%);
+  }
+
+  .about-service__service-description {
+    width: 286px;
+    margin-right: auto;
+  }
+
+  .about-service__show-button {
+    display: block;
+    width: 274px;
+    height: 81px;
+  }
+
+  .about-service__photo {
+    display: block;
+    z-index: 1;
+  }
+
+  .about-service__photo-content {
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: $huge-width) {
+  .about-service {
+    box-sizing: border-box;
+    width: 1440px;
+    height: auto;
+    padding: 0;
+
+    &::before {
+      width: 213px;
+      height: 213px;
+      top: 70px;
+      left: 60px;
+      border-radius: 20px;
+    }
+  }
+
+  .about-service__wrapper {
+    padding: 0 60px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .about-service__service-description {
+    box-sizing: border-box;
+    padding: 134px 0 0 70px;
+    width: 690px;
+  }
+
+  .about-service__photo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-service__photo-content {
+    width: 100%;
+    padding: 85px 0 0 0;
+    margin-bottom: -7px;
+  }
+}

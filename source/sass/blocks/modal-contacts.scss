@@ -1,0 +1,95 @@
+@import "../variables";
+@import "../mixins";
+
+.modal-contacts {
+  margin-bottom: 42px;
+}
+
+.modal-contacts__contact {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding-left: 61px;
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+  z-index: 1;
+
+  @include font-set(16px, 800, 22px);
+
+  &--phone,
+  &--email {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 40px;
+      left: 0;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--phone {
+    &::before {
+      background-color: $mango-dark;
+      background-image: url("../../img/topmenu-phone.svg");
+      background-size: 18px 18px;
+    }
+  }
+
+  &--email {
+    &::before {
+      background-color: $light-gold;
+      background-image: url("../../img/topmenu-mail.svg");
+      background-size: 18px 14px;
+    }
+  }
+}
+
+@media (min-width: $medium-width) {
+  .modal-contacts {
+    margin-bottom: 132px;
+  }
+
+  .modal-contacts__contact {
+    padding-left: 91px;
+
+    @include font-set(28px, 800, 28px);
+  }
+}
+
+@media (min-width: $huge-width) {
+  .modal-contacts {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .modal-contacts__contact {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+
+    &--phone {
+      &::before {
+        width: 50px;
+        height: 50px;
+        background-color: $mango-dark;
+      }
+    }
+
+    &--email {
+      &::before {
+        width: 50px;
+        height: 50px;
+        background-color: $light-gold;
+      }
+    }
+
+    span {
+      display: none;
+    }
+  }
+}

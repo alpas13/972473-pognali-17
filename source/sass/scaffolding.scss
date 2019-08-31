@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixins";
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "BloggerSans", sans-serif;
+  color: #ffffff;
+  font-style: normal;
+
+  background-color: $dark-slate-blue;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  @include element-hidden();
+}
+
+.none-active {
+  display: none;
+}

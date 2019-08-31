@@ -1,0 +1,35 @@
+@import "../variables";
+@import "../mixins";
+
+.developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.developer-text {
+  margin: 0;
+  padding: 0;
+  color: $greyish-brown;
+
+  @include font-set(16px, 500, 16px);
+}
+
+.developer__logo {
+  margin: 0;
+  padding: 0;
+}
+
+.developer__logo-image {
+  display: block;
+  width: 27px;
+  height: 34px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $medium-width) {
+  .developer-text {
+    margin-right: 24px;
+  }
+}

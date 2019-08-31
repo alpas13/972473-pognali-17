@@ -1,0 +1,139 @@
+@import "../variables";
+@import "../mixins";
+
+.intro-site__title {
+  margin: 21px 0 0 0;
+  padding-top: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  font-style: normal;
+  font-family: "BloggerSans", sans-serif;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.intro-site__picture-set {
+  margin: 0;
+  padding: 0;
+}
+
+.intro-site__image {
+  margin: 9px 0 -9px 79px;
+  padding: 0;
+}
+
+.intro-site__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 25px 39px 25px;
+  background-color: $light-slate-blue;
+  background-image: linear-gradient(to bottom, $dark-slate-blue 0%, $dark-slate-blue 80px, $light-slate-blue 80px, $light-slate-blue 100%);
+}
+
+.intro-site__review {
+  margin: 0;
+  padding: 47px 25px 30px 50px;
+  background-color: $dark-slate-blue;
+
+  &-text {
+    @include font-set(16px, 300, 22px);
+    margin: 0 0 18px 0;
+    padding: 0;
+  }
+
+  &-source {
+    @include font-set(16px, 800, 22px);
+  }
+}
+
+.intro-site__description {
+  width: 100%;
+  margin: 0;
+}
+
+@media (min-width: $medium-width) {
+  .intro-site__title {
+    width: 100%;
+    margin-top: 29px;
+    order: 1;
+
+    @include font-set(60px, 800, 70px);
+  }
+
+  .intro-site__picture-set {
+    order: 3;
+    border: none;
+  }
+
+  .intro-site__image {
+    position: relative;
+    right: 49px;
+    margin: 31px 0 -6px;
+  }
+
+  .intro-site__list {
+    order: 4;
+    width: 768px;
+    margin: 0;
+    padding: 0 40px 96px;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 140px, $light-slate-blue 140px, $light-slate-blue 100%);
+  }
+
+  .intro-site__review {
+    margin: 88px 0 0 74px;
+    padding: 0;
+    background-color: transparent;
+    order: 2;
+
+    &-text {
+      margin-bottom: 45px;
+
+      @include font-set(28px, 300, 33px);
+    }
+
+    &-source {
+      display: block;
+      width: 245px;
+
+      @include font-set(21px, 800, 25px);
+    }
+  }
+}
+
+@media (min-width: $huge-width) {
+  .intro-site {
+    border-radius: 0 0  60px 60px;
+  }
+
+  .intro-site__title {
+    margin-top: 100px;
+    margin-left: 127px;
+    width: auto;
+    text-align: left;
+  }
+
+  .intro-site__list {
+    position: relative;
+    top: -237px;
+    width: auto;
+    padding: 0 60px;
+    z-index: 1;
+  }
+
+  .intro-site__title,
+  .intro-site__review,
+  .intro-site__picture-set,
+  .intro-site__list {
+    order: 0;
+  }
+
+  .intro-site__image {
+    margin: 0 0 0 82px;
+  }
+
+  .intro-site__review {
+    margin: 110px 0 0 59px;
+  }
+}

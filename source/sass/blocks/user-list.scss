@@ -1,0 +1,101 @@
+@import "../variables";
+@import "../mixins";
+
+.user-list {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.user-list__first-companion,
+.user-list__second-companion {
+  &::before {
+    top: 17.5px;
+    left: 17.5px;
+  }
+
+  &::after {
+    top: 52px;
+    left: 31px;
+  }
+}
+
+.user-list__first-companion {
+  &::before {
+    content: "99";
+  }
+}
+
+.user-list__second-companion {
+  &::before {
+    content: "80";
+  }
+}
+
+.user-list__image {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.user-list__flags {
+  margin-bottom: 15px;
+}
+
+.user-list__card {
+  margin: 3px 0 15px;
+  text-align: center;
+
+  span {
+    position: relative;
+    color: $dark-slate-blue;
+
+    @include font-set(24px, 800, 24px);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -16px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      transform: translateY(-2.5px);
+      background-color: $salmon;
+    }
+  }
+}
+
+.user-list__hash-tags {
+  margin: 0 46px 16px 47px;
+  padding: 0;
+}
+
+.user-list__transport-list {
+  margin-bottom: 21px;
+}
+
+@media (min-width: $medium-width) {
+  .user-list {
+    &:nth-child(2n + 1) {
+      margin-right: 48px;
+    }
+  }
+
+  .user-list__first-companion,
+  .user-list__second-companion {
+    &::before {
+      top: 25px;
+      left: 24.5px;
+    }
+
+    &::after {
+      top: 59px;
+      left: 38px;
+    }
+  }
+
+  .user-list__flags {
+    margin-bottom: 19px;
+  }
+}

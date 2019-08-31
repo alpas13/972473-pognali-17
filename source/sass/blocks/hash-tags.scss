@@ -1,0 +1,12 @@
+@import "../variables";
+@import "../mixins";
+
+.hash-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  color: $greyish-brown;
+
+  @include font-set (16px, 400, 18px);
+}
