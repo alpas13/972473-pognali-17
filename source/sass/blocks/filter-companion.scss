@@ -75,6 +75,7 @@
   }
 }
 
+/* stylelint-disable */
 @each $filter-section in food, music, hobbies {
   .filter-companion__#{$filter-section}-control:checked + .filter-companion__#{$filter-section}-label {
     &::after {
@@ -92,6 +93,7 @@
     }
   }
 }
+/* stylelint-enable */
 
 .filter-companion__transport-wrapper {
   margin-bottom: 20px;
@@ -404,6 +406,7 @@
     }
   }
 
+  /* stylelint-disable */
   @each $filter-section in food, music, hobbies {
     .filter-companion__#{$filter-section}-control:checked + .filter-companion__#{$filter-section}-label {
       &::after {
@@ -414,6 +417,7 @@
       }
     }
   }
+  /* stylelint-enable */
 
   .filter-companion__slider-left,
   .filter-companion__slider-right {

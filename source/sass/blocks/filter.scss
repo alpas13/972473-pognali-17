@@ -89,6 +89,7 @@
   @include font-set(14px, 500, 18px);
 }
 
+/* stylelint-disable */
 @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
   .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__alphabet-wrapper label[for="letter-#{$letter}"] {
     color: hsl(0, 0%, 100%);
@@ -96,6 +97,7 @@
     background-color: $dark-slate-blue;
   }
 }
+/* stylelint-enable */
 
 .filter-country__countries {
   margin: 0 0 0 26px;
@@ -121,11 +123,13 @@
   }
 }
 
+/* stylelint-disable */
 @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
   .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__countries .filter-country__countries-list--#{$letter} {
     display: block;
   }
 }
+/* stylelint-enable */
 
 .filter-country__content-close {
   width: 100%;
@@ -227,6 +231,7 @@
     text-align: left;
   }
 
+  /* stylelint-disable */
   @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
     .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__alphabet-wrapper label[for="letter-#{$letter}"] {
       color: $dark-slate-blue;
@@ -234,12 +239,15 @@
       background-color: transparent;
     }
   }
+  /* stylelint-enable */
 
+  /* stylelint-disable */
   @each $letter in Ё, Ж, Й, Ц, Щ {
     label[for="letter-#{$letter}"] {
       display: none;
     }
   }
+  /* stylelint-enable */
 
   .filter-country__list-item {
     a {
@@ -299,6 +307,7 @@
     display: none;
   }
 
+  /* stylelint-disable */
   @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
     .filter-country__countries-list--#{$letter} {
       position: relative;
@@ -314,6 +323,7 @@
       }
     }
   }
+  /* stylelint-enable */
 
   .filter-country__countries-list {
     min-width: 200px;
@@ -338,6 +348,4 @@
     width: 18px;
     height: 18px;
   }
-
 }
-
