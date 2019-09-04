@@ -11,6 +11,10 @@
   background-color: $pale-grey-middle;
 }
 
+.page-footer--form {
+  background-color: $light-blue-grey;
+}
+
 .page-footer__wrapper {
   box-sizing: border-box;
   position: relative;
@@ -20,6 +24,7 @@
   background-color: hsl(0, 0%, 100%);
 }
 
+.page-footer__wrapper--form,
 .page-footer__wrapper--catalog {
   position: static;
   margin: 0;

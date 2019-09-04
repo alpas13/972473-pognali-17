@@ -1,0 +1,236 @@
+@import "../variables";
+@import "../mixins";
+
+.form__cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: $dark-slate-blue;
+}
+
+.form__submit-button {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $dark-slate-blue;
+  background-color: $light-gold;
+  vertical-align: middle;
+
+  @include font-set(17px, 800, 30px);
+}
+
+.form__card-item {
+  margin: 0 0 10px;
+  padding: 24px 20px 22px;
+  border-radius: 10px;
+  background-color: $white;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form__card-item--step-2,
+.form__card-item--step-3 {
+  padding-bottom: 13px;
+}
+
+.form__card-title {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 15px;
+  padding: 0 5px;
+
+  @include font-set(20px, 800, 20px);
+}
+
+.form__card-description {
+  margin: 0 0 22px;
+  padding: 0 5px;
+  color: $greyish-brown;
+
+  @include font-set(16px, 400, 22px);
+}
+
+.form__select-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 21px;
+  padding: 0 5px 0;
+}
+
+.form__children-item {
+  position: relative;
+  margin: 0 5px 21px;
+}
+
+.form__children-button {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 39px;
+  color: $greyish-brown;
+  vertical-align: middle;
+
+  @include font-set(15px, 400, 26px);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border: 1px solid $border-grey;
+    border-radius: 5px;
+  }
+}
+
+.form__checkbox-tick {
+  display: none;
+}
+
+.form__checkbox-control:checked + .form__children-button {
+  .form__checkbox-tick {
+    display: block;
+    position: absolute;
+    fill: $dark-slate-blue;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-3px);
+  }
+}
+
+.form__calender {
+  margin: 0 0 23px;
+  padding: 0 5px 0;
+}
+
+.form__step-button {
+  margin: 0;
+  padding: 0;
+}
+
+.form__select-country {
+  margin: 0 0 25px;
+  padding: 0 5px;
+}
+
+.form__trip-description {
+  margin: 0;
+  padding: 0 5px;
+}
+
+@media (min-width: $medium-width) {
+  .form__card-item {
+    padding: 49px 44px 55px;
+    border-radius: 30px;
+  }
+
+  .form__calender {
+    margin-bottom: 46px;
+  }
+
+  .form__card-title {
+    margin-bottom: 35px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__card-description {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .form__select-item {
+    padding-top: 25px;
+    margin-bottom: 35px;
+    border-top: 1px solid $border-grey;
+  }
+
+  .form__children-item {
+    margin-bottom: 35px;
+  }
+
+  .form__children-button {
+    padding-left: 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: $dark-slate-blue;
+
+    &::before {
+      top: -7px;
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .form__checkbox-control:checked + .form__children-button {
+    .form__checkbox-tick {
+      left: 14px;
+      width: 12px;
+      height: 12px;
+      transform: translateY(-6px);
+    }
+  }
+
+  .form__submit-button {
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 27px 0 27px 34px;
+    width: 285px;
+    height: 81px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 36px;
+      transform: translateY(-7px);
+
+      @include triangle-arrow-right();
+    }
+  }
+}
+
+@media (min-width: $huge-width) {
+  .form__card-item {
+    padding: 93px 160px 105px;
+    border-radius: 60px;
+  }
+
+  .form__card-header {
+    display: flex;
+  }
+
+  .form__header-wrapper {
+    width: auto;
+    margin-right: 196px;
+  }
+
+  .form__card-title {
+    display: block;
+  }
+
+  .form__select-item {
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .form__children-item {
+    margin: 0 0 0 auto;
+  }
+}

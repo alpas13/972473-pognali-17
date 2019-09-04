@@ -1,0 +1,168 @@
+@import "../variables";
+@import "../mixins";
+
+.calender__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 23px;
+  padding: 13px 0;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+}
+
+.calender__mounts-item {
+  margin: 0;
+  padding: 0;
+
+  @include font-set(20px, 800, 20px);
+}
+
+.calender__mounts-button {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-right: none;
+  border-top: none;
+  border-left: 2px solid $border-grey;
+  border-bottom: 2px solid $border-grey;
+  background-color: $white;
+}
+
+.calender__mounts-button--minus {
+  transform: rotate(45deg);
+}
+
+.calender__mounts-button--plus {
+  transform: rotate(-135deg);
+}
+
+.calender__mounts-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.calender__weekday-names {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.calender__day-week {
+  width: (100%) / 7;
+  text-align: center;
+  color: $greyish-brown;
+
+  @include font-set(14px, 400, 18px);
+}
+
+.calender__day-week--day-off {
+  color: $orange-red;
+}
+
+.calender__name-tablet {
+  display: none;
+}
+
+.calender__week-wrapper {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  &:nth-of-type(n + 2) {
+    margin-top: -1px;
+  }
+}
+
+.calender__day {
+  display: block;
+  width: (100%) / 7;
+  height: 30px;
+  text-align: center;
+  border: 1px solid $border-grey;
+  color: $greyish-brown;
+  vertical-align: middle;
+  background-color: $pale-grey-middle;
+
+  @include font-set(14px, 400, 30px);
+
+  &:nth-of-type(n + 2) {
+    margin-left: -1px;
+  }
+}
+
+.calender__day-controls:disabled + .calender__day {
+  color: adjust_color($greyish-brown, $alpha: -0.7);
+  background-color: $white;
+}
+
+.calender__day-controls:checked + .calender__day {
+  color: $white;
+  background-color: $dark-slate-blue;
+}
+
+.calender__day-controls:not(:disabled) + .calender__day:hover {
+  position: relative;
+  color: $white;
+  background-color: $dark-slate-blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    top: -2px;
+    left: -2px;
+    border: 2px solid $orange-red;
+  }
+}
+
+@media (min-width: $medium-width) {
+  .calender__name-tablet {
+    display: inline;
+  }
+
+  .calender__name-mobile {
+    display: none;
+  }
+
+  .calender__day-week {
+    padding: 0 0 5px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1.8px;
+  }
+
+  .calender__day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .calender__mounts-item {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .calender__wrapper {
+    padding: 29px 20px 22px;
+  }
+
+  .calender__mounts-button {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (min-width: $huge-width) {
+  .calender__day-week {
+    padding: 0 0 16px 17px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,158 @@
+@import "../variables";
+@import "../mixins";
+
+.plan-cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: $dark-slate-blue;
+}
+
+.plan-cards__card {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 10px;
+  padding: 24px 25px 25px;
+  border-radius: 10px;
+  background-color: $white;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.plan-cards__card-content,
+.plan-cards__card-title {
+  margin: 0;
+  padding: 0;
+}
+
+.plan-cards__card-title {
+  margin-bottom: 21px;
+}
+
+.plan-cards__card-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 27px;
+  text-transform: uppercase;
+
+  @include font-set(14px, 500, 14px);
+  letter-spacing: 1.4px;
+}
+
+.plan-cards__card-companions {
+  margin-bottom: 7px;
+}
+
+.plan-cards__card-country {
+  @include font-set(16px, 800, 16px);
+}
+
+.plan-cards__card-number {
+  @include font-set(14px, 500, 14px);
+  letter-spacing: 1.6px;
+}
+
+.plan-cards__change-plan {
+  padding: 0;
+  color: adjust_color($black, $alpha: -0.7);
+  border: none;
+  text-transform: uppercase;
+  background-color: inherit;
+
+  @include font-set(14px, 500, 18px);
+  letter-spacing: 1.4px;
+}
+
+@media (min-width: $medium-width) {
+  .plan-cards__card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 0 18px;
+  }
+
+  .plan-cards__card-title {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 97px;
+    margin-bottom: 18px;
+    padding: 32px 32px 18px;
+    border-bottom: 1px solid $pale-grey;
+  }
+
+  .plan-cards__card-number {
+    order: 1;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .plan-cards__card-country {
+    font-size: 24px;
+    line-height: 50px;
+    vertical-align: middle;
+  }
+
+  .plan-cards__card-content {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 32px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .plan-cards__card-companions {
+    margin-bottom: 0;
+  }
+
+  .plan-cards__change-plan {
+    margin-left: 83px;
+    margin-right: 32px;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: $huge-width) {
+  .plan-cards__card {
+    padding: 30px 44px;
+  }
+
+  .plan-cards__card-title {
+    justify-content: flex-start;
+    width: 50%;
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .plan-cards__card-number {
+    order: 0;
+    margin-right: 38px;
+  }
+
+  .plan-cards__card-content {
+    flex-grow: 0;
+    width: 360px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .plan-cards__card-companions {
+    margin-right: auto;
+  }
+
+  .plan-cards__change-plan {
+    margin: 0;
+  }
+}
