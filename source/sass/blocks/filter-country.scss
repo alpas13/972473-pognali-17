@@ -5,6 +5,15 @@
   padding-top: 17px;
 }
 
+.filter-country__content--form {
+  display: none;
+  position: absolute;
+  top: 41px;
+  left: 0;
+  z-index: 1;
+}
+
+
 .filter-country__header-icon {
   margin-right: 12px;
   fill: $dark-blue-grey;
@@ -63,6 +72,11 @@
   flex-direction: column;
 }
 
+.filter-country__sorting-alphabet--form {
+  background-color: $white;
+  border-radius: 10px;
+}
+
 .filter-country__alphabet-wrapper {
   display: flex;
   width: 225px;
@@ -72,6 +86,11 @@
   border-right: 1px solid hsl(227, 16%, 82%);
   border-top: 1px solid hsl(227, 16%, 82%);
   background-color: hsl(0, 0%, 100%);
+}
+
+.filter-country__alphabet-wrapper--form {
+  margin: 0;
+  width: 219px;
 }
 
 .filter-country__sorting-item {
@@ -89,6 +108,10 @@
   @include font-set(14px, 500, 18px);
 }
 
+.filter-country__sorting-item--form {
+  width: (100%) / 5;
+}
+
 /* stylelint-disable */
 @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
   .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__alphabet-wrapper label[for="letter-#{$letter}"] {
@@ -97,11 +120,26 @@
     background-color: $dark-slate-blue;
   }
 }
+
+@each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+  .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__flex-wrapper label[for="letter-#{$letter}"] {
+    color: $dark-slate-blue;
+    border-left: 1px solid #cacdd8;
+    border-bottom: 1px solid #cacdd8;
+    background-color: $pale-grey-middle;
+  }
+}
+
 /* stylelint-enable */
 
 .filter-country__countries {
   margin: 0 0 0 26px;
   padding: 23px 0 0 0;
+}
+
+.filter-country__countries--form {
+  margin: 0;
+  padding: 18px 20px;
 }
 
 .filter-country__countries-list {
@@ -112,6 +150,11 @@
 
   border: 1px solid $pale-grey-dark;
   background-color: $pale-grey-dark;
+}
+
+.filter-country__countries-list--form {
+  border: none;
+  background-color: $white;
 }
 
 .filter-country__list-item {
@@ -129,6 +172,7 @@
     display: block;
   }
 }
+
 /* stylelint-enable */
 
 .filter-country__content-close {
@@ -204,7 +248,22 @@
     flex-direction: row;
   }
 
-  .filter-country__alphabet-wrapper {
+  .filter-country__content--form {
+    top: 70px;
+    z-index: 1;
+  }
+
+  .filter-country__flex-wrapper {
+    padding: 34px 27px 96px;
+    border-right: 1px solid adjust_color($dark-slate-blue, $alpha: -0.9);
+  }
+
+  .filter-country__countries--form {
+    padding: 34px 19px 96px;
+  }
+
+
+  .filter-country__alphabet-wrapper--catalog {
     box-sizing: border-box;
     justify-content: space-between;
     align-items: flex-start;
@@ -217,7 +276,12 @@
     background-color: transparent;
   }
 
-  .filter-country__sorting-item {
+  .filter-country__alphabet-wrapper--form {
+    box-sizing: border-box;
+    width: 313px;
+  }
+
+  .filter-country__sorting-item--catalog {
     display: block;
     box-sizing: border-box;
     width: auto;
@@ -231,9 +295,18 @@
     text-align: left;
   }
 
+  .filter-country__sorting-item--form {
+    width: (100%) / 6;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    height: 70px;
+  }
+
   /* stylelint-disable */
   @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
-    .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__alphabet-wrapper label[for="letter-#{$letter}"] {
+    .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__alphabet-wrapper--catalog label[for="letter-#{$letter}"] {
       color: $dark-slate-blue;
       border: none;
       background-color: transparent;
@@ -242,8 +315,18 @@
   /* stylelint-enable */
 
   /* stylelint-disable */
+  @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+    .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__flex-wrapper label[for="letter-#{$letter}"] {
+      color: $white;
+      border: none;
+      background-color: $dark-slate-blue;
+    }
+  }
+  /* stylelint-enable */
+
+  /* stylelint-disable */
   @each $letter in Ё, Ж, Й, Ц, Щ {
-    label[for="letter-#{$letter}"] {
+    .filter-country__alphabet-wrapper--catalog label[for="letter-#{$letter}"] {
       display: none;
     }
   }
@@ -301,15 +384,15 @@
     margin-right: 68px;
   }
 
-  .filter-country__alphabet-wrapper,
-  .filter-country__sorting-radio,
+  .filter-country__alphabet-wrapper--catalog,
+  .filter-country__sorting-radio--catalog,
   .filter-country__collapse-button--mobile {
     display: none;
   }
 
   /* stylelint-disable */
   @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
-    .filter-country__countries-list--#{$letter} {
+    .filter-country__countries-list--catalog-#{$letter} {
       position: relative;
       display: block;
 
@@ -327,10 +410,9 @@
 
   .filter-country__countries-list {
     min-width: 200px;
-    margin-top: 140px;
   }
 
-  .filter-country__countries {
+  .filter-country__countries--catalog {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -347,5 +429,38 @@
   .filter-country__collapse-button--big {
     width: 18px;
     height: 18px;
+  }
+
+
+  .filter-country__flex-wrapper {
+    box-sizing: border-box;
+    width: 489px;
+    padding-bottom: 34px;
+  }
+
+  .filter-country__alphabet-wrapper--form {
+    width: 435px;
+    border: none;
+  }
+
+  .filter-country__countries--form {
+    box-sizing: border-box;
+    width: 240px;
+  }
+
+  .filter-country__sorting-item--form {
+    box-sizing: border-box;
+    width: 60px;
+    margin-right: 15px;
+    border: 1px solid $border-grey;
+    border-radius: 5px;
+  }
+
+  .filter-country__sorting-item--form:nth-of-type(6n) {
+    margin-right: 0;
+  }
+
+  .filter-country__sorting-item--form:nth-last-of-type(7n) {
+    margin-bottom: 15px;
   }
 }

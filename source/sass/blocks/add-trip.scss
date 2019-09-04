@@ -1,0 +1,97 @@
+@import "../variables";
+@import "../mixins";
+
+.add-trip__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.add-trip__title {
+  margin: 0;
+  padding: 0;
+  color: $dark-slate-blue;
+
+  @include font-set(24px, 800, 24px);
+}
+
+.add-trip__step-indicator {
+  display: flex;
+}
+
+.add-trip__step-indicator--card {
+  display: none;
+}
+
+.add-trip__step-item {
+  position: relative;
+  padding: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $steel-grey;
+    transform: translateY(-5px);
+  }
+
+  &:nth-last-of-type(n + 2) {
+    padding-left: 21px;
+  }
+}
+
+.add-trip__step-item--active {
+  &::before {
+    background-color: $dark-slate-blue;
+  }
+}
+
+@media (min-width: $medium-width) {
+  .add-trip__title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .add-trip__step-item {
+    &:nth-last-of-type(n + 2) {
+      padding-left: 29px;
+    }
+  }
+}
+
+@media (min-width: $huge-width) {
+  .add-trip__step-indicator--header {
+    display: none;
+  }
+
+  .add-trip__step-indicator {
+    margin-right: 48px;
+  }
+
+  .add-trip__step-indicator--card {
+    padding-top: 10px;
+    display: block;
+  }
+
+  .add-trip__title-wrapper {
+    padding-left: 70px;
+  }
+
+  .add-trip__step-item {
+    margin: 0 0 26px;
+    padding-left: 29px;
+    color: adjust_color($dark-slate-blue, $alpha: -0.4);
+    text-transform: uppercase;
+
+    @include font-set(20px, 400, 20px);
+    letter-spacing: 2px;
+  }
+
+  .add-trip__step-item--active {
+    color: $dark-slate-blue;
+  }
+}
