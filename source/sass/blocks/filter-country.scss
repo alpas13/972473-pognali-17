@@ -356,6 +356,7 @@
 @media (min-width: $huge-width) {
   .filter-country__header {
     padding-top: 59px;
+    margin-bottom: 0;
   }
 
   .filter-country__header-button {
@@ -395,6 +396,7 @@
     .filter-country__countries-list--catalog-#{$letter} {
       position: relative;
       display: block;
+      margin-top: 137px;
 
       &::before {
         content: "#{$letter}";
