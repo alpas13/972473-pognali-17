@@ -155,4 +155,12 @@
   .plan-cards__change-plan {
     margin: 0;
   }
+
+  .plan-cards__change-plan:hover {
+    color: adjust_color($black, $alpha: -0.4);
+  }
+
+  .plan-cards__change-plan:active {
+    color: adjust_color($black, $alpha: -0.9);
+  }
 }

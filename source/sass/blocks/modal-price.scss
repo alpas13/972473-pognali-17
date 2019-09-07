@@ -13,6 +13,7 @@
   box-shadow: 0 20px 50px 0 hsla(224, 52%, 24%, 0.1);
   background-color: hsl(0, 0%, 100%);
   transform: translateX(-135px);
+  z-index: 10;
 }
 
 .modal-price__title {
@@ -84,5 +85,9 @@
 
   .modal-price__list {
     padding: 0 60px;
+  }
+
+  .modal-price__close:active {
+    color: adjust_color($dark-slate-blue, $alpha: -0.7);
   }
 }

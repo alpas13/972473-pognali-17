@@ -161,6 +161,34 @@
 
     &::before {
       top: -9px;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: 0;
+      width: 67px;
+      height: 67px;
+      border-radius: 50%;
+      background-color: $pale-grey-dark;
+    }
+  }
+
+  .set-profile__business-price:hover {
+    color: adjust_color($dark-slate-blue, $alpha: -0.3);
+
+    &::before {
+      opacity: 0.7;
+    }
+  }
+
+  .set-profile__business-price:active {
+    color: adjust_color($dark-slate-blue, $alpha: -0.7);
+
+    &::before {
+      opacity: 0.3;
     }
   }
 }

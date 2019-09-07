@@ -26,8 +26,8 @@
   height: 12px;
   border-right: none;
   border-top: none;
-  border-left: 2px solid $border-grey;
-  border-bottom: 2px solid $border-grey;
+  border-left: 2px solid adjust_color($lighter-slate-blue, $alpha: -0.7);
+  border-bottom: 2px solid adjust_color($lighter-slate-blue, $alpha: -0.7);
   background-color: $white;
 }
 
@@ -164,5 +164,15 @@
   .calender__day-week {
     padding: 0 0 16px 17px;
     text-align: left;
+  }
+
+  .calender__mounts-button:hover {
+    border-left: 2px solid adjust_color($lighter-slate-blue, $alpha: -0.5);
+    border-bottom: 2px solid adjust_color($lighter-slate-blue, $alpha: -0.5);
+  }
+
+  .calender__mounts-button:active {
+    border-left: 2px solid adjust_color($lighter-slate-blue, $alpha: -0.9);
+    border-bottom: 2px solid adjust_color($lighter-slate-blue, $alpha: -0.9);
   }
 }

@@ -233,4 +233,39 @@
   .form__children-item {
     margin: 0 0 0 auto;
   }
+
+  .form__children-button:hover {
+    &::before {
+      border: 1px solid $bluey-grey-two;
+    }
+  }
+
+  .form__children-button:active {
+    &::before {
+      border-color: $pale-grey-two;
+      background-color: $pale-grey-two;
+    }
+  }
+
+  .form__children-item:active {
+    .form__checkbox-control:checked ~ .form__children-button {
+      .form__checkbox-tick {
+        fill: adjust_color($dark-slate-blue, $alpha: -0.8);
+      }
+    }
+  }
+
+  .form__submit-button:hover,
+  .step-button__next:hover {
+    background-color: $mango-two;
+  }
+
+  .form__submit-button:active,
+  .step-button__next:active {
+    color: adjust_color($dark-slate-blue, $alpha: -0.7);
+
+    &::after {
+      border-left-color: adjust_color($dark-slate-blue, $alpha: -0.7);
+    }
+  }
 }

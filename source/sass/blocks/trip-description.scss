@@ -147,6 +147,19 @@
   .trip-description__description {
     width: 730px;
     height: 142px;
+    outline: none;
+  }
+
+  .trip-description__description:hover {
+    border-color: $bluey-grey-two;
+  }
+
+  .trip-description__description:active {
+    border-color: $dark-slate-blue;
+  }
+
+  .trip-description__description:focus {
+    border-color: $dark-slate-blue;
   }
 
   .trip-description__flag {
@@ -155,11 +168,20 @@
 
   .trip-description__route-decoration {
     left: 774px;
+    height: 256px;
+
+    &::before {
+      top: 0;
+    }
   }
 
   .trip-description__country {
     &::before {
       display: none;
     }
+  }
+
+  .trip-description__wrapper {
+    margin-bottom: 46px;
   }
 }

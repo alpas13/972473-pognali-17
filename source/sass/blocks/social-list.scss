@@ -90,3 +90,17 @@
     }
   }
 }
+
+@media (min-width: $huge-width) {
+  .social-list__network--page-footer:hover {
+    &::before {
+      background-color: $mango-two;
+    }
+  }
+
+  .social-list__network--page-footer:active {
+    .social-list__network-icon--page-footer {
+      fill: adjust_color($dark-slate-blue, $alpha: -0.7);
+    }
+  }
+}

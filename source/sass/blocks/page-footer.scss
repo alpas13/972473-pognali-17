@@ -45,7 +45,8 @@
   display: block;
   margin: 0 auto 38px;
   padding: 0;
-  width: 96px;
+  width: 100px;
+  height: 19px;
 }
 
 .page-footer__list-social {
@@ -81,7 +82,8 @@
   .page-footer__logo-image {
     margin: 0;
     padding: 0;
-    width: 165px;
+    width: 166px;
+    height: 42px;
   }
 
   .page-footer__list-social {
@@ -96,5 +98,10 @@
 @media (min-width: $huge-width) {
   .page-footer {
     width: 1440px;
+  }
+
+  .page-footer__logo-image {
+    width: 200px;
+    height: 52px;
   }
 }

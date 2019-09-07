@@ -27,3 +27,15 @@ img {
 .none-active {
   display: none;
 }
+
+@media (min-width: $medium-width) {
+  body {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: $huge-width) {
+  body {
+    min-width: 1440px;
+  }
+}

@@ -60,6 +60,11 @@
   margin-top: 2px;
 }
 
+.page-header__logo-image {
+  width: 100px;
+  height: 19px;
+}
+
 .page-header__list {
   margin: 0;
   padding: 0;
@@ -330,6 +335,11 @@
     margin-right: 161px;
   }
 
+  .page-header__logo-image {
+    width: 166px;
+    height: 42px;
+  }
+
   .page-header__content-menu--opened {
     position: fixed;
     align-items: flex-start;
@@ -380,6 +390,11 @@
   .page-header__logo {
     width: 200px;
     margin: 0;
+  }
+
+  .page-header__logo-image {
+    width: 200px;
+    height: 52px;
   }
 
   .page-header__toggle {

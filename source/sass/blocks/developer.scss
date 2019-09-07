@@ -33,3 +33,13 @@
     margin-right: 24px;
   }
 }
+
+@media (min-width: $huge-width) {
+  .developer:hover {
+    opacity: 0.6;
+  }
+
+  .developer:active {
+    opacity: 0.3;
+  }
+}

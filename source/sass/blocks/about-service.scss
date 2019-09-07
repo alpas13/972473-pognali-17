@@ -45,8 +45,15 @@
   display: none;
 }
 
-.about-service__photo {
+.about-service__photo-content {
   display: none;
+}
+
+@media (max-width: $mobile-only-width) and (min-resolution: $retina-dpi), (max-width: $mobile-only-width) and (min-resolution: $retina-dppx) {
+  .about-service__wrapper {
+    background-image: url("../../img/about-mobile@2x.png"), linear-gradient(to bottom, transparent 0%, transparent 80%, $light-slate-blue 80%, $light-slate-blue 100%);
+    background-size: auto 352px;
+  }
 }
 
 @media (min-width: $medium-width) {
@@ -84,12 +91,10 @@
     height: 81px;
   }
 
-  .about-service__photo {
-    display: block;
-    z-index: 1;
-  }
-
   .about-service__photo-content {
+    display: block;
+    width: 376px;
+    height: 548px;
     padding-top: 5px;
   }
 }
@@ -111,6 +116,7 @@
   }
 
   .about-service__wrapper {
+    margin: 0 -1px;
     padding: 0 60px;
     border-radius: 0 0 60px 60px;
   }
@@ -124,11 +130,13 @@
   .about-service__photo {
     margin: 0;
     padding: 0;
+    font-size: 0;
+    line-height: 0;
   }
 
   .about-service__photo-content {
-    width: 100%;
+    width: 630px;
+    height: 665px;
     padding: 85px 0 0 0;
-    margin-bottom: -7px;
   }
 }
