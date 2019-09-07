@@ -66,6 +66,22 @@
   background-color: hsl(0, 0%, 100%);
 }
 
+@media (max-width: $mobile-only-width) and (min-resolution: $retina-dpi), (max-width: $mobile-only-width) and (min-resolution: $retina-dppx) {
+  .companions__service-description {
+    &::after {
+      background-image: url("../../img/smolov-back-desktop@2x.png");
+      background-size: 143px 143px;
+    }
+  }
+
+  .companions__user-list-wrapper {
+    &::before {
+      background-image: url("../../img/rogovaya-back-mobile@2x.png");
+      background-size: 71px 71px;
+    }
+  }
+}
+
 @media (min-width: $medium-width) {
   .companions {
     width: 768px;
@@ -108,6 +124,15 @@
   }
 }
 
+@media (min-width: $medium-width) and (min-resolution: $retina-dpi), (min-width: $medium-width) and (min-resolution: $retina-dppx) {
+  .companions__user-list-wrapper {
+    &::before {
+      background-image: url("../../img/smolov-back-desktop@2x.png");
+      background-size: 143px 143px;
+    }
+  }
+}
+
 @media (min-width: $medium-width) and (max-width: $medium-only-width) {
   .companions__service-description {
     &::after {
@@ -117,6 +142,15 @@
       right: 35px;
       border-radius: 20px;
       background-image: url("../../img/rogovaya-back-desktop@1x.png");
+    }
+  }
+}
+
+@media (min-width: $medium-width) and (max-width: $medium-only-width) and (min-resolution: $retina-dpi), (min-width: $medium-width) and (max-width: $medium-only-width) and (min-resolution: $retina-dppx) {
+  .companions__service-description {
+    &::after {
+      background-image: url("../../img/rogovaya-back-desktop@2x.png");
+      background-size: 285px 285px;
     }
   }
 }
@@ -160,5 +194,17 @@
   .companions__show-button {
     bottom: 135px;
     left: 70px;
+  }
+}
+
+@media (min-width: $huge-width) and (min-resolution: $retina-dpi), (min-width: $huge-width) and (min-resolution: $retina-dppx) {
+  .companions__service-description {
+    background-image: url("../../img/rogovaya-back-desktop@2x.png");
+    background-size: 285px 285px;
+
+    &::after {
+      background-image: url("../../img/smolov-back-desktop@2x.png");
+      background-size: 143px 143px;
+    }
   }
 }

@@ -465,4 +465,32 @@
   .filter-country__sorting-item--form:nth-last-of-type(7n) {
     margin-bottom: 15px;
   }
+
+  /* stylelint-disable */
+  @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+    .filter-country__flex-wrapper label[for="letter-#{$letter}"]:hover {
+      border: solid 1px $bluey-grey-two;
+    }
+  }
+
+  @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+    .filter-country__flex-wrapper label[for="letter-#{$letter}"]:active {
+      color: $white;
+      border: none;
+      background-color: $dark-slate-blue;
+    }
+  }
+  /* stylelint-enable */
+
+  .filter-country__countries-list--form {
+    .filter-country__list-item {
+      a:hover {
+        color: $dark-slate-blue;
+      }
+
+      a:active {
+        color: adjust_color($dark-slate-blue, $alpha: -0.7);
+      }
+    }
+  }
 }

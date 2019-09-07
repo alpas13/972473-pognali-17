@@ -39,14 +39,24 @@
   }
 
   .select-country__country {
+    position: relative;
     color: $white;
+  }
+
+  .select-country__country--close-button {
+    display: block;
+    position: absolute;
+    width: 49px;
+    height: 36px;
+    top: 3px;
+    left: 150px;
 
     &::before,
     &::after {
       content: "";
       position: absolute;
-      top: 20px;
-      left: 194px;
+      top: 17px;
+      left: 32px;
       width: 12px;
       height: 1px;
       background-color: $white;
@@ -230,11 +240,14 @@
   }
 
   .select-country__button-wrapper--active {
-    .select-country__country {
+    .select-country__country--close-button {
+      top: -6px;
+      left: 280px;
+
       &::before,
       &::after {
-        top: 35px;
-        left: 323px;
+        top: 17px;
+        left: 16px;
         width: 24px;
         height: 2px;
         background-color: $white;
@@ -286,8 +299,8 @@
     &::before {
       width: 10px;
       height: 10px;
-      border-right: 2px solid #cacdd8;
-      border-bottom: 2px solid #cacdd8;
+      border-right: 2px solid adjust_color($lighter-slate-blue, $alpha: -0.7);
+      border-bottom: 2px solid adjust_color($lighter-slate-blue, $alpha: -0.7);
     }
   }
 
@@ -374,6 +387,17 @@
     margin-right: 85px;
   }
 
+  .select-country__list:hover {
+    border-color: $bluey-grey-two;
+  }
+
+  .select-country__show-button:hover {
+    &::before {
+      border-right: 2px solid adjust_color($lighter-slate-blue, $alpha: -0.5);
+      border-bottom: 2px solid adjust_color($lighter-slate-blue, $alpha: -0.5);
+    }
+  }
+
   .select-country__close-button {
     left: 132px;
   }
@@ -383,15 +407,33 @@
   }
 
   .select-country__button-wrapper--active {
-    .select-country__country {
+    .select-country__country--close-button {
+      left: 642px;
+
       &::before,
       &::after {
-        left: 686px;
+        left: 13px;
+        background-color: adjust_color($white, $alpha: -0.7);
+      }
+    }
+
+    .select-country__country--close-button:hover {
+      &::before,
+      &::after {
+        background-color: $white;
+      }
+    }
+
+    .select-country__country--close-button:active {
+      &::before,
+      &::after {
+        background-color: adjust_color($white, $alpha: -0.9);
       }
     }
 
     .select-country__close-button--add {
       left: 950px;
+      background-color: adjust_color($white, $alpha: -0.7);
     }
   }
 
@@ -400,6 +442,65 @@
     &::before,
     &::after {
       left: 767px;
+    }
+  }
+
+  .select-country__button-wrapper--selected {
+    .select-country__close-button {
+      &::before,
+      &::after {
+        background-color: adjust_color($dark-slate-blue, $alpha: -0.9);
+      }
+    }
+  }
+
+  .select-country__plus-button {
+    background-color: $white;
+
+    &::before,
+    &::after {
+      background-color: adjust_color($dark-slate-blue, $alpha: -0.8);
+    }
+  }
+
+  .select-country__list--add {
+    background-color: $white;
+  }
+
+  .select-country__list--add:hover {
+    background-color: $pale-grey;
+
+    .select-country__plus-button {
+      background-color: $pale-grey;
+    }
+  }
+
+  .select-country__list--add:active {
+    background-color: $border-grey;
+
+    .select-country__plus-button {
+      background-color: $border-grey;
+
+      &::before,
+      &::after {
+        background-color: adjust_color($dark-slate-blue, $alpha: -0.9);
+      }
+    }
+  }
+
+  .step-button__back:hover {
+    color: adjust_color($dark-slate-blue, $alpha: -0.3);
+
+    &::before {
+      border-right-color: adjust_color($dark-slate-blue, $alpha: -0.3);
+    }
+  }
+
+  .step-button__back:active {
+    color: adjust_color($dark-slate-blue, $alpha: -0.7);
+
+    &::before {
+      border-right-color: adjust_color($dark-slate-blue, $alpha: -0.7);
     }
   }
 }

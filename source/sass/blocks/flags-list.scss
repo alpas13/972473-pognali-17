@@ -4,8 +4,10 @@
 .flags-list {
   display: flex;
   list-style: none;
-  justify-content: center;
   margin: 0;
+}
+
+.flags-list--catalog {
   padding: 0;
 }
 
@@ -52,6 +54,10 @@
   }
 }
 
+.flag--tooltip {
+  display: none;
+}
+
 @media (min-width: $medium-width) {
   .flags-list--catalog {
     justify-content: flex-start;
@@ -83,8 +89,61 @@
   }
 }
 
-/*@media (min-width: $huge-width) {
-  .flags-list--catalog {
-    margin-top: 49px;
+@media (min-width: $huge-width) {
+  .flags-list__item {
+    position: relative;
   }
-}*/
+
+  .flags-list__item:hover > {
+    & .flag--tooltip {
+      position: absolute;
+      display: block;
+
+      bottom: 0;
+      left: 0;
+      width: auto;
+      height: auto;
+      margin: 0;
+      padding: 20px 23px;
+      border-radius: 5px;
+      color: $white;
+      white-space: nowrap;
+      background-color: $dark-blue-grey-four;
+      z-index: 1;
+
+      @include font-set(20px, 400px, 20px);
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: $dark-blue-grey-four;
+        transform: rotate(45deg) translateX(-8px);
+      }
+    }
+
+    & .flag--tooltip-srilanka {
+      transform: translate(-52px, 70px);
+    }
+
+    & .flag--tooltip-thailand {
+      transform: translate(-40px, 70px);
+    }
+
+    & .flag--tooltip-seychelles {
+      transform: translate(-43px, 70px);
+    }
+
+    & .flag--tooltip-belgium {
+      transform: translate(-38px, 70px);
+    }
+
+    & .flag--tooltip-czech {
+      transform: translate(-28px, 70px);
+    }
+  }
+}

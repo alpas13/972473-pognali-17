@@ -33,7 +33,11 @@
 }
 
 .inquiry__text-link {
+  display: inline-block;
   color: $light-gold;
+  text-decoration: none;
+  border-bottom: 1px solid $light-gold;
+  vertical-align: middle;
 }
 
 .inquiry__registration-form {
@@ -56,8 +60,7 @@
 }
 
 .inquiry__registration-mail::placeholder {
-  //padding-left: 20px;
-  color: hsla(0, 0%, 27%, 0.3);
+  color: adjust_color($greyish-brown, $alpha: -0.7);
 
   @include font-set(18px, 800, 18px);
 }
@@ -231,6 +234,16 @@
     }
   }
 
+  .inquiry__text-link:hover {
+    color: $mango-dark;
+    border-color: $mango-dark;
+  }
+
+  .inquiry__text-link:active {
+    color: adjust_color($mango-dark, $alpha: -0.7);
+    border-color: adjust_color($mango-dark, $alpha: -0.7);
+  }
+
   .inquiry__list {
     .modal-contacts {
       justify-content: center;
@@ -276,6 +289,65 @@
       span {
         display: block;
       }
+    }
+  }
+
+  .inquiry__registration-mail {
+    color: $white;
+
+    @include font-set(24px, 800, 24px);
+  }
+
+  .inquiry__registration-label:hover {
+    .inquiry__registration-mail::placeholder {
+      color: adjust_color($greyish-brown, $alpha: -0.5);
+    }
+  }
+
+  .inquiry__registration-label:active {
+    .inquiry__registration-mail {
+      color: $white;
+      background-color: $dark-slate-blue;
+    }
+  }
+
+  .inquiry__registration-label {
+    .inquiry__registration-mail:focus {
+      height: 73px;
+      background-color: $dark-slate-blue;
+      border: 4px solid $white;
+    }
+  }
+
+  .modal-contacts__contact--inquiry {
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .modal-contacts__contact--inquiry:hover {
+    color: $mango-two;
+    background-color: transparent;
+  }
+
+  .inquiry__registration-button {
+    position: relative;
+    width: 325px;
+    padding-left: 37px;
+    border-radius: 0 20px 20px 0;
+    text-align: left;
+
+    @include font-set(24px, 800, 24px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 36px;
+      width: 0;
+      height: 0;
+      transform: translateY(-7px);
+
+      @include triangle-arrow-right();
     }
   }
 }

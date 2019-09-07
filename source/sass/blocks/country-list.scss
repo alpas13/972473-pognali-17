@@ -7,6 +7,8 @@
 }
 
 .country-list__image {
+  width: 270px;
+  height: 110px;
   margin: 0;
   padding: 0;
   border-radius: 10px 10px 0 0;
@@ -81,6 +83,7 @@
   }
 
   .country-list__image {
+    width: 186px;
     height: 140px;
     border-radius: 0 10px 10px 0;
   }

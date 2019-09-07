@@ -66,6 +66,16 @@
     order: 1;
   }
 
+  .modal-login:hover {
+    background-color: $mango-two;
+  }
+
+  .modal-login:active {
+    .modal-login__button {
+      opacity: 0.3;
+    }
+  }
+
   .modal-login--menu {
     display: block;
   }

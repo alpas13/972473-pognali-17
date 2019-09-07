@@ -35,11 +35,15 @@
   display: block;
   margin: 0;
   padding: 0;
+  width: 270px;
+  height: 270px;
   border-radius: 10px 10px 0 0;
 }
 
 .user-list__flags {
+  justify-content: center;
   margin-bottom: 15px;
+  padding: 0;
 }
 
 .user-list__card {
@@ -97,5 +101,64 @@
 
   .user-list__flags {
     margin-bottom: 19px;
+  }
+
+  .user-list__image {
+    width: 285px;
+    height: 285px;
+  }
+}
+
+@media (min-width: $huge-width) {
+  .user-list {
+    margin: 0;
+  }
+
+  .user-level {
+    position: absolute;
+    z-index: 10;
+  }
+
+  .user-list__image-wrapper {
+    max-width: 285px;
+    max-height: 285px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .user-list__image {
+    transition: all 1s ease-out;
+  }
+
+  .user-list:hover > {
+    & .user-list__image-wrapper {
+      .user-list__image {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .user-list__card {
+    cursor: default;
+  }
+
+  .user-list__card:hover {
+    span {
+      color: adjust_color($dark-slate-blue, $alpha: -0.3);
+
+      &::before {
+        background-color: adjust_color($salmon, $alpha: -0.3);
+      }
+    }
+  }
+
+  .user-list__card:active {
+    span {
+      color: adjust_color($dark-slate-blue, $alpha: -0.7);
+
+      &::before {
+        background-color: adjust_color($salmon, $alpha: -0.7);
+      }
+    }
   }
 }

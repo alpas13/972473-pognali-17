@@ -12,7 +12,7 @@
   .site-list__item {
     margin-right: 34px;
 
-    a {
+    .site-list__item-reference {
       color: hsl(0, 0%, 100%);
     }
   }
@@ -20,8 +20,44 @@
   .site-list__item--scroll {
     margin-right: 34px;
 
-    a {
+    .site-list__item-reference {
       color: $dark-slate-blue;
+    }
+  }
+
+  .site-list__item-reference {
+    position: relative;
+    display: inline-block;
+    max-height: 30px;
+    overflow: hidden;
+
+    span {
+      position: relative;
+      display: inline-block;
+      transition: transform 0.3s;
+
+      &::before {
+        content: attr(data-hover);
+        position: absolute;
+        top: 100%;
+        white-space: nowrap;
+        color: $light-gold;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+
+  .site-list__item-reference:hover {
+    span {
+      transform: translateY(-100%);
+    }
+  }
+
+  .site-list__item-reference:active {
+    span {
+      &::before {
+        color: adjust_color($light-gold, $alpha: -0.7);
+      }
     }
   }
 }

@@ -33,16 +33,18 @@
   }
 
   &--phone {
+    background-color: $mango-dark;
+
     &::before {
-      background-color: $mango-dark;
       background-image: url("../../img/topmenu-phone.svg");
       background-size: 18px 18px;
     }
   }
 
   &--email {
+    background-color: $light-gold;
+
     &::before {
-      background-color: $light-gold;
       background-image: url("../../img/topmenu-mail.svg");
       background-size: 18px 14px;
     }
@@ -73,18 +75,42 @@
     padding: 0;
 
     &--phone {
+      border-radius: 50%;
+      background-color: $mango-dark;
+
       &::before {
         width: 50px;
         height: 50px;
-        background-color: $mango-dark;
+      }
+    }
+
+    &--phone:hover {
+      background-color: $dusty-orange;
+    }
+
+    &--phone:active {
+      &::before {
+        opacity: 0.3;
       }
     }
 
     &--email {
+      border-radius: 50%;
+      background-color: $light-gold;
+
       &::before {
         width: 50px;
         height: 50px;
-        background-color: $light-gold;
+      }
+    }
+
+    &--email:hover {
+      background-color: $mango-dark;
+    }
+
+    &--email:active {
+      &::before {
+        opacity: 0.3;
       }
     }
 
