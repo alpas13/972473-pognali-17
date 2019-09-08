@@ -35,7 +35,7 @@
   .direction__wrapper {
     padding: 70px 40px 80px;
     border-radius: 0 0 60px 60px;
-    background-image: url("../../img/flags-back@1x.png");
+    background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position-x: 438px;
     background-position-y: 80px;
@@ -67,7 +67,7 @@
 
 @media (min-width: $medium-width) and (min-resolution: $retina-dpi), (min-width: $medium-width) and (min-resolution: $retina-dppx) {
   .direction__wrapper {
-    background-image: url("../../img/flags-back@2x.png");
+    background-image: url("../img/flags-back@2x.png");
     background-size: 289px 575px;
   }
 }

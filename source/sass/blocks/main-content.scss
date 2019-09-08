@@ -12,7 +12,7 @@
   width: 320px;
   margin: 0 auto;
   background-color: $dark-slate-blue;
-  background-image: url("../../img/globe-back-mobile@1x.jpg");
+  background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: -74px;
@@ -20,7 +20,7 @@
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .main-content__intro {
-    background-image: url("../../img/globe-back-mobile@2x.jpg");
+    background-image: url("../img/globe-back-mobile@2x.jpg");
     background-size: 320px auto;
   }
 }
@@ -37,7 +37,7 @@
     min-height: 591px;
     padding: 0;
     background-color: $light-slate-blue;
-    background-image: url("../../img/globe-back-tablet@1x.jpg");
+    background-image: url("../img/globe-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 245px;
@@ -46,7 +46,7 @@
 
 @media (min-width: $medium-width) and (min-resolution: $retina-dpi), (min-width: $medium-width) and (min-resolution: $retina-dppx) {
   .main-content__intro {
-    background-image: url("../../img/globe-back-tablet@2x.jpg");
+    background-image: url("../img/globe-back-tablet@2x.jpg");
     background-size: 1479px auto;
   }
 }
@@ -66,14 +66,14 @@
     width: 1440px;
     height: 640px;
     background-color: $dark-slate-blue;
-    background-image: url("../../img/globe-back-desktop@1x.jpg");
+    background-image: url("../img/globe-back-desktop@1x.jpg");
     background-position: bottom;
   }
 }
 
 @media (min-width: $huge-width) and (min-resolution: $retina-dpi), (min-width: $huge-width) and (min-resolution: $retina-dppx) {
   .main-content__intro {
-    background-image: url("../../img/globe-back-desktop@2x.jpg");
+    background-image: url("../img/globe-back-desktop@2x.jpg");
     background-size: 1800px auto;
   }
 }
