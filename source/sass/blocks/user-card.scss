@@ -5,13 +5,17 @@
   position: relative;
   box-sizing: border-box;
   margin: 0 0 10px;
-  padding: 16px 20px 22px;
+  padding: 12px 20px 22px;
   border-radius: 20px;
   background-color: $white;
 
   &:last-of-type {
     margin-bottom: 0;
   }
+}
+
+.user-card__catalog {
+  margin-bottom: 12px;
 }
 
 .user-card__header {
@@ -34,7 +38,7 @@
   border-radius: 50%;
   min-width: 70px;
   height: 70px;
-  margin: 0 0 0 -2px;
+  margin: 2px 0 0 -2px;
 }
 
 .user-card__name-wrapper {
@@ -74,8 +78,8 @@
 
   &::after {
     position: absolute;
-    top: 6px;
-    right: 21px;
+    top: 10px;
+    right: 36px;
   }
 }
 
@@ -87,7 +91,8 @@
 
 .user-card__user-rating {
   position: relative;
-  left: -35px;
+  left: -37px;
+  top: 2px;
   display: flex;
   align-items: center;
   margin: 0;
@@ -99,9 +104,9 @@
 .user-card__hash-tags {
   position: relative;
   list-style: none;
-  top: 10px;
+  top: 14px;
   left: -80px;
-  width: 170px;
+  width: 180px;
   margin: 0;
   padding: 0;
   font-size: 15px;
@@ -135,11 +140,25 @@
 .user-card__footer-wrapper {
   display: flex;
   flex-direction: column;
+  padding: 5px 5px 0;
+  margin-bottom: 6px;
 }
 
 .user-card__wrapper-properties {
   display: flex;
   justify-content: space-between;
+
+  &--first {
+    padding-top: 11px;
+  }
+
+  &--second {
+    padding-top: 17px;
+  }
+
+  &--third {
+    padding-top: 14px;
+  }
 }
 
 .user-card__section-title {
@@ -183,12 +202,14 @@
 }
 
 .user-card__title-content--level {
-  right: -13px;
+  right: -14px;
   padding: 0 13px 0 13px;
 }
 
 .user-card__level-volume {
   position: relative;
+  top: -1px;
+  right: -5px;
   margin-left: auto;
   text-align: right;
 }
@@ -227,6 +248,16 @@
     justify-content: flex-start;
     width: 628px;
     left: -565px;
+  }
+
+  .user-card__wrapper-properties {
+    &--first {
+      padding-top: 0;
+    }
+  }
+
+  .user-card__footer-wrapper {
+    padding: 0 2px 0 0;
   }
 }
 

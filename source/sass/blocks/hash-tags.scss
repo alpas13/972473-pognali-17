@@ -10,3 +10,14 @@
 
   @include font-set (16px, 400, 18px);
 }
+
+.hash-tags__item {
+  margin-right: 5px;
+}
+
+@media (min-width: $medium-width) {
+  .hash-tags {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

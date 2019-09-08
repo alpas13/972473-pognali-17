@@ -16,7 +16,7 @@
   box-sizing: border-box;
 
   &--country {
-    margin: 0 0 16px 0;
+    margin: 0 0 14px 0;
     padding: 0;
   }
 
@@ -30,12 +30,16 @@
 
   &--catalog {
     display: flex;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     color: $lighter-slate-blue;
 
     span {
-      @include font-set(15px, 500, 24px);
+      @include font-set(15px, 500, 18px);
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
     }
   }
 }
@@ -92,6 +96,10 @@
 @media (min-width: $huge-width) {
   .flags-list__item {
     position: relative;
+
+    &-image--country {
+      margin-top: 23px;
+    }
   }
 
   .flags-list__item:hover > {

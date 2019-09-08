@@ -3,7 +3,7 @@
 
 .main-catalog {
   width: 100%;
-  padding-bottom: 25px;
+  padding-bottom: 45px;
   background-color: $pale-grey-middle;
 }
 
@@ -14,6 +14,33 @@
   padding: 0 25px;
   border-radius: 0 0 20px 20px;
   background-color: $pale-grey-dark;
+}
+
+.main-catalog__filter-country--collapsed {
+  .filter-country__header {
+    display: flex;
+    width: 100%;
+  }
+
+  .filter-country__header-continents,
+  .filter-country__content {
+    display: none;
+  }
+
+  .filter-country__header-icon,
+  .filter-country__title-wrapper {
+    margin-bottom: 18px;
+  }
+
+  .filter-country__collapse-button {
+    display: none;
+  }
+
+  .filter-country__expand-button {
+    display: block;
+    margin-right: 5px;
+    margin-top: 1px;
+  }
 }
 
 .main-catalog__wrapper {
@@ -71,12 +98,73 @@
     padding-bottom: 62px;
   }
 
+  .main-catalog__filter-wrapper {
+    margin-bottom: 37px;
+  }
+
+  .main-catalog__filter-country--collapsed {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 60px 60px;
+
+    .filter-country__header {
+      margin-bottom: 57px;
+    }
+
+    .filter-country__filter-close,
+    .filter-country__content {
+      display: none;
+    }
+
+    .filter-country__filter-show {
+      display: block;
+      margin: 0 15px 0 70px;
+      color: $dark-slate-blue;
+      text-transform: uppercase;
+      white-space: nowrap;
+      border: none;
+      background-color: transparent;
+
+      @include font-set(20px, 800, 24px);
+    }
+
+    .filter-country__header-continents {
+      display: flex;
+    }
+
+    .filter-country__header-button {
+      display: block;
+      width: auto;
+      order: 1;
+    }
+
+    .filter-country__header-icon,
+    .filter-country__title-wrapper {
+      display: none;
+    }
+
+    .filter-country__expand-button {
+      display: none;
+    }
+
+    .filter-country__dots-button {
+      display: block;
+      min-width: 27px;
+      max-width: 27px;
+    }
+  }
+
+  .filter-country__header-button {
+    display: none;
+  }
+
   .main-catalog__users-cards {
     margin-bottom: 45px;
   }
 
   .main-catalog__filter-country {
     width: 768px;
+    margin-bottom: 44px;
     padding: 0 75px;
   }
 
@@ -106,6 +194,43 @@
 @media (min-width: $huge-width) {
   .main-catalog {
     padding-bottom: 77px;
+  }
+
+  .main-catalog__filter-country--collapsed {
+    .filter-country__header {
+      margin-bottom: 51px;
+    }
+
+    .filter-country__header-icon,
+    .filter-country__title-wrapper {
+      display: block;
+      margin: 0;
+    }
+
+    .filter-country__header-icon {
+      width: 23px;
+      height: 17px;
+      margin: 0 21px;
+    }
+
+    .filter-country__title-wrapper {
+      margin-right: 35px;
+    }
+
+    .filter-country__header-button {
+      display: flex;
+      order: 0;
+      margin: 0;
+    }
+
+    .filter-country__dots-button-button {
+      margin-right: 62px;
+    }
+
+    .filter-country__filter-show {
+      margin-right: 20px;
+      margin-left: 372px;
+    }
   }
 
   .main-catalog__users-cards {

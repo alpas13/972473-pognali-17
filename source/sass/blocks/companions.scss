@@ -15,7 +15,7 @@
 
 .companions__service-description {
   position: relative;
-  padding: 34px 30px 0 25px;
+  padding: 31px 30px 0 25px;
 
   &::before {
     content: "";
@@ -44,14 +44,14 @@
 
 .companions__user-list-wrapper {
   position: relative;
-  padding: 70px 0 10px;
+  padding: 56px 0 10px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 35px;
-    left: -25px;
-    width: 61px;
+    top: 21px;
+    left: -35px;
+    width: 71px;
     height: 71px;
     border-radius: 0 5px 0 0;
     background-image: url("../../img/rogovaya-back-mobile@1x.png");
@@ -62,7 +62,7 @@
 .companions__user-info {
   margin: 0;
   padding: 0 0 1px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 10px 10px;
   background-color: hsl(0, 0%, 100%);
 }
 
@@ -89,11 +89,11 @@
 
   .companions__wrapper {
     padding: 80px 40px 88px;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 60px 60px;
   }
 
   .companions__service-description {
-    padding: 63px 220px 0 35px;
+    padding: 56px 220px 0 34px;
 
     &::before {
       width: 213px;
@@ -106,6 +106,7 @@
 
   .companions__user-info {
     width: 285px;
+    border-radius: 0 0 20px 20px;
   }
 
   .companions__user-list-wrapper {
@@ -171,20 +172,20 @@
     width: 630px;
     min-height: 610px;
     margin-right: 60px;
-    padding: 65px 130px 0 70px;
+    padding: 55px 130px 0 70px;
     background-color: $light-slate-blue;
     background-image: url("../../img/rogovaya-back-desktop@1x.png");
     background-repeat: no-repeat;
     background-position-x: 130px;
-    background-position-y: bottom;
+    background-position-y: 315px;
 
     &::after {
-      top: 65px;
+      top: 60px;
     }
   }
 
   .companions__user-list-wrapper {
-    padding: 65px 0 0;
+    padding: 62px 0 0;
 
     &::before {
       display: none;
@@ -192,8 +193,11 @@
   }
 
   .companions__show-button {
-    bottom: 135px;
-    left: 70px;
+    margin-top: -145px;
+    margin-bottom: 134px;
+    position: static;
+    bottom: 145px;
+    left: 72px;
   }
 }
 

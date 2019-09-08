@@ -57,6 +57,13 @@
 
     @include font-set(20px, bold, 50px);
   }
+
+  .modal-login__button {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 800;
+    margin: 9px 0 11px;
+  }
 }
 
 @media (min-width: $huge-width) {

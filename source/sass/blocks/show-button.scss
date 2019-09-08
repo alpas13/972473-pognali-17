@@ -31,6 +31,7 @@
   .show-button {
     width: 618px;
     height: 81px;
+    margin: 0 auto;
     padding-left: 34px;
     border-radius: 20px;
 
@@ -39,12 +40,17 @@
     &::after {
       right: 36px;
     }
+
+    &--about-service {
+      margin: 0;
+    }
   }
 }
 
 @media (min-width: $huge-width) {
   .show-button {
-    width: 274px;
+    width: 280px;
     height: 81px;
+    margin: 0;
   }
 }

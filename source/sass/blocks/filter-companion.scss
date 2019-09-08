@@ -3,10 +3,14 @@
 
 .filter-companion {
   margin: 0;
-  padding: 20px 25px 22px;
+  padding: 24px 0 22px;
   color: $dark-slate-blue;
   border-radius: 20px;
   background-color: $light-gold;
+}
+
+.filter-companion__wrapper {
+  padding: 0 25px 0;
 }
 
 .filter-companion__hobbies-wrapper,
@@ -18,7 +22,8 @@
 }
 
 .filter-companion__title {
-  margin: 0 5px 34px;
+  margin: 0 0 35px;
+  padding: 0 25px 0 25px;
 
   @include font-set(22.5px, 800, 22.5px);
 }
@@ -28,7 +33,7 @@
 .filter-companion__food,
 .filter-companion__transport,
 .filter-companion__level {
-  margin: 0 0 27px;
+  margin: 0 0 23px;
   padding: 0;
   border: none;
 }
@@ -45,11 +50,16 @@
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 17px;
+  margin-bottom: 8px;
+  padding-left: 1px;
   vertical-align: bottom;
   text-transform: uppercase;
 
   @include font-set(16px, 800, 18px);
+}
+
+.filter-companion__transport-toggle {
+  margin-bottom: 15px;
 }
 
 .filter-companion__food-label,
@@ -93,6 +103,7 @@
     }
   }
 }
+
 /* stylelint-enable */
 
 .filter-companion__transport-wrapper {
@@ -165,7 +176,7 @@
 
 .filter-companion__level-slider {
   position: relative;
-  margin-top: 24px;
+  margin-top: 22px;
 }
 
 .filter-companion__slider-base {
@@ -196,8 +207,9 @@
 }
 
 .filter-companion__form-submit {
-  width: 100%;
+  width: 230px;
   height: 40px;
+  margin: 0 20px;
   text-transform: uppercase;
   border: none;
   border-radius: 20px;
@@ -218,7 +230,7 @@
       position: absolute;
       width: 100%;
       height: 1px;
-      top: -13px;
+      top: -12px;
       left: 0;
       background-color: hsl(47, 89%, 56%);
     }
@@ -231,16 +243,61 @@
       height: 4px;
       top: 50%;
       right: 0;
-      transform: translateY(-4px);
+      transform: translate(-1px, -4px);
 
-      @include triangle-arrow-bottom(4px, 4px);
+      @include triangle-arrow-top(4px, 4px);
+    }
+  }
+
+  .filter-companion__hobbies--collapsed {
+    .filter-companion__hobbies-toggle {
+      &::after {
+        @include triangle-arrow-bottom(4px, 4px);
+        transform: translate(-1px, -2px);
+      }
+    }
+
+    .filter-companion__hobbies-wrapper {
+      display: none;
+    }
+  }
+
+  .filter-companion__food--collapsed {
+    .filter-companion__food-toggle {
+      padding-top: 2px;
+
+      &::after {
+        @include triangle-arrow-bottom(4px, 4px);
+        transform: translate(-1px, -1px);
+      }
+
+      &::before {
+        top: -10px;
+      }
+    }
+
+    .filter-companion__food-wrapper {
+      display: none;
+    }
+  }
+
+  .filter-companion__level-toggle {
+    margin-bottom: 12px;
+    padding-top: 6px;
+
+    &::before {
+      top: -6px;
+    }
+
+    &::after {
+      transform: translate(0, 2px);
     }
   }
 }
 
 @media (min-width: $medium-width) and (max-width: $medium-only-width) {
   .filter-companion {
-    padding: 37px 35px 38px;
+    padding: 33px 33px 38px;
   }
 
   .filter-companion__hobbies-toggle,
@@ -250,7 +307,7 @@
   .filter-companion__level-toggle {
     box-sizing: border-box;
     width: 100px;
-    margin: 0 21px 0 0;
+    margin: 0 22px 0 0;
     vertical-align: middle;
 
     &::after {
@@ -259,8 +316,16 @@
     }
   }
 
+  .filter-companion__title {
+    padding: 0;
+  }
+
+  .filter-companion__wrapper {
+    padding: 0;
+  }
+
   .filter-companion__transport-toggle {
-    padding-top: 10px;
+    padding-top: 7px;
   }
 
   .filter-companion__hobbies,
@@ -271,11 +336,15 @@
     display: flex;
   }
 
+  .filter-companion__food,
+  .filter-companion__music {
+    margin: 0 0 20px;
+  }
+
   .filter-companion__hobbies,
   .filter-companion__music,
   .filter-companion__food {
     justify-content: space-between;
-    margin-bottom: 22px;
   }
 
   .filter-companion__hobbies,
@@ -291,8 +360,23 @@
     }
   }
 
+  .filter-companion__level-label--min {
+    position: relative;
+
+    &::before {
+      top: 16px;
+    }
+
+    &::after {
+      width: 18px;
+      top: 21px;
+      left: -9px;
+    }
+  }
+
   .filter-companion__hobbies {
-    padding-top: 31px;
+    margin: 0 0 20px;
+    padding-top: 37px;
 
     &::before {
       top: 0;
@@ -308,13 +392,21 @@
     }
   }
 
+  .filter-companion__level-toggle {
+    padding-top: 8px;
+  }
+
   .filter-companion__transport {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 
   .filter-companion__transport-wrapper {
     justify-content: space-between;
     margin: 0;
+
+    label {
+      margin: 0;
+    }
   }
 
   .filter-companion__level-wrapper {
@@ -336,6 +428,10 @@
   .filter-companion__hobbies-label {
     box-sizing: border-box;
     min-width: 156px;
+
+    &::before {
+      left: 3px;
+    }
   }
 
   .filter-companion__level-slider {
@@ -346,17 +442,32 @@
   }
 
   .filter-companion__slider-base {
-    width: 277px;
+    width: 290px;
     margin-top: 5px;
     background-image: linear-gradient(to left, $dark-slate-blue 0%, $dark-slate-blue 72%, $pale-grey-middle 72%, $pale-grey-middle 100%);
   }
 
   .filter-companion__level-control {
     width: 75px;
+    height: 45px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 18px;
+      font-weight: 500;
+    }
+  }
+
+  .filter-companion__form-submit {
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 800;
   }
 
   .filter-companion__slider-left {
-    left: 70px;
+    left: 75px;
   }
 
   .filter-companion__form-submit {
@@ -394,10 +505,10 @@
   .filter-companion__music-label,
   .filter-companion__hobbies-label {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 20px;
-    margin-bottom: 16px;
-    padding-left: 36px;
+    //margin-bottom: 16px;
+    padding-left: 38px;
 
     &::before {
       width: 24px;

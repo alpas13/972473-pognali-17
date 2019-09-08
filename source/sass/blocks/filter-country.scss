@@ -2,7 +2,7 @@
 @import "../mixins";
 
 .filter-country__header {
-  padding-top: 17px;
+  padding-top: 19px;
 }
 
 .filter-country__content--form {
@@ -11,6 +11,11 @@
   top: 41px;
   left: 0;
   z-index: 1;
+}
+
+.filter-country__dots-button,
+.filter-country__expand-button {
+  display: none;
 }
 
 
@@ -196,8 +201,10 @@
 @media (min-width: $medium-width) {
   .filter-country__header {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
     align-items: center;
-    padding-top: 53px;
+    padding-top: 56px;
     margin-bottom: 62px;
   }
 
