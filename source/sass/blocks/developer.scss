@@ -12,7 +12,7 @@
   padding: 0;
   color: $greyish-brown;
 
-  @include font-set(16px, 500, 16px);
+  @include font-set(16px, 400, 16px);
 }
 
 .developer__logo {
@@ -31,6 +31,11 @@
 @media (min-width: $medium-width) {
   .developer-text {
     margin-right: 24px;
+    margin-left: 8px;
+    padding-bottom: 2px;
+
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -41,5 +46,10 @@
 
   .developer:active {
     opacity: 0.3;
+  }
+
+  .developer-text {
+    margin-top: -4px;
+    margin-left: 45px;
   }
 }

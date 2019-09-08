@@ -3,7 +3,7 @@
 
 .user-list {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .user-list__first-companion,
@@ -42,19 +42,19 @@
 
 .user-list__flags {
   justify-content: center;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   padding: 0;
 }
 
 .user-list__card {
-  margin: 3px 0 15px;
+  margin: 3px 0 13px;
   text-align: center;
 
   span {
     position: relative;
     color: $dark-slate-blue;
 
-    @include font-set(24px, 800, 24px);
+    @include font-set(21px, 800, 21px);
 
     &::before {
       content: "";
@@ -68,10 +68,18 @@
       background-color: $salmon;
     }
   }
+
+  &--active {
+    span {
+      &::before {
+        background-color: $green-apple;
+      }
+    }
+  }
 }
 
 .user-list__hash-tags {
-  margin: 0 46px 16px 47px;
+  margin: 0 40px 16px 45px;
   padding: 0;
 }
 
@@ -86,16 +94,32 @@
     }
   }
 
+  .user-list__transport-list {
+    margin-bottom: 27px;
+  }
+
+  .user-list__card {
+    span {
+      @include font-set(24px, 800, 24px);
+
+      &::before {
+        left: -21px;
+        width: 7px;
+        height: 7px;
+      }
+    }
+  }
+
   .user-list__first-companion,
   .user-list__second-companion {
     &::before {
-      top: 25px;
-      left: 24.5px;
+      top: 22px;
+      left: 21.5px;
     }
 
     &::after {
-      top: 59px;
-      left: 38px;
+      top: 56px;
+      left: 34px;
     }
   }
 
@@ -106,12 +130,34 @@
   .user-list__image {
     width: 285px;
     height: 285px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .user-list__hash-tags {
+    margin: 0 25px 22px 25px;
   }
 }
 
 @media (min-width: $huge-width) {
   .user-list {
     margin: 0;
+
+    &:nth-child(2n + 1) {
+      margin-right: 60px;
+    }
+  }
+
+  .user-list__first-companion,
+  .user-list__second-companion {
+    &::before {
+      top: 24px;
+      left: 23.5px;
+    }
+
+    &::after {
+      top: 59px;
+      left: 36px;
+    }
   }
 
   .user-level {

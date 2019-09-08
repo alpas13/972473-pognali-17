@@ -8,7 +8,7 @@
 }
 
 .inquiry__wrapper {
-  padding: 72px 25px 29px;
+  padding: 70px 25px 29px;
   border-radius: 0 0 20px 20px;
   background-color: $light-slate-blue;
 }
@@ -26,18 +26,27 @@
   display: flex;
   flex-direction: column;
   margin: 0 30px 29px;
-  padding: 0;
+  padding: 0 0 0 2px;
   text-align: center;
 
   @include font-set(16px, 300, 22px);
 }
 
 .inquiry__text-link {
-  display: inline-block;
+  position: relative;
+  display: inline;
   color: $light-gold;
   text-decoration: none;
-  border-bottom: 1px solid $light-gold;
-  vertical-align: middle;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 102%;
+    height: 0;
+    bottom: 1px;
+    left: -1px;
+    border-top: 1px solid $light-gold;
+  }
 }
 
 .inquiry__registration-form {
@@ -53,7 +62,7 @@
   width: 100%;
   height: 62px;
   margin: 0;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 22px;
   border: none;
   border-radius: 10px 0 0 10px;
   background-color: hsl(0, 0%, 100%);
@@ -82,6 +91,10 @@
     transform: translate(-2px, -7px);
 
     @include triangle-arrow-right();
+  }
+
+  span {
+    display: none;
   }
 }
 
@@ -142,8 +155,8 @@
   }
 
   .inquiry__wrapper {
-    padding: 77px 75px 60px;
-    border-radius: 0 0 50px 50px;
+    padding: 73px 75px 60px;
+    border-radius: 0 0 60px 60px;
   }
 
   .inquiry__title {
@@ -164,6 +177,10 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 0 65px;
+
+    span:first-child {
+      margin-right: 5px;
+    }
   }
 
   .inquiry__registration {
@@ -192,6 +209,10 @@
           width: 67px;
           height: 67px;
         }
+
+        &::after {
+          display: none;
+        }
       }
 
       &--phone {
@@ -209,12 +230,28 @@
   }
 
   .inquiry__registration-mail {
-    height: 81px;
+    height: 79px;
+    border-radius: 20px 0 0 20px;
+    padding: 2px 22px 0 0;
   }
 
   .inquiry__registration-button {
+    position: relative;
     width: 82px;
     height: 81px;
+    border-radius: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 50%;
+      right: 36px;
+      transform: translateY(-7px);
+
+      @include triangle-arrow-right();
+    }
   }
 }
 
@@ -225,10 +262,12 @@
 
   .inquiry__wrapper {
     padding: 108px 132px 104px;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 60px 60px;
   }
 
   .inquiry__tip {
+    margin-bottom: 46px;
+
     &::after {
       content: "Свяжитесь с нами удобным для вас способом:";
     }
@@ -242,6 +281,15 @@
   .inquiry__text-link:active {
     color: adjust_color($mango-dark, $alpha: -0.7);
     border-color: adjust_color($mango-dark, $alpha: -0.7);
+  }
+
+  .inquiry__text {
+    margin-bottom: 58px;
+    padding: 0 270px;
+
+    span:first-child {
+      margin-left: 0;
+    }
   }
 
   .inquiry__list {
@@ -264,7 +312,7 @@
     .modal-contacts__contact {
       width: auto;
       height: 90px;
-      padding-left: 122px;
+      padding-left: 120px;
 
       &--phone,
       &--email {
@@ -329,10 +377,14 @@
     background-color: transparent;
   }
 
+  .inquiry__registration {
+    margin-bottom: 65px;
+  }
+
   .inquiry__registration-button {
     position: relative;
     width: 325px;
-    padding-left: 37px;
+    padding-left: 35px;
     border-radius: 0 20px 20px 0;
     text-align: left;
 
@@ -342,12 +394,16 @@
       content: "";
       position: absolute;
       top: 50%;
-      right: 36px;
+      right: 37px;
       width: 0;
       height: 0;
       transform: translateY(-7px);
 
       @include triangle-arrow-right();
+    }
+
+    span {
+      display: inline-block;
     }
   }
 }

@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   padding: 73px 25px 30px;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
   background-color: $pale-grey-middle;
 }
 
@@ -23,7 +23,7 @@
 .direction__country-list {
   list-style: none;
   min-height: 90px;
-  margin: 0 0 25px 0;
+  margin: 0 0 18px 0;
   padding: 0;
 }
 
@@ -33,23 +33,24 @@
   }
 
   .direction__wrapper {
-    padding: 73px 40px 80px;
-    border-radius: 0 0 50px 50px;
+    padding: 70px 40px 80px;
+    border-radius: 0 0 60px 60px;
     background-image: url("../../img/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position-x: 438px;
-    background-position-y: 73px;
+    background-position-y: 80px;
   }
 
   .direction__service-description {
     box-sizing: border-box;
-    width: 400px;
-    padding: 0 0 110px 35px;
+    width: 380px;
+    padding: 0 0 105px 34px;
   }
 
   .direction__country-list {
     position: relative;
     padding: 0 35px 0;
+    margin-bottom: 38px;
 
     &::before {
       content: "";
@@ -79,9 +80,9 @@
   .direction__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 160px 60px 140px;
-    background-position-x: 1095px;
-    background-position-y: 88px;
+    padding: 162px 60px 140px;
+    background-position-x: 1090px;
+    background-position-y: 89px;
   }
 
   .direction__country-list {
@@ -90,14 +91,14 @@
     order: -1;
 
     &::before {
-      top: -70px;
+      top: -72px;
     }
   }
 
   .direction__service-description {
-    width: 337px;
+    width: 350px;
     margin: 0;
-    padding: 6px 0 0 0;
+    padding: 2px 0 0 0;
   }
 
   .direction__show-button {
