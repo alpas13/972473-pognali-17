@@ -460,19 +460,16 @@
 
   .filter-companion__form-submit {
     width: 100%;
+    height: 50px;
     margin: 0;
     font-size: 20px;
     line-height: 30px;
     font-weight: 800;
+    border-radius: 25px;
   }
 
   .filter-companion__slider-left {
     left: 75px;
-  }
-
-  .filter-companion__form-submit {
-    height: 50px;
-    border-radius: 25px;
   }
 }
 
