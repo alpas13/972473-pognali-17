@@ -37,7 +37,7 @@
     right: 0;
     border-radius: 10px;
     background-color: $dark-slate-blue;
-    background-image: url("../../img/smolov-back-desktop@1x.png");
+    background-image: url("../img/smolov-back-desktop@1x.png");
     background-repeat: no-repeat;
   }
 }
@@ -54,7 +54,7 @@
     width: 71px;
     height: 71px;
     border-radius: 0 5px 0 0;
-    background-image: url("../../img/rogovaya-back-mobile@1x.png");
+    background-image: url("../img/rogovaya-back-mobile@1x.png");
     background-repeat: no-repeat;
   }
 }
@@ -69,14 +69,14 @@
 @media (max-width: $mobile-only-width) and (min-resolution: $retina-dpi), (max-width: $mobile-only-width) and (min-resolution: $retina-dppx) {
   .companions__service-description {
     &::after {
-      background-image: url("../../img/smolov-back-desktop@2x.png");
+      background-image: url("../img/smolov-back-desktop@2x.png");
       background-size: 143px 143px;
     }
   }
 
   .companions__user-list-wrapper {
     &::before {
-      background-image: url("../../img/rogovaya-back-mobile@2x.png");
+      background-image: url("../img/rogovaya-back-mobile@2x.png");
       background-size: 71px 71px;
     }
   }
@@ -120,7 +120,7 @@
       width: 143px;
       height: 143px;
       border-radius: 10px;
-      background-image: url("../../img/smolov-back-desktop@1x.png");
+      background-image: url("../img/smolov-back-desktop@1x.png");
     }
   }
 }
@@ -128,7 +128,7 @@
 @media (min-width: $medium-width) and (min-resolution: $retina-dpi), (min-width: $medium-width) and (min-resolution: $retina-dppx) {
   .companions__user-list-wrapper {
     &::before {
-      background-image: url("../../img/smolov-back-desktop@2x.png");
+      background-image: url("../img/smolov-back-desktop@2x.png");
       background-size: 143px 143px;
     }
   }
@@ -142,7 +142,7 @@
       top: 0;
       right: 35px;
       border-radius: 20px;
-      background-image: url("../../img/rogovaya-back-desktop@1x.png");
+      background-image: url("../img/rogovaya-back-desktop@1x.png");
     }
   }
 }
@@ -150,7 +150,7 @@
 @media (min-width: $medium-width) and (max-width: $medium-only-width) and (min-resolution: $retina-dpi), (min-width: $medium-width) and (max-width: $medium-only-width) and (min-resolution: $retina-dppx) {
   .companions__service-description {
     &::after {
-      background-image: url("../../img/rogovaya-back-desktop@2x.png");
+      background-image: url("../img/rogovaya-back-desktop@2x.png");
       background-size: 285px 285px;
     }
   }
@@ -174,7 +174,7 @@
     margin-right: 60px;
     padding: 55px 130px 0 70px;
     background-color: $light-slate-blue;
-    background-image: url("../../img/rogovaya-back-desktop@1x.png");
+    background-image: url("../img/rogovaya-back-desktop@1x.png");
     background-repeat: no-repeat;
     background-position-x: 130px;
     background-position-y: 315px;
@@ -203,11 +203,11 @@
 
 @media (min-width: $huge-width) and (min-resolution: $retina-dpi), (min-width: $huge-width) and (min-resolution: $retina-dppx) {
   .companions__service-description {
-    background-image: url("../../img/rogovaya-back-desktop@2x.png");
+    background-image: url("../img/rogovaya-back-desktop@2x.png");
     background-size: 285px 285px;
 
     &::after {
-      background-image: url("../../img/smolov-back-desktop@2x.png");
+      background-image: url("../img/smolov-back-desktop@2x.png");
       background-size: 143px 143px;
     }
   }

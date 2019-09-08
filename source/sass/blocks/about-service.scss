@@ -35,7 +35,7 @@
   padding: 33px 50px 0;
   border-radius: 0 0 30px 30px;
   background-color: transparent;
-  background-image: url("../../img/about-mobile@1x.png"), linear-gradient(to bottom, transparent 0%, transparent 80%, $light-slate-blue 80%, $light-slate-blue 100%);
+  background-image: url("../img/about-mobile@1x.png"), linear-gradient(to bottom, transparent 0%, transparent 80%, $light-slate-blue 80%, $light-slate-blue 100%);
   background-repeat: no-repeat;
   background-position: center;
   z-index: 0;
@@ -51,7 +51,7 @@
 
 @media (max-width: $mobile-only-width) and (min-resolution: $retina-dpi), (max-width: $mobile-only-width) and (min-resolution: $retina-dppx) {
   .about-service__wrapper {
-    background-image: url("../../img/about-mobile@2x.png"), linear-gradient(to bottom, transparent 0%, transparent 80%, $light-slate-blue 80%, $light-slate-blue 100%);
+    background-image: url("../img/about-mobile@2x.png"), linear-gradient(to bottom, transparent 0%, transparent 80%, $light-slate-blue 80%, $light-slate-blue 100%);
     background-size: auto 352px;
   }
 }

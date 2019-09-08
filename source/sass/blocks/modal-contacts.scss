@@ -44,7 +44,7 @@
 
   &--phone {
     &::before {
-      background-image: url("../../img/topmenu-phone.svg");
+      background-image: url("../img/topmenu-phone.svg");
       background-size: 18px 18px;
       z-index: 1;
     }
@@ -56,7 +56,7 @@
 
   &--email {
     &::before {
-      background-image: url("../../img/topmenu-mail.svg");
+      background-image: url("../img/topmenu-mail.svg");
       background-size: 18px 14px;
       z-index: 1;
     }
