@@ -197,7 +197,7 @@
 
 @media (min-width: $huge-width) {
   .main-catalog {
-    padding-bottom: 77px;
+    padding-bottom: 80px;
   }
 
   .main-catalog__filter-country--collapsed {
@@ -252,12 +252,13 @@
   .main-catalog__filter-country {
     width: 1440px;
     padding: 0 60px 1px;
+    border-radius: 0 0 60px 60px;
   }
 
   .main-catalog__wrapper {
     display: flex;
     width: 1440px;
-    padding: 0 60px;
+    padding: 34px 60px 0;
   }
 
   .main-catalog__filter-wrapper {
@@ -275,6 +276,7 @@
   }
 
   .main-catalog__show-more {
-    margin-bottom: 68px;
+    margin-bottom: 65px;
+    left: -35px;
   }
 }

@@ -541,11 +541,11 @@
 
 @media (min-width: $huge-width) {
   .filter-companion {
-    padding: 47px;
+    padding: 45px 22px 0;
   }
 
-  .filter-companion__level-control {
-    width: 95.5px;
+  .filter-companion__title {
+    margin: 0 0 30px;
   }
 
   .filter-companion__slider-base {
@@ -558,5 +558,66 @@
 
   .filter-companion__level {
     margin-bottom: 43px;
+  }
+
+  .filter-companion__hobbies {
+    margin-bottom: 12px;
+  }
+
+  .filter-companion__music-toggle {
+    margin-bottom: 22px;
+  }
+
+  .filter-companion__music-label {
+    margin-bottom: 20px;
+  }
+
+  .filter-companion__food-label,
+  .filter-companion__hobbies-label,
+  .filter-companion__music-label {
+    &::before {
+      left: 4px;
+    }
+  }
+
+  .filter-companion__level-toggle {
+    margin-bottom: 14px;
+  }
+
+  .filter-companion__music {
+    margin-bottom: -13px;
+  }
+
+  .filter-companion__music-wrapper {
+    margin-left: -3px;
+  }
+
+  .filter-companion__food {
+    margin: 0 0 10px;
+  }
+
+  .filter-companion__level-slider {
+    margin-top: 31px;
+  }
+
+  .filter-companion__form-submit {
+    width: 200px;
+    height: 50px;
+    margin: 0 0 46px 23px;
+    font-size: 20px;
+  }
+
+  .filter-companion__level-control {
+    padding-right: 3px;
+    width: 95.5px;
+    height: 48px;
+
+    &::placeholder {
+      position: relative;
+      left: 0;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 0.9;
+    }
   }
 }
