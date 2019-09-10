@@ -64,15 +64,6 @@
     @include font-set(60px, 800, 70px);
   }
 
-  .intro-site__review-source {
-    width: 220px;
-  }
-
-
-  .intro-site__review-text {
-    width: 260px;
-  }
-
   .intro-site__picture-set {
     order: 3;
     border: none;
@@ -102,6 +93,7 @@
     order: 2;
 
     &-text {
+      width: 260px;
       margin-bottom: 43px;
 
       @include font-set(28px, 300, 33px);
@@ -118,7 +110,7 @@
 
 @media (min-width: $huge-width) {
   .intro-site {
-    border-radius: 0 0  60px 60px;
+    border-radius: 0 0 60px 60px;
   }
 
   .intro-site__title {

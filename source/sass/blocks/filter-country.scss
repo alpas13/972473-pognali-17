@@ -118,7 +118,7 @@
 }
 
 /* stylelint-disable */
-@each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+@each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
   .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__alphabet-wrapper label[for="letter-#{$letter}"] {
     color: hsl(0, 0%, 100%);
     border: none;
@@ -126,7 +126,7 @@
   }
 }
 
-@each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+@each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
   .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__flex-wrapper label[for="letter-#{$letter}"] {
     color: $dark-slate-blue;
     border-left: 1px solid #cacdd8;
@@ -172,7 +172,7 @@
 }
 
 /* stylelint-disable */
-@each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+@each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
   .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__countries .filter-country__countries-list--#{$letter} {
     display: block;
   }
@@ -312,7 +312,7 @@
   }
 
   /* stylelint-disable */
-  @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+  @each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
     .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__alphabet-wrapper--catalog label[for="letter-#{$letter}"] {
       color: $dark-slate-blue;
       border: none;
@@ -322,7 +322,7 @@
   /* stylelint-enable */
 
   /* stylelint-disable */
-  @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+  @each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
     .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__flex-wrapper label[for="letter-#{$letter}"] {
       color: $white;
       border: none;
@@ -332,7 +332,7 @@
   /* stylelint-enable */
 
   /* stylelint-disable */
-  @each $letter in Ё, Ж, Й, Ц, Щ {
+  @each $letter in 7, 8, 11, 24, 27 {
     .filter-country__alphabet-wrapper--catalog label[for="letter-#{$letter}"] {
       display: none;
     }
@@ -373,6 +373,10 @@
     margin-left: 20px;
   }
 
+  .filter-country__continent-sorting {
+    margin-left: -20px;
+  }
+
   .filter-country__header-icon {
     width: 23px;
     height: 17px;
@@ -407,14 +411,14 @@
   }
 
   /* stylelint-disable */
-  @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+  @each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
     .filter-country__countries-list--catalog-#{$letter} {
       position: relative;
       display: block;
       margin-top: 121px;
 
       &::before {
-        content: "#{$letter}";
+        content: attr(data-letter);
         position: absolute;
         top: -77px;
         color: $dark-blue-grey;
@@ -683,13 +687,13 @@
   }
 
   /* stylelint-disable */
-  @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+  @each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
     .filter-country__flex-wrapper label[for="letter-#{$letter}"]:hover {
       border: solid 1px $bluey-grey-two;
     }
   }
 
-  @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+  @each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
     .filter-country__flex-wrapper label[for="letter-#{$letter}"]:active {
       color: $white;
       border: none;
