@@ -433,13 +433,6 @@
     padding: 0 44px 0 0;
   }
 
-  .user-card__icon {
-    width: 285px;
-    height: 285px;
-    border-radius: 20px 0 0 20px;
-    margin: 0;
-  }
-
   .user-card__trip-preferences {
     position: relative;
     order: 0;
@@ -544,6 +537,10 @@
   .user-card__heart-wrapper {
     margin-right: 6px;
     margin-top: -3px;
+
+    &:focus {
+      outline: 1px solid;
+    }
   }
 
   .user-card__catalog {
@@ -569,6 +566,71 @@
         top: 5px;
         right: -1px;
       }
+    }
+  }
+
+  .user-card__icon {
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 0 0 20px;
+    margin: 0;
+    transition: all 1s ease-out;
+  }
+
+  .user-card__photo {
+    display: block;
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 0 0 20px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .user-card__catalog:hover {
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+
+    .user-card__photo {
+      .user-card__icon {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .user-card__name-content:hover {
+    color: rgba(29, 46, 91, 0.6);
+  }
+
+  .user-card__name-content:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+
+  .user-card__call-user:hover {
+    background-color: $mango-two;
+  }
+
+  .user-card__call-user:active {
+    color: adjust_color(#161c35, $alpha: -0.7);
+  }
+
+  .user-card__heart-wrapper:hover:not(.user-card__heart-wrapper--active) {
+    .user-card__heart {
+      fill: #192144;
+    }
+  }
+
+  .user-card__heart-wrapper:active:not(.user-card__heart-wrapper--active) {
+    .user-card__heart {
+      fill: adjust_color(#192144, $alpha:-0.9);
+    }
+  }
+
+  .user-card__heart-wrapper--active:hover {
+    background-color: #f9d8d8;
+  }
+
+  .user-card__heart-wrapper--active:active {
+    .user-card__heart-active {
+      fill: adjust_color(#f02323, $alpha:-0.7);
     }
   }
 }
