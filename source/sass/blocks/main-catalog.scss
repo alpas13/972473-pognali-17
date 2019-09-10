@@ -99,7 +99,7 @@
   }
 
   .main-catalog__filter-wrapper {
-    margin-bottom: 37px;
+    margin-bottom: 41px;
   }
 
   .main-catalog__filter-country--collapsed {
@@ -159,7 +159,7 @@
   }
 
   .main-catalog__users-cards {
-    margin-bottom: 45px;
+    margin-bottom: 43px;
   }
 
   .main-catalog__filter-country {
@@ -176,17 +176,21 @@
   .main-catalog__show-more {
     font-size: 20px;
     margin-bottom: 48px;
-    padding-left: 52px;
+    padding: 0 0 0 45px;
 
     &::before,
     &::after {
       width: 27px;
       height: 3px;
-      transform: translateY(-3px);
     }
 
     &::after {
+      left: -5px;
       transform: translateY(-3px) rotate(90deg);
+    }
+
+    &::before {
+      transform: translate(-7px, -3px);
     }
   }
 }

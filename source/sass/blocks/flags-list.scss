@@ -73,6 +73,7 @@
     span {
       font-size: 20px;
       line-height: 30px;
+      font-weight: 500;
     }
   }
 
@@ -90,6 +91,10 @@
       right: -35px;
       margin: 16px 0 0;
     }
+  }
+
+  .flags-list__item--catalog-smolov {
+    margin-right: 25px;
   }
 }
 

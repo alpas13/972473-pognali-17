@@ -437,8 +437,8 @@
   .filter-companion__level-slider {
     align-self: center;
     order: -1;
-    margin-top: 0;
-    margin-right: auto;
+    margin-top: -7px;
+    margin-right: 60px;
   }
 
   .filter-companion__slider-base {
@@ -448,10 +448,11 @@
   }
 
   .filter-companion__level-control {
-    width: 75px;
+    width: 73px;
     height: 45px;
 
     &::placeholder {
+      padding-left: 0;
       font-size: 20px;
       line-height: 18px;
       font-weight: 500;
@@ -505,7 +506,7 @@
     font-weight: 400;
     line-height: 20px;
     //margin-bottom: 16px;
-    padding-left: 38px;
+    padding-left: 40px;
 
     &::before {
       width: 24px;
@@ -519,7 +520,7 @@
     .filter-companion__#{$filter-section}-control:checked + .filter-companion__#{$filter-section}-label {
       &::after {
         top: 4px;
-        left: 6px;
+        left: 11px;
         width: 12px;
         height: 12px;
       }

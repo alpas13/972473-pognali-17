@@ -9,7 +9,7 @@
 
 .about-self__level {
   position: relative;
-  margin-right: 35px;
+  margin-right: 31px;
   background-color: $pale-grey-middle;
 
   &::before,
@@ -19,8 +19,8 @@
 
   &::before {
     content: "80";
-    top: 25px;
-    left: 30px;
+    top: 20px;
+    left: 31px;
     color: $dark-slate-blue;
 
     @include font-set(38px, 800, 38px);
@@ -28,10 +28,10 @@
 
   &::after {
     content: "level";
-    width: 31px;
+    width: 47px;
     padding-top: 2px;
-    top: 60px;
-    left: 35px;
+    top: 57px;
+    left: 28px;
     text-align: center;
     color: $greyish-brown;
 
@@ -39,6 +39,12 @@
 
     @include font-set(18px, 400, 22px);
   }
+}
+
+.about-self__level-value {
+  position: relative;
+  top: -3px;
+  left: -1px;
 }
 
 .about-self__level,
@@ -60,8 +66,8 @@
   align-items: center;
   width: 100%;
   height: 40px;
-  margin: 19px 0 33px;
-  padding: 5px 0 0;
+  margin: 15px 0 24px;
+  padding: 0;
   border: none;
   border-radius: 20px;
   text-transform: uppercase;
@@ -88,7 +94,7 @@
 }
 
 .about-self__tags {
-  margin-bottom: 25px;
+  margin-bottom: 17px;
   padding: 10px 26px 15px;
 }
 
@@ -115,16 +121,37 @@
 }
 
 @media (min-width: $medium-width) {
+  .about-self {
+    justify-content: flex-start;
+  }
+
   .about-self__transport {
     order: -1;
-    width: auto;
-    margin: 0 auto;
-    padding: 25px 56px;
+    width: 307px;
+    height: 94px;
+    margin: 0 62px 0 0;
+    padding: 25px 0 0 0;
   }
 
   .about-self__level {
     order: -2;
-    margin-right: 0;
+    margin-right: 55px;
+  }
+
+  .about-self__level-value {
+    left: -1px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-self__level::before {
+    top: 19px;
+    left: 26px;
+  }
+
+  .about-self__level::after {
+    top: 54px;
+    left: 23px;
   }
 
   .about-self__photo-icon {
@@ -140,12 +167,12 @@
     font-weight: 500;
     line-height: 18px;
     letter-spacing: 2px;
-    margin-top: 52px;
+    margin-top: 45px;
     margin-bottom: 52px;
   }
 
   .about-self__tags {
-    padding: 20px 40px 0;
+    padding: 32px 40px 5px;
   }
 
   .about-self__tags,
@@ -184,12 +211,13 @@
   .about-self__transport {
     order: 0;
     width: 384px;
+    margin: 0;
   }
 
   .about-self__level {
     order: 0;
-    margin-left: 825px;
-    margin-right: 45px;
+    margin-left: 896px;
+    margin-right: 39px;
     background-color: inherit;
 
     &::before,
@@ -198,17 +226,17 @@
     }
 
     &::before {
-      top: 70px;
+      top: 63px;
     }
 
     &::after {
-      top: 105px;
+      top: 100px;
       border-color: adjust_color($white, $alpha: -0.7);
     }
   }
 
   .about-self__level-value {
-    margin-top: 45px;
+    margin-top: 43px;
   }
 
   .about-self__photo,
@@ -226,7 +254,7 @@
     width: 190px;
     height: 47px;
     border-radius: 0 0 10px 10px;
-    margin: 0 0 26px 970px;
+    margin: 0 0 26px 1035px;
 
     span:first-child {
       display: none;
@@ -247,7 +275,8 @@
   .about-self__tags {
     width: 730px;
     margin: 0 142px 0 64px;
-    padding-top: 35px;
+    padding-top: 32px;
+    padding-bottom: 0;
   }
 
   .about-self__tags-title {

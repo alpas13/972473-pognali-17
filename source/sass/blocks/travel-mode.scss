@@ -18,6 +18,10 @@
   margin: -1px -3px 0;
 }
 
+.travel-mode--form {
+  margin-bottom: 2px;
+}
+
 .travel-mode-filter {
   margin-left: -2px;
 }
@@ -112,7 +116,7 @@
   .travel-mode__item--transport-label {
     width: 43px;
     height: 43px;
-    margin-right: 13px;
+    margin-right: 8px;
     background-color: $white;
 
     &:last-of-type {
