@@ -200,11 +200,6 @@
     padding-bottom: 80px;
   }
 
-  .main-catalog__show-more {
-    &::after {
-      left: -6px;
-    }
-  }
 
   .main-catalog__filter-country--collapsed {
     .filter-country__header {
@@ -284,6 +279,10 @@
   .main-catalog__show-more {
     margin-bottom: 65px;
     left: -35px;
+
+    &::after {
+      left: -6px;
+    }
   }
 
   .main-catalog__show-more:hover {
