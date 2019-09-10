@@ -116,4 +116,38 @@
   .catalog-pagination {
     padding-right: 19px;
   }
+
+  .catalog-pagination__page-item:hover:not(.catalog-pagination__page-item--active) {
+    color: rgba(22, 28, 53, 0.6);
+  }
+
+  .catalog-pagination__page-item:active:not(.catalog-pagination__page-item--active) {
+    color: #171d36;
+    border-radius: 50%;
+    background-color: #ffd84d;
+  }
+
+  .catalog-pagination__back:hover {
+    &::before {
+      border-right-color: adjust_color(#192144, $alpha: -0.4);
+    }
+  }
+
+  .catalog-pagination__next:hover {
+    &::before {
+      border-left-color: adjust_color(#192144, $alpha: -0.4);
+    }
+  }
+
+  .catalog-pagination__back:active {
+    &::before {
+      border-right-color: adjust_color(#192144, $alpha: -0.7);
+    }
+  }
+
+  .catalog-pagination__next:active {
+    &::before {
+      border-left-color: adjust_color(#192144, $alpha: -0.7);
+    }
+  }
 }
