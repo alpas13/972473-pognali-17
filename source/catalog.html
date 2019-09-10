@@ -5,13 +5,15 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>HTML Academy: Погнали | Попутчики</title>
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font" type="font/woff2">
   <link href="css/style.min.css" rel="stylesheet">
-  <script>
-    // Picture element HTML5 shiv
-    document.createElement("picture");
-
-  </script>
-  <script async src="js/picturefill.min.js"></script>
 </head>
 
 <body>
@@ -106,6 +108,11 @@
         class="page-header__menu-header page-header__menu-header--catalog page-header__menu-header--closed page-header__menu-header--nojs">
         <a class="page-header__logo" href="index.html">
           <picture class="page-header__logo-first">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp, img/logo-mobile-white@2x.webp 2x">
             <source media="(min-width: 1200px)"
               srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
             <source media="(min-width: 768px)"
@@ -114,6 +121,10 @@
               srcset="img/logo-mobile-white@2x.png 2x">
           </picture>
           <picture class="page-header__logo-scroll none-active">
+            <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp 2x">
             <source media="(min-width: 1200px)"
               srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
@@ -249,113 +260,113 @@
       <section class="filter-country__content">
         <div class="filter-country__sorting-alphabet">
           <input checked="" class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-А" name="filter-radio-sorting" type="radio">
+            id="letter-1" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Б" name="filter-radio-sorting" type="radio">
+            id="letter-2" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-В" name="filter-radio-sorting" type="radio">
+            id="letter-3" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Г" name="filter-radio-sorting" type="radio">
+            id="letter-4" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Д" name="filter-radio-sorting" type="radio">
+            id="letter-5" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Е" name="filter-radio-sorting" type="radio">
+            id="letter-6" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Ё" name="filter-radio-sorting" type="radio">
+            id="letter-7" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Ж" name="filter-radio-sorting" type="radio">
+            id="letter-8" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-З" name="filter-radio-sorting" type="radio">
+            id="letter-9" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-И" name="filter-radio-sorting" type="radio">
+            id="letter-10" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Й" name="filter-radio-sorting" type="radio">
+            id="letter-11" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-К" name="filter-radio-sorting" type="radio">
+            id="letter-12" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Л" name="filter-radio-sorting" type="radio">
+            id="letter-13" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-М" name="filter-radio-sorting" type="radio">
+            id="letter-14" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Н" name="filter-radio-sorting" type="radio">
+            id="letter-15" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-О" name="filter-radio-sorting" type="radio">
+            id="letter-16" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-П" name="filter-radio-sorting" type="radio">
+            id="letter-17" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Р" name="filter-radio-sorting" type="radio">
+            id="letter-18" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-С" name="filter-radio-sorting" type="radio">
+            id="letter-19" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Т" name="filter-radio-sorting" type="radio">
+            id="letter-20" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-У" name="filter-radio-sorting" type="radio">
+            id="letter-21" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Ф" name="filter-radio-sorting" type="radio">
+            id="letter-22" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Х" name="filter-radio-sorting" type="radio">
+            id="letter-23" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Ц" name="filter-radio-sorting" type="radio">
+            id="letter-24" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Ч" name="filter-radio-sorting" type="radio">
+            id="letter-25" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Ш" name="filter-radio-sorting" type="radio">
+            id="letter-26" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Щ" name="filter-radio-sorting" type="radio">
+            id="letter-27" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Э" name="filter-radio-sorting" type="radio">
+            id="letter-28" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Ю" name="filter-radio-sorting" type="radio">
+            id="letter-29" name="filter-radio-sorting" type="radio">
           <input class="filter-country__sorting-radio filter-country__sorting-radio--catalog visually-hidden"
-            id="letter-Я" name="filter-radio-sorting" type="radio">
+            id="letter-30" name="filter-radio-sorting" type="radio">
           <div class="filter-country__alphabet-wrapper filter-country__alphabet-wrapper--catalog">
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-А">А</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Б">Б</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-В">В</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Г">Г</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Д">Д</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Е">Е</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Ё">Ё</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Ж">Ж</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-З">З</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-И">И</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Й">Й</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-К">К</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Л">Л</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-М">М</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Н">Н</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-О">О</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-П">П</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Р">Р</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-С">С</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Т">Т</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-У">У</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Ф">Ф</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Х">Х</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Ц">Ц</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Ч">Ч</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Ш">Ш</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Щ">Щ</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Э">Э</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Ю">Ю</label>
-            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-Я">Я</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-1">А</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-2">Б</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-3">В</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-4">Г</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-5">Д</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-6">Е</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-7">Ё</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-8">Ж</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-9">З</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-10">И</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-11">Й</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-12">К</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-13">Л</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-14">М</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-15">Н</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-16">О</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-17">П</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-18">Р</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-19">С</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-20">Т</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-21">У</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-22">Ф</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-23">Х</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-24">Ц</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-25">Ч</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-26">Ш</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-27">Щ</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-28">Э</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-29">Ю</label>
+            <label class="filter-country__sorting-item filter-country__sorting-item--catalog" for="letter-30">Я</label>
           </div>
           <section class="filter-country__countries filter-country__countries--catalog">
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-А filter-country__countries-list--А">
+              class="filter-country__countries-list filter-country__countries-list--catalog-1 filter-country__countries-list--1" data-letter="А">
               <li class="filter-country__list-item"><a href="europa/australia">Австралия</a></li>
               <li class="filter-country__list-item"><a href="europa/austria">Австрия</a></li>
               <li class="filter-country__list-item"><a href="europa/azerbaijan">Азербайджан</a></li>
               <li class="filter-country__list-item"><a href="europa/algeria">Алжир</a></li>
               <li class="filter-country__list-item"><a href="europa/angola">Ангола</a></li>
               <li class="filter-country__list-item"><a href="europa/andorra">Андорра</a></li>
-              <li class="filter-country__list-item"><a href="europa/antigua and barbuda">Антигуа и Барбуда</a></li>
+              <li class="filter-country__list-item"><a href="europa/antigua-and-barbuda">Антигуа и Барбуда</a></li>
               <li class="filter-country__list-item"><a href="europa/argentina">Аргентина</a></li>
               <li class="filter-country__list-item"><a href="europa/armenia">Армения</a></li>
               <li class="filter-country__list-item"><a href="europa/afghanistan">Афганистан</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-Б filter-country__countries-list--Б">
+              class="filter-country__countries-list filter-country__countries-list--catalog-2 filter-country__countries-list--2" data-letter="Б">
               <li class="filter-country__list-item"><a href="europa/bahamas">Багамские Острова</a></li>
               <li class="filter-country__list-item"><a href="europa/bangladesh">Бангладеш</a></li>
               <li class="filter-country__list-item"><a href="europa/barbados">Барбадос</a></li>
@@ -366,26 +377,26 @@
               <li class="filter-country__list-item"><a href="europa/benin">Бенин</a></li>
               <li class="filter-country__list-item"><a href="europa/bulgaria">Болгария</a></li>
               <li class="filter-country__list-item"><a href="europa/bolivia">Боливия</a></li>
-              <li class="filter-country__list-item"><a href="europa/bosnia and herzegovina">Босния и Герцеговина</a>
+              <li class="filter-country__list-item"><a href="europa/bosnia-and-herzegovina">Босния и Герцеговина</a>
               </li>
               <li class="filter-country__list-item"><a href="europa/botswana">Ботсвана</a></li>
               <li class="filter-country__list-item"><a href="europa/brazil">Бразилия</a></li>
               <li class="filter-country__list-item"><a href="europa/brunei">Бруней</a></li>
-              <li class="filter-country__list-item"><a href="europa/burkina faso">Буркина-Фасо</a></li>
+              <li class="filter-country__list-item"><a href="europa/burkina-faso">Буркина-Фасо</a></li>
               <li class="filter-country__list-item"><a href="europa/burundi">Бурунди</a></li>
               <li class="filter-country__list-item"><a href="europa/butane">Бутан</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-В filter-country__countries-list--В">
+              class="filter-country__countries-list filter-country__countries-list--catalog-3 filter-country__countries-list--3" data-letter="В">
               <li class="filter-country__list-item"><a href="europa/vanuatu">Вануату</a></li>
-              <li class="filter-country__list-item"><a href="europa/great britain">Великобритания</a></li>
+              <li class="filter-country__list-item"><a href="europa/great-britain">Великобритания</a></li>
               <li class="filter-country__list-item"><a href="europa/hungary">Венгрия</a></li>
               <li class="filter-country__list-item"><a href="europa/venezuela">Венесуэла</a></li>
-              <li class="filter-country__list-item"><a href="europa/east timor">Восточный Тимор</a></li>
+              <li class="filter-country__list-item"><a href="europa/east-timor">Восточный Тимор</a></li>
               <li class="filter-country__list-item"><a href="europa/vietnam">Вьетнам</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-Г filter-country__countries-list--Г">
+              class="filter-country__countries-list filter-country__countries-list--catalog-4 filter-country__countries-list--4" data-letter="Г">
               <li class="filter-country__list-item"><a href="europa/gabon">Габон</a></li>
               <li class="filter-country__list-item"><a href="europa/haiti">Гаити</a></li>
               <li class="filter-country__list-item"><a href="europa/guyana">Гайана</a></li>
@@ -401,23 +412,23 @@
               <li class="filter-country__list-item"><a href="europa/georgia">Грузия</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-Д filter-country__countries-list--Д">
+              class="filter-country__countries-list filter-country__countries-list--catalog-5 filter-country__countries-list--5" data-letter="Д">
               <li class="filter-country__list-item"><a href="europa/denmark">Дания</a></li>
               <li class="filter-country__list-item"><a href="europa/djibouti">Джибути</a></li>
               <li class="filter-country__list-item"><a href="europa/dominica">Доминика</a></li>
-              <li class="filter-country__list-item"><a href="europa/dominican republic">Доминикана</a></li>
+              <li class="filter-country__list-item"><a href="europa/dominican-republic">Доминикана</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-Е filter-country__countries-list--Е">
+              class="filter-country__countries-list filter-country__countries-list--catalog-6 filter-country__countries-list--6" data-letter="Е">
               <li class="filter-country__list-item"><a href="europa/egypt">Египет</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-З filter-country__countries-list--З">
+              class="filter-country__countries-list filter-country__countries-list--catalog-9 filter-country__countries-list--9" data-letter="З">
               <li class="filter-country__list-item"><a href="europa/zambia">Замбия</a></li>
               <li class="filter-country__list-item"><a href="europa/zimbabwe">Зимбабве</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-И filter-country__countries-list--И">
+              class="filter-country__countries-list filter-country__countries-list--catalog-10 filter-country__countries-list--10" data-letter="И">
               <li class="filter-country__list-item"><a href="europa/israel">Израиль</a></li>
               <li class="filter-country__list-item"><a href="europa/india">Индия</a></li>
               <li class="filter-country__list-item"><a href="europa/indonesia">Индонезия</a></li>
@@ -430,8 +441,8 @@
               <li class="filter-country__list-item"><a href="europa/italy">Италия</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-К filter-country__countries-list--К">
-              <li class="filter-country__list-item"><a href="europa/cape verde">Кабо-Верде</a></li>
+              class="filter-country__countries-list filter-country__countries-list--catalog-12 filter-country__countries-list--12" data-letter="К">
+              <li class="filter-country__list-item"><a href="europa/cape-verde">Кабо-Верде</a></li>
               <li class="filter-country__list-item"><a href="europa/kazakhstan">Казахстан</a></li>
               <li class="filter-country__list-item"><a href="europa/cambodia">Камбоджа</a></li>
               <li class="filter-country__list-item"><a href="europa/cameroon">Камерун</a></li>
@@ -445,15 +456,15 @@
               <li class="filter-country__list-item"><a href="europa/colombia">Колумбия</a></li>
               <li class="filter-country__list-item"><a href="europa/comoros">Коморы</a></li>
               <li class="filter-country__list-item"><a href="europa/congo">Конго</a></li>
-              <li class="filter-country__list-item"><a href="europa/north korea">КНДР</a></li>
-              <li class="filter-country__list-item"><a href="europa/the republic of korea">Республика Корея</a></li>
-              <li class="filter-country__list-item"><a href="europa/costa rica">Коста-Рика</a></li>
-              <li class="filter-country__list-item"><a href="europa/côte d'ivoire">Кот-д’Ивуар</a></li>
+              <li class="filter-country__list-item"><a href="europa/north-korea">КНДР</a></li>
+              <li class="filter-country__list-item"><a href="europa/the-republic-of-korea">Республика Корея</a></li>
+              <li class="filter-country__list-item"><a href="europa/costa-rica">Коста-Рика</a></li>
+              <li class="filter-country__list-item"><a href="europa/côte-d'ivoire">Кот-д’Ивуар</a></li>
               <li class="filter-country__list-item"><a href="europa/cuba">Куба</a></li>
               <li class="filter-country__list-item"><a href="europa/kuwait">Кувейт</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-Л filter-country__countries-list--Л">
+              class="filter-country__countries-list filter-country__countries-list--catalog-13 filter-country__countries-list--13" data-letter="Л">
               <li class="filter-country__list-item"><a href="europa/laos">Лаос</a></li>
               <li class="filter-country__list-item"><a href="europa/latvia">Латвия</a></li>
               <li class="filter-country__list-item"><a href="europa/lesotho">Лесото</a></li>
@@ -465,7 +476,7 @@
               <li class="filter-country__list-item"><a href="europa/luxembourg">Люксембург</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-М filter-country__countries-list--М">
+              class="filter-country__countries-list filter-country__countries-list--catalog-14 filter-country__countries-list--14" data-letter="М">
               <li class="filter-country__list-item"><a href="europa/mauritius">Маврикий</a></li>
               <li class="filter-country__list-item"><a href="europa/mauritania">Мавритания</a></li>
               <li class="filter-country__list-item"><a href="europa/madagascar">Мадагаскар</a></li>
@@ -475,7 +486,7 @@
               <li class="filter-country__list-item"><a href="europa/maldives">Мальдивы</a></li>
               <li class="filter-country__list-item"><a href="europa/malta">Мальта</a></li>
               <li class="filter-country__list-item"><a href="europa/morocco">Марокко</a></li>
-              <li class="filter-country__list-item"><a href="europa/marshall islands">Маршалловы Острова</a></li>
+              <li class="filter-country__list-item"><a href="europa/marshall-islands">Маршалловы Острова</a></li>
               <li class="filter-country__list-item"><a href="europa/mexico">Мексика</a></li>
               <li class="filter-country__list-item"><a href="europa/mozambique">Мозамбик</a></li>
               <li class="filter-country__list-item"><a href="europa/moldavia">Молдавия</a></li>
@@ -484,7 +495,7 @@
               <li class="filter-country__list-item"><a href="europa/myanmar">Мьянма</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-Н filter-country__countries-list--Н">
+              class="filter-country__countries-list filter-country__countries-list--catalog-15 filter-country__countries-list--15" data-letter="Н">
               <li class="filter-country__list-item"><a href="europa/namibia">Намибия</a></li>
               <li class="filter-country__list-item"><a href="europa/nauru">Науру</a></li>
               <li class="filter-country__list-item"><a href="europa/nepal">Непал</a></li>
@@ -492,36 +503,36 @@
               <li class="filter-country__list-item"><a href="europa/nigeria">Нигерия</a></li>
               <li class="filter-country__list-item"><a href="europa/netherlands">Нидерланды</a></li>
               <li class="filter-country__list-item"><a href="europa/nicaragua">Никарагуа</a></li>
-              <li class="filter-country__list-item"><a href="europa/new zealand">Новая Зеландия</a></li>
+              <li class="filter-country__list-item"><a href="europa/new-zealand">Новая Зеландия</a></li>
               <li class="filter-country__list-item"><a href="europa/norway">Норвегия</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-О filter-country__countries-list--О">
-              <li class="filter-country__list-item"><a href="europa/united arab emirates">ОАЭ</a></li>
+              class="filter-country__countries-list filter-country__countries-list--catalog-16 filter-country__countries-list--16" data-letter="О">
+              <li class="filter-country__list-item"><a href="europa/united-arab-emirates">ОАЭ</a></li>
               <li class="filter-country__list-item"><a href="europa/oman">Оман</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-П filter-country__countries-list--П">
+              class="filter-country__countries-list filter-country__countries-list--catalog-17 filter-country__countries-list--17" data-letter="П">
               <li class="filter-country__list-item"><a href="europa/pakistan">Пакистан</a></li>
               <li class="filter-country__list-item"><a href="europa/palau">Палау</a></li>
               <li class="filter-country__list-item"><a href="europa/panama">Панама</a></li>
-              <li class="filter-country__list-item"><a href="europa/papua new guinea">Папуа — Новая Гвинея</a></li>
+              <li class="filter-country__list-item"><a href="europa/papua-new-guinea">Папуа — Новая Гвинея</a></li>
               <li class="filter-country__list-item"><a href="europa/paraguay">Парагвай</a></li>
               <li class="filter-country__list-item"><a href="europa/peru">Перу</a></li>
               <li class="filter-country__list-item"><a href="europa/poland">Польша</a></li>
               <li class="filter-country__list-item"><a href="europa/portugal">Португалия</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-С filter-country__countries-list--С">
+              class="filter-country__countries-list filter-country__countries-list--catalog-19 filter-country__countries-list--19" data-letter="С">
               <li class="filter-country__list-item"><a href="europa/salvador">Сальвадор</a></li>
               <li class="filter-country__list-item"><a href="europa/samoa">Самоа</a></li>
-              <li class="filter-country__list-item"><a href="europa/san marino">Сан-Марино</a></li>
-              <li class="filter-country__list-item"><a href="europa/sao tome and principe">Сан-Томе и Принсипи</a></li>
-              <li class="filter-country__list-item"><a href="europa/saudi arabia">Саудовская Аравия</a></li>
-              <li class="filter-country__list-item"><a href="europa/north macedonia">Северная Македония</a></li>
+              <li class="filter-country__list-item"><a href="europa/san-marino">Сан-Марино</a></li>
+              <li class="filter-country__list-item"><a href="europa/sao-tome-and-principe">Сан-Томе и Принсипи</a></li>
+              <li class="filter-country__list-item"><a href="europa/saudi-arabia">Саудовская Аравия</a></li>
+              <li class="filter-country__list-item"><a href="europa/north-macedonia">Северная Македония</a></li>
               <li class="filter-country__list-item"><a href="europa/seychelles">Сейшелы</a></li>
               <li class="filter-country__list-item"><a href="europa/senegal">Сенегал</a></li>
-              <li class="filter-country__list-item"><a href="europa/saint lucia">Сент-Люсия</a></li>
+              <li class="filter-country__list-item"><a href="europa/saint-lucia">Сент-Люсия</a></li>
               <li class="filter-country__list-item"><a href="europa/serbia">Сербия</a></li>
               <li class="filter-country__list-item"><a href="europa/singapore">Сингапур</a></li>
               <li class="filter-country__list-item"><a href="europa/syria">Сирия</a></li>
@@ -531,54 +542,54 @@
               <li class="filter-country__list-item"><a href="europa/somalia">Сомали</a></li>
               <li class="filter-country__list-item"><a href="europa/sudan">Судан</a></li>
               <li class="filter-country__list-item"><a href="europa/surinam">Суринам</a></li>
-              <li class="filter-country__list-item"><a href="europa/sierra leone">Сьерра-Леоне</a></li>
+              <li class="filter-country__list-item"><a href="europa/sierra-leone">Сьерра-Леоне</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-Т filter-country__countries-list--Т">
+              class="filter-country__countries-list filter-country__countries-list--catalog-20 filter-country__countries-list--20" data-letter="Т">
               <li class="filter-country__list-item"><a href="europa/tajikistan">Таджикистан</a></li>
               <li class="filter-country__list-item"><a href="europa/thailand">Таиланд</a></li>
               <li class="filter-country__list-item"><a href="europa/tanzania">Танзания</a></li>
               <li class="filter-country__list-item"><a href="europa/togo">Того</a></li>
               <li class="filter-country__list-item"><a href="europa/tonga">Тонга</a></li>
-              <li class="filter-country__list-item"><a href="europa/trinidad and tobago">Тринидад и Тобаго</a></li>
+              <li class="filter-country__list-item"><a href="europa/trinidad-and-tobago">Тринидад и Тобаго</a></li>
               <li class="filter-country__list-item"><a href="europa/tuvalu">Тувалу</a></li>
               <li class="filter-country__list-item"><a href="europa/tunisia">Тунис</a></li>
               <li class="filter-country__list-item"><a href="europa/turkmenistan">Туркмения</a></li>
               <li class="filter-country__list-item"><a href="europa/turkey">Турция</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-У filter-country__countries-list--У">
+              class="filter-country__countries-list filter-country__countries-list--catalog-21 filter-country__countries-list--21" data-letter="У">
               <li class="filter-country__list-item"><a href="europa/uganda">Уганда</a></li>
               <li class="filter-country__list-item"><a href="europa/uzbekistan">Узбекистан</a></li>
               <li class="filter-country__list-item"><a href="europa/ukraine">Украина</a></li>
               <li class="filter-country__list-item"><a href="europa/uruguay">Уругвай</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-Ф filter-country__countries-list--Ф">
+              class="filter-country__countries-list filter-country__countries-list--catalog-22 filter-country__countries-list--22" data-letter="Ф">
               <li class="filter-country__list-item"><a href="europa/fiji">Фиджи</a></li>
               <li class="filter-country__list-item"><a href="europa/philippines">Филиппины</a></li>
               <li class="filter-country__list-item"><a href="europa/finland">Финляндия</a></li>
               <li class="filter-country__list-item"><a href="europa/france">Франция</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-Х filter-country__countries-list--Х">
+              class="filter-country__countries-list filter-country__countries-list--catalog-23 filter-country__countries-list--23" data-letter="Х">
               <li class="filter-country__list-item"><a href="europa/croatia">Хорватия</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-Ч filter-country__countries-list--Ч">
+              class="filter-country__countries-list filter-country__countries-list--catalog-25 filter-country__countries-list--25" data-letter="Ч">
               <li class="filter-country__list-item"><a href="europa/chad">Чад</a></li>
               <li class="filter-country__list-item"><a href="europa/montenegro">Черногория</a></li>
               <li class="filter-country__list-item"><a href="europa/czech">Чехия</a></li>
               <li class="filter-country__list-item"><a href="europa/chile">Чили</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-Ш filter-country__countries-list--Ш">
+              class="filter-country__countries-list filter-country__countries-list--catalog-26 filter-country__countries-list--26" data-letter="Ш">
               <li class="filter-country__list-item"><a href="europa/switzerland">Швейцария</a></li>
               <li class="filter-country__list-item"><a href="europa/sweden">Швеция</a></li>
-              <li class="filter-country__list-item"><a href="europa/sri lanka">Шри-Ланка</a></li>
+              <li class="filter-country__list-item"><a href="europa/sri-lanka">Шри-Ланка</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-Э filter-country__countries-list--Э">
+              class="filter-country__countries-list filter-country__countries-list--catalog-28 filter-country__countries-list--28" data-letter="Э">
               <li class="filter-country__list-item"><a href="europa/ecuador">Эквадор</a></li>
               <li class="filter-country__list-item"><a href="europa/eritrea">Эритрея</a></li>
               <li class="filter-country__list-item"><a href="europa/esvatini">Эсватини</a></li>
@@ -586,12 +597,12 @@
               <li class="filter-country__list-item"><a href="europa/ethiopia">Эфиопия</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-Ю filter-country__countries-list--Ю">
-              <li class="filter-country__list-item"><a href="europa/south africa">ЮАР</a></li>
-              <li class="filter-country__list-item"><a href="europa/south sudan">Южный Судан</a></li>
+              class="filter-country__countries-list filter-country__countries-list--catalog-29 filter-country__countries-list--29" data-letter="Ю">
+              <li class="filter-country__list-item"><a href="europa/south-africa">ЮАР</a></li>
+              <li class="filter-country__list-item"><a href="europa/south-sudan">Южный Судан</a></li>
             </ul>
             <ul
-              class="filter-country__countries-list filter-country__countries-list--catalog-Я filter-country__countries-list--Я">
+              class="filter-country__countries-list filter-country__countries-list--catalog-30 filter-country__countries-list--30" data-letter="Я">
               <li class="filter-country__list-item"><a href="europa/jamaica">Ямайка</a></li>
               <li class="filter-country__list-item"><a href="europa/japan">Япония</a></li>
             </ul>
@@ -613,7 +624,7 @@
           <form action="https://echo.htmlacademy.ru" class="filter-companion__filter-form" method="post"
             name="companion-filter">
             <div class="filter-companion__wrapper">
-              <div class="filter-companion__hobbies <!--filter-companion__hobbies--collapsed-->" role="group">
+              <div class="filter-companion__hobbies filter-companion__hobbies--collapsed" role="group">
                 <span class="filter-companion__hobbies-toggle">Хобби</span>
                 <div class="filter-companion__hobbies-wrapper">
                   <input checked="" class="filter-companion__hobbies-control visually-hidden" id="hobby-fitness"
@@ -641,7 +652,7 @@
                   <label class="filter-companion__music-label" for="euro-dance">Евроденс</label>
                 </div>
               </div>
-              <div class="filter-companion__food <!--filter-companion__food--collapsed-->" role="group">
+              <div class="filter-companion__food filter-companion__food--collapsed" role="group">
                 <span class="filter-companion__food-toggle">Еда</span>
                 <div class="filter-companion__food-wrapper">
                   <input checked="" class="filter-companion__food-control visually-hidden" id="food-meat"
@@ -730,8 +741,13 @@
             <div class="user-card__header">
               <a class="user-card__photo" href="#">
                 <picture class="user-card__photo-set">
+                  <source type="image/webp" media="(min-width: 1200px)"
+                          srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                          srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/firsova-mobile@1x.webp, img/firsova-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
-                    srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg ">
+                    srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
                   <img alt="Иконка пользователя" class="user-card__icon" height="70" src="img/firsova-mobile@1x.jpg"
@@ -743,11 +759,11 @@
                     <span>Фирсова</span></a>
                 </h2>
                 <p class="user-card__user-rating">
-                  <span class="user-card__heart-wrapper user-card__heart-wrapper--active">
+                  <a href="#" class="user-card__heart-wrapper user-card__heart-wrapper--active">
                     <svg class="user-card__heart user-card__heart-active" height="11" viewBox="0 0 13 11" width="13">
                       <use xlink:href="#user-heart-active"></use>
                     </svg>
-                  </span>1.5 M
+                  </a>1.5 M
                 </p>
                 <ul class="user-card__hash-tags hash-tags">
                   <li class="hash-tags__item">#ЗОЖ</li>
@@ -836,6 +852,9 @@
             <div class="user-card__header">
               <a class="user-card__photo" href="#">
                 <picture class="user-card__photo-set">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/demin-mobile@1x.webp, img/demin-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
                   <img alt="Иконка пользователя" class="user-card__icon" height="70" src="img/demin-mobile@1x.jpg"
@@ -936,6 +955,10 @@
             <div class="user-card__header">
               <a class="user-card__photo" href="#">
                 <picture class="user-card__photo-set">
+                  <source type="image/webp" media="(min-width: 1200px)"
+                          srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/smolov-mobile@1x.webp, img/smolov-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
@@ -952,7 +975,7 @@
                     <svg class="user-card__heart user-card__heart-passive" height="11" viewBox="0 0 20 17" width="13">
                       <use xlink:href="#user-heart-passive"></use>
                     </svg>
-                  </span>1700
+                  </span>150
                 </p>
                 <ul class="user-card__hash-tags hash-tags">
                   <li class="hash-tags__item">#рэп</li>
@@ -968,17 +991,17 @@
                 <h3 class="user-card__section-title user-card__section-title--trip"><span
                     class="user-card__title-content user-card__title-content--trip">хочет посетить:</span></h3>
                 <ul class="trip-preferences__list flags-list flags-list--catalog">
-                  <li class="flags-list__item flags-list__item--catalog">
+                  <li class="flags-list__item flags-list__item--catalog flags-list__item--catalog-smolov">
                     <img alt="Флаг США" class="flags-list__item-image flags-list__item-image--catalog" height="18"
                       src="img/flag-usa.svg" width="26">
                     <span>США</span>
                   </li>
-                  <li class="flags-list__item flags-list__item--catalog">
+                  <li class="flags-list__item flags-list__item--catalog flags-list__item--catalog-smolov">
                     <img alt="Флаг Австралия" class="flags-list__item-image flags-list__item-image--catalog" height="18"
                       src="img/flag-australia.svg" width="26">
                     <span>Австралия</span>
                   </li>
-                  <li class="flags-list__item flags-list__item--catalog">
+                  <li class="flags-list__item flags-list__item--catalog flags-list__item--catalog-smolov">
                     <img alt="Флаг Доминикана" class="flags-list__item-image flags-list__item-image--catalog"
                       height="18" src="img/flag-dominica.svg" width="26">
                     <span>Доминикана</span>
@@ -1041,6 +1064,11 @@
             <div class="user-card__header">
               <a class="user-card__photo" href="#">
                 <picture class="user-card__photo-set">
+                  <source type="image/webp" media="(min-width: 1200px)"
+                          srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                          srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp, img/rogovaya-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)"
                     srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
@@ -1155,8 +1183,11 @@
   </main>
   <footer class="page-footer page-footer--catalog">
     <div class="page-footer__wrapper page-footer__wrapper--catalog">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <picture class="page-footer__photo-set">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp, img/logo-mobile-blue@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
           <img alt="Логотип сайта 'погнали?'" class="page-footer__logo-image" height="19"
@@ -1193,14 +1224,16 @@
         </li>
       </ul>
       <div class="page-footer__developer developer">
-        <p class="developer-text">Разработано</p>
-        <a class="developer__logo" href="#" target="_blank">
+        <p class="developer-text"><a class="developer-text__link" href="https://htmlacademy.ru/intensive/adaptive"
+            target="_blank">Разработано</a></p>
+        <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <img alt="" class="developer__logo-image" height="34" src="img/htmlacademy.svg" width="27">
         </a>
       </div>
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <script async src="js/picturefill.min.js"></script>
 </body>
 
 </html>

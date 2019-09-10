@@ -12,8 +12,13 @@
   @include font-set(16px, 500, 16px);
 }
 
+.select-item__clarification {
+  letter-spacing: 1.6px;
+}
+
 .select-item__label-title {
   color: $dark-slate-blue;
+  letter-spacing: 1.6px;
 }
 
 .select-item__clarification-item {
@@ -23,7 +28,8 @@
 .select-item__input-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 219px;
+  height: 40px;
   margin: 0;
   padding: 0;
   border: 1px solid $border-grey;
@@ -53,7 +59,6 @@
 .select-item__button {
   position: relative;
   width: 42px;
-  height: 43px;
   margin: 0;
   padding: 0;
   border: none;
@@ -104,6 +109,7 @@
   .select-item__wrapper {
     display: flex;
     flex-direction: column;
+    padding-bottom: 29px;
   }
 
   .select-item__duration {
@@ -117,7 +123,7 @@
   }
 
   .select-item__button {
-    height: 70px;
+    height: 66px;
 
     &::before,
     &::after {
@@ -129,13 +135,24 @@
     &::before,
     &::after {
       right: 20px;
+      top: 50%;
     }
   }
 
   .select-item__button-minus {
     &::before {
       left: 20px;
+      top: 50%;
     }
+  }
+
+  .select-item__label-title {
+    letter-spacing: 2px;
+  }
+
+  .select-item__input-wrapper {
+    width: 530px;
+    height: 68px;
   }
 }
 
@@ -148,7 +165,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    padding: 30px 0;
+    padding: 30px 0 33px;
     border-top: 1px solid #cacdd8;
   }
 
@@ -157,7 +174,7 @@
     padding-left: 0;
     padding-right: 0;
     border: none;
-    margin-bottom: 14px;
+    margin-bottom: 17px;
   }
 
   .select-item__duration {
@@ -171,8 +188,8 @@
   }
 
   .select-item__input-wrapper--companions {
-    margin-left: 32px;
-    margin-right: 36px;
+    margin-left: 29px;
+    margin-right: 34px;
   }
 
   .select-item__input-wrapper:hover {
@@ -184,8 +201,8 @@
   }
 
   .select-item__input-wrapper--duration {
-    margin-left: 58px;
-    margin-right: 47px;
+    margin-left: 54px;
+    margin-right: 38px;
   }
 
   .select-item__input-value {
@@ -195,6 +212,11 @@
   .select-item__label,
   .select-item__clarification {
     margin-bottom: 0;
+  }
+
+  .select-item__label {
+    padding-left: 5px;
+    white-space: nowrap;
   }
 
   .select-item__clarification-item {

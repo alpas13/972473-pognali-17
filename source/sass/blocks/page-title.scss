@@ -54,7 +54,7 @@
   .page-title__title-wrapper {
     display: flex;
     min-height: 219px;
-    padding: 0 75px 0 77px;
+    padding: 0 75px 0 76px;
     border-radius: 0 0 60px 60px;
   }
 
@@ -67,7 +67,7 @@
     line-height: 70px;
 
     &::before {
-      bottom: -4px;
+      bottom: -5px;
       height: 8px;
     }
   }
@@ -104,7 +104,7 @@
 
   .page-title__title-header {
     margin-top: 105px;
-    padding-bottom: 67px;
+    padding-bottom: 65px;
   }
 
   .page-title__title-home {

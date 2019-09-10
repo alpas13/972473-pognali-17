@@ -18,12 +18,12 @@
   width: 320px;
   margin: 0 auto;
   padding: 29px 25px 30px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 30px 30px 0 0;
   background-color: $pale-grey;
 }
 
 .main-form__plans-title {
-  margin: 0 0 34px;
+  margin: 0 0 30px;
   padding: 0;
   color: $dark-slate-blue;
 
@@ -39,19 +39,19 @@
 .main-form__trip-wrapper {
   margin: 0;
   padding: 30px 25px 44px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 30px 30px 0 0;
   background-color: $light-blue-grey;
 }
 
 @media (min-width: $medium-width) {
   .maim-form__about-self {
     width: 768px;
-    padding: 60px 75px;
+    padding: 64px 75px 45px;
   }
 
   .main-form__plans {
     width: 768px;
-    padding: 51px 75px 74px;
+    padding: 47px 75px 74px;
     border-radius: 30px 30px 0 0;
   }
 
@@ -60,8 +60,16 @@
   }
 
   .main-form__trip-wrapper {
-    padding: 50px 75px 72px;
+    margin-bottom: 27px;
+    padding: 45px 75px 72px;
     border-radius: 30px 30px 0 0;
+  }
+
+  .main-form__plans-title {
+    margin-bottom: 42px;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 50px;
   }
 }
 
@@ -73,12 +81,17 @@
 
   .main-form__plans {
     width: 1440px;
-    padding: 51px 60px 63px 124px;
+    padding: 46px 60px 63px 124px;
     border-radius: 60px 60px 0 0;
   }
 
+  .main-form__plans-title {
+    margin-bottom: 42px;
+    padding-left: 5px;
+  }
+
   .main-form__trip-wrapper {
-    padding: 50px 60px 72px;
+    padding: 46px 60px 96px;
     border-radius: 60px 60px 0 0;
   }
 

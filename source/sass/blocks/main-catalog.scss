@@ -99,7 +99,7 @@
   }
 
   .main-catalog__filter-wrapper {
-    margin-bottom: 37px;
+    margin-bottom: 41px;
   }
 
   .main-catalog__filter-country--collapsed {
@@ -159,7 +159,7 @@
   }
 
   .main-catalog__users-cards {
-    margin-bottom: 45px;
+    margin-bottom: 43px;
   }
 
   .main-catalog__filter-country {
@@ -176,24 +176,28 @@
   .main-catalog__show-more {
     font-size: 20px;
     margin-bottom: 48px;
-    padding-left: 52px;
+    padding: 0 0 0 45px;
 
     &::before,
     &::after {
       width: 27px;
       height: 3px;
-      transform: translateY(-3px);
     }
 
     &::after {
+      left: -5px;
       transform: translateY(-3px) rotate(90deg);
+    }
+
+    &::before {
+      transform: translate(-7px, -3px);
     }
   }
 }
 
 @media (min-width: $huge-width) {
   .main-catalog {
-    padding-bottom: 77px;
+    padding-bottom: 80px;
   }
 
   .main-catalog__filter-country--collapsed {
@@ -248,12 +252,13 @@
   .main-catalog__filter-country {
     width: 1440px;
     padding: 0 60px 1px;
+    border-radius: 0 0 60px 60px;
   }
 
   .main-catalog__wrapper {
     display: flex;
     width: 1440px;
-    padding: 0 60px;
+    padding: 34px 60px 0;
   }
 
   .main-catalog__filter-wrapper {
@@ -271,6 +276,7 @@
   }
 
   .main-catalog__show-more {
-    margin-bottom: 68px;
+    margin-bottom: 65px;
+    left: -35px;
   }
 }

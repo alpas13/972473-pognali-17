@@ -118,7 +118,7 @@
 }
 
 /* stylelint-disable */
-@each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+@each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
   .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__alphabet-wrapper label[for="letter-#{$letter}"] {
     color: hsl(0, 0%, 100%);
     border: none;
@@ -126,7 +126,7 @@
   }
 }
 
-@each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+@each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
   .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__flex-wrapper label[for="letter-#{$letter}"] {
     color: $dark-slate-blue;
     border-left: 1px solid #cacdd8;
@@ -172,7 +172,7 @@
 }
 
 /* stylelint-disable */
-@each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+@each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
   .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__countries .filter-country__countries-list--#{$letter} {
     display: block;
   }
@@ -312,7 +312,7 @@
   }
 
   /* stylelint-disable */
-  @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+  @each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
     .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__alphabet-wrapper--catalog label[for="letter-#{$letter}"] {
       color: $dark-slate-blue;
       border: none;
@@ -322,7 +322,7 @@
   /* stylelint-enable */
 
   /* stylelint-disable */
-  @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+  @each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
     .filter-country__sorting-radio[id="letter-#{$letter}"]:checked ~ .filter-country__flex-wrapper label[for="letter-#{$letter}"] {
       color: $white;
       border: none;
@@ -332,7 +332,7 @@
   /* stylelint-enable */
 
   /* stylelint-disable */
-  @each $letter in Ё, Ж, Й, Ц, Щ {
+  @each $letter in 7, 8, 11, 24, 27 {
     .filter-country__alphabet-wrapper--catalog label[for="letter-#{$letter}"] {
       display: none;
     }
@@ -362,19 +362,29 @@
 
 @media (min-width: $huge-width) {
   .filter-country__header {
-    padding-top: 59px;
+    padding-top: 55px;
     margin-bottom: 0;
   }
 
   .filter-country__header-button {
     display: flex;
     justify-content: flex-start;
-    width: auto;
+    //width: auto;
     margin-left: 20px;
   }
 
+  .filter-country__continent-sorting {
+    margin-left: -20px;
+  }
+
+  .filter-country__header-icon {
+    width: 23px;
+    height: 17px;
+    margin-right: 20px;
+  }
+
   .filter-country__title-wrapper {
-    margin: 0 35px 0 0;
+    margin: 0 27px 0 0;
     font-size: 20px;
     line-height: 24px;
     white-space: nowrap;
@@ -388,6 +398,8 @@
   }
 
   .filter-country__filter-close {
+    position: relative;
+    top: 2px;
     margin-left: 371px;
     margin-right: 68px;
   }
@@ -399,14 +411,14 @@
   }
 
   /* stylelint-disable */
-  @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+  @each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
     .filter-country__countries-list--catalog-#{$letter} {
       position: relative;
       display: block;
-      margin-top: 137px;
+      margin-top: 121px;
 
       &::before {
-        content: "#{$letter}";
+        content: attr(data-letter);
         position: absolute;
         top: -77px;
         color: $dark-blue-grey;
@@ -417,20 +429,218 @@
   }
   /* stylelint-enable */
 
+  .filter-country__countries {
+    padding-top: 12px;
+  }
+
   .filter-country__countries-list {
     min-width: 200px;
+
+    &::before {
+      top: -58px;
+    }
+
+    &:nth-of-type(2) {
+      margin-bottom: 17px;
+
+      &::before {
+        left: 0;
+      }
+
+      .filter-country__list-item {
+        margin-left: -2px;
+      }
+    }
+
+    &:nth-of-type(4) {
+      &::before {
+        left: -9px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -9px;
+      }
+    }
+
+    &:nth-of-type(5) {
+      &::before {
+        left: -9px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -7px;
+      }
+    }
+
+    &:nth-of-type(6) {
+      &::before {
+        left: -7px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -3px;
+      }
+    }
+
+    &:nth-of-type(8) {
+      &::before {
+        left: -5px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -2px;
+      }
+    }
+
+    &:nth-of-type(9) {
+      margin-bottom: 23px;
+    }
+
+    &:nth-of-type(10) {
+      &::before {
+        left: -11px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -8px;
+      }
+    }
+
+    &:nth-of-type(11) {
+      &::before {
+        left: -9px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -8px;
+      }
+    }
+
+    &:nth-of-type(12) {
+      &::before {
+        left: -6px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -3px;
+      }
+    }
+
+    &:nth-of-type(14) {
+      &::before {
+        left: -6px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -3px;
+      }
+    }
+
+    &:nth-of-type(15) {
+      margin-bottom: 18px;
+    }
+
+    &:nth-of-type(16) {
+      &::before {
+        left: -10px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -9px;
+      }
+    }
+
+    &:nth-of-type(17) {
+      &::before {
+        left: -8px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -6px;
+      }
+    }
+
+    &:nth-of-type(18) {
+      &::before {
+        left: -6px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -3px;
+      }
+    }
+
+    &:nth-of-type(19) {
+      &::before {
+        left: 0;
+      }
+
+      .filter-country__list-item {
+        margin-left: -1px;
+      }
+    }
+
+    &:nth-of-type(20) {
+      &::before {
+        left: -6px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -3px;
+      }
+    }
+
+    &:nth-of-type(21) {
+      &::before {
+        left: -3px;
+      }
+
+      .filter-country__list-item {
+        margin-left: 0;
+      }
+    }
+
+    &:nth-of-type(22) {
+      &::before {
+        left: -10px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -9px;
+      }
+    }
+
+    &:nth-of-type(23) {
+      &::before {
+        left: -8px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -6px;
+      }
+    }
+
+    &:nth-of-type(24) {
+      &::before {
+        left: -5px;
+      }
+
+      .filter-country__list-item {
+        margin-left: -3px;
+      }
+    }
   }
 
   .filter-country__countries--catalog {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 47px;
+    width: 100%;
+    margin-left: 65px;
   }
 
   .filter-country__content-close {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: 85px 0 74px;
   }
@@ -438,6 +648,9 @@
   .filter-country__collapse-button--big {
     width: 18px;
     height: 18px;
+    margin-left: 595px;
+    margin-top: 5px;
+    margin-right: 20px;
   }
 
 
@@ -474,13 +687,13 @@
   }
 
   /* stylelint-disable */
-  @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+  @each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
     .filter-country__flex-wrapper label[for="letter-#{$letter}"]:hover {
       border: solid 1px $bluey-grey-two;
     }
   }
 
-  @each $letter in А, Б, В, Г, Д, Е, Ё, Ж, З, И, Й, К, Л, М, Н, О, П, Р, С, Т, У, Ф, Х, Ц, Ч, Ш, Щ, Э, Ю, Я {
+  @each $letter in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 {
     .filter-country__flex-wrapper label[for="letter-#{$letter}"]:active {
       color: $white;
       border: none;
@@ -492,7 +705,7 @@
   .filter-country__countries-list--form {
     .filter-country__list-item {
       a:hover {
-        color: $dark-slate-blue;
+        color: #1d2e5b;
       }
 
       a:active {

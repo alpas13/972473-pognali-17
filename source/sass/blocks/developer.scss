@@ -15,6 +15,11 @@
   @include font-set(16px, 400, 16px);
 }
 
+.developer-text__link {
+  color: $greyish-brown;
+  text-decoration: none;
+}
+
 .developer__logo {
   margin: 0;
   padding: 0;

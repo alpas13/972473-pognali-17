@@ -6,11 +6,11 @@
 }
 
 .trip-description-wrapper {
-  margin: 0 0 23px;
+  margin: 0 0 17px;
   flex-wrap: wrap;
 
   &:last-of-type {
-    margin-bottom: 22px;
+    margin-bottom: 17px;
   }
 }
 
@@ -48,7 +48,7 @@
 .trip-description__description {
   box-sizing: border-box;
   margin: 0;
-  padding: 13px 15px;
+  padding: 8px 14px;
   width: 100%;
   height: 220px;
   border-radius: 4px;
@@ -68,7 +68,7 @@
   top: 13px;
   left: -10px;
   width: 12px;
-  height: 283px;
+  height: 278px;
   border: 2px solid $dark-slate-blue;
   border-right: none;
 
@@ -94,11 +94,12 @@
 
 @media (min-width: $medium-width) {
   .trip-description {
-    padding-top: 28px;
+    padding-top: 24px;
     border-top: 1px solid $border-grey;
   }
 
   .trip-description__country {
+    padding: 0;
     font-size: 30px;
     font-weight: 800;
     line-height: 30px;
@@ -111,26 +112,32 @@
 
   .trip-description__description::placeholder,
   .trip-description__description {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 24px;
   }
 
   .trip-description__description {
-    padding: 21px 19px;
+    padding: 16px 40px 16px 17px;
+    height: 142px;
   }
 
-  .trip-description-wrapper:last-of-type {
-    margin-bottom: 47px;
+  .trip-description-wrapper {
+    margin-bottom: 36px;
+    padding: 0 31px 0 2px;
+
+    &:last-of-type {
+      margin-bottom: 43px;
+    }
   }
 
   .trip-description__country-wrapper {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 
   .trip-description__route-decoration {
-    top: 45px;
-    left: 546px;
-    height: 335px;
+    top: 47px;
+    left: 530px;
+    height: 268px;
     border: none;
     border-left: 3px solid $dark-slate-blue;
 
@@ -144,9 +151,15 @@
 }
 
 @media (min-width: $huge-width) {
+  .trip-description {
+    padding-top: 70px;
+  }
+
   .trip-description__description {
     width: 730px;
     height: 142px;
+    margin-left: 5px;
+    padding: 22px 0 11px 22px;
     outline: none;
   }
 
@@ -163,12 +176,15 @@
   }
 
   .trip-description__flag {
-    margin-right: 113px;
+    position: relative;
+    top: 5px;
+    margin-right: 90px;
   }
 
   .trip-description__route-decoration {
-    left: 774px;
-    height: 256px;
+    top: 88px;
+    left: 778px;
+    height: 271px;
 
     &::before {
       top: 0;
@@ -178,6 +194,12 @@
   .trip-description__country {
     &::before {
       display: none;
+    }
+  }
+
+  .trip-description-wrapper {
+    &:last-of-type {
+      margin-bottom: 51px;
     }
   }
 
