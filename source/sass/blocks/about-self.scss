@@ -261,6 +261,18 @@
     }
   }
 
+  .about-self__tags:hover {
+    border-color: $bluey-grey-two;
+  }
+
+  .about-self__tags:active {
+    border-color: $dark-slate-blue;
+  }
+
+  .about-self__tags:focus {
+    border-color: $dark-slate-blue;
+  }
+
   .about-self__change-photo:hover {
     background-color: $light-blue-grey-five;
   }

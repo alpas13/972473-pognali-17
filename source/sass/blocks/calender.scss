@@ -106,7 +106,7 @@
 .calender__day-controls:not(:disabled) + .calender__day:hover {
   position: relative;
   color: $white;
-  background-color: $dark-slate-blue;
+  background-color: $lighter-slate-blue;
 
   &::before {
     content: "";
