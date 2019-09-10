@@ -369,7 +369,7 @@
   .filter-country__header-button {
     display: flex;
     justify-content: flex-start;
-    width: auto;
+    //width: auto;
     margin-left: 20px;
   }
 
@@ -631,6 +631,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
     margin-left: 65px;
   }
 
