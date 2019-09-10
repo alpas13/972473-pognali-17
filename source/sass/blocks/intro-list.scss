@@ -41,7 +41,7 @@
 .intro-list__description {
   position: relative;
   display: flex;
-  width: 100%;
+  width: 140px;
   margin: 22px 0 0 24px;
   padding: 0 39px 0 0;
   color: $dark-slate-blue;
@@ -53,7 +53,7 @@
     content: counter(section);
     position: absolute;
     top: 0;
-    right: 21px;
+    right: -46px;
     color: hsl(0, 0%, 100%);
   }
 }
@@ -102,6 +102,7 @@
 
   .intro-list__description {
     padding: 10px 0 0 10px;
+    width: 185px;
 
     @include font-set(24px, 800, 24px);
 
@@ -117,6 +118,7 @@
 @media (min-width: $huge-width) {
   .intro-list__description {
     padding-top: 7px;
+    width: 185px;
 
     &::after {
       top: -41px;

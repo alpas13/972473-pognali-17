@@ -3,7 +3,7 @@
 
 .intro-site__title {
   margin: 19px 0 0 0;
-  padding-top: 0;
+  padding: 0 35px;
   font-weight: bold;
   font-size: 36px;
   line-height: 40px;
@@ -58,9 +58,19 @@
   .intro-site__title {
     width: 100%;
     margin-top: 27px;
+    padding: 0 165px;
     order: 1;
 
     @include font-set(60px, 800, 70px);
+  }
+
+  .intro-site__review-source {
+    width: 220px;
+  }
+
+
+  .intro-site__review-text {
+    width: 260px;
   }
 
   .intro-site__picture-set {
@@ -114,7 +124,9 @@
   .intro-site__title {
     margin-top: 95px;
     margin-left: 127px;
-    width: auto;
+    padding-right: 0;
+    padding-left: 0;
+    width: 395px;
     text-align: left;
   }
 

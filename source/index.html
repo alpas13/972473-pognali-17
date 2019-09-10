@@ -5,6 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <title>HTML Academy: Погнали</title>
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font" type="font/woff2">
   <link href="css/style.min.css" rel="stylesheet">
   <style>
     .ring-level {
@@ -149,28 +157,28 @@
 <main class="main-content">
   <div class="main-content__intro-wrapper">
     <div class="main-content__intro intro-site">
-      <h1 class="intro-site__title">В путешествие<br> с крутыми<br>попутчиками!</h1>
+      <h1 class="intro-site__title">В путешествие с крутыми попутчиками!</h1>
       <picture class="intro-site__picture-set">
         <source media="(min-width: 1200px)" srcset="img/traveller-illustration-desktop@1x.png 1x, img/traveller-illustration-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/traveller-illustration-tablet@1x.png 1x, img/traveller-illustration-tablet@2x.png 2x">
         <img alt="Илюстрация путешественника" class="intro-site__image" height="255" src="img/traveller-illustration-mobile@1x.png" srcset="img/traveller-illustration-mobile@2x.png 2x" width="192">
       </picture>
       <blockquote class="intro-site__review">
-        <p class="intro-site__review-text">«Лучшее приложение,<br> что я видел в жизни!»</p>
-        <cite class="intro-site__review-source">Мурат Эльтазин<br>главный редактор газеты «гаджетлайф»</cite>
+        <p class="intro-site__review-text">«Лучшее приложение, что я видел в жизни!»</p>
+        <cite class="intro-site__review-source">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
       </blockquote>
       <ul class="intro-site__list intro-list">
         <li class="intro-list__item">
-          <p class="intro-list__description">Выберите<br>направление</p>
+          <p class="intro-list__description">Выберите направление</p>
         </li>
         <li class="intro-list__item">
-          <p class="intro-list__description">Изучите идеи<br>путешественников</p>
+          <p class="intro-list__description">Изучите идеи путешественников</p>
         </li>
         <li class="intro-list__item">
-          <p class="intro-list__description">Находите тех,<br>кто похож на вас</p>
+          <p class="intro-list__description">Находите тех, кто похож на вас</p>
         </li>
         <li class="intro-list__item">
-          <p class="intro-list__description">Путешествуйте<br>вместе!</p>
+          <p class="intro-list__description">Путешествуйте вместе!</p>
         </li>
       </ul>
     </div>
@@ -402,7 +410,7 @@
           </section>
         </section>
       </div>
-      <a class="companions__show-button show-button" href="#">Показать всех</a>
+      <a class="companions__show-button show-button" href="catalog.html">Показать всех</a>
     </div>
   </section>
   <section class="set-profile">
@@ -524,8 +532,8 @@
       </li>
     </ul>
     <div class="page-footer__developer developer">
-      <p class="developer-text">Разработано</p>
-      <a class="developer__logo" href="#" target="_blank">
+      <p class="developer-text"><a class="developer-text__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Разработано</a></p>
+      <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <img alt="" class="developer__logo-image" height="34" src="img/htmlacademy.svg" width="27">
       </a>
     </div>
