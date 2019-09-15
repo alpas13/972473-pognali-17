@@ -7,8 +7,6 @@ var navLogoMenu = document.querySelector('.page-header__logo-first');
 var navLogoScroll = document.querySelector('.page-header__logo-scroll');
 var navListMenu = document.querySelector('.main-nav__list');
 var navListMenuItem = document.querySelectorAll('.site-list__item');
-var mapImage = document.querySelectorAll('.map__image');
-var mapGoogle = document.querySelectorAll('.map__toggle');
 var flag = false;
 
 try {
@@ -17,11 +15,6 @@ try {
   var modal = document.querySelector('.modal-price');
 } catch (err) {
 }
-
-mapGoogle.classList.remove('map__toggle-off');
-mapImage.classList.remove('.map__image');
-
-
 
 navMenu.classList.add('page-header__content-menu--closed');
 navToggle.classList.remove('page-header__toggle--nojs');
